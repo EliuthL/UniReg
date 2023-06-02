@@ -1,0 +1,19 @@
+C:\Users\lopez\source\repos\Proyecto UniReg\Proyecto UniReg\bin\Debug\Proyecto UniReg.exe.config
+C:\Users\lopez\source\repos\Proyecto UniReg\Proyecto UniReg\bin\Debug\Proyecto UniReg.exe
+C:\Users\lopez\source\repos\Proyecto UniReg\Proyecto UniReg\bin\Debug\Proyecto UniReg.pdb
+C:\Users\lopez\source\repos\Proyecto UniReg\Proyecto UniReg\obj\Debug\Proyecto UniReg.csproj.AssemblyReference.cache
+C:\Users\lopez\source\repos\Proyecto UniReg\Proyecto UniReg\obj\Debug\Proyecto UniReg.csproj.SuggestedBindingRedirects.cache
+C:\Users\lopez\source\repos\Proyecto UniReg\Proyecto UniReg\obj\Debug\Proyecto_UniReg.Principal.resources
+C:\Users\lopez\source\repos\Proyecto UniReg\Proyecto UniReg\obj\Debug\Proyecto_UniReg.Properties.Resources.resources
+C:\Users\lopez\source\repos\Proyecto UniReg\Proyecto UniReg\obj\Debug\Proyecto UniReg.csproj.GenerateResource.cache
+C:\Users\lopez\source\repos\Proyecto UniReg\Proyecto UniReg\obj\Debug\Proyecto UniReg.csproj.CoreCompileInputs.cache
+C:\Users\lopez\source\repos\Proyecto UniReg\Proyecto UniReg\obj\Debug\Proyecto UniReg.exe
+C:\Users\lopez\source\repos\Proyecto UniReg\Proyecto UniReg\obj\Debug\Proyecto UniReg.pdb
+C:\Users\lopez\source\repos\Proyecto UniReg\Proyecto UniReg\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\lopez\source\repos\Proyecto UniReg\Proyecto UniReg\bin\Debug\itextsharp.dll
+C:\Users\lopez\source\repos\Proyecto UniReg\Proyecto UniReg\bin\Debug\itextsharp.xmlworker.dll
+C:\Users\lopez\source\repos\Proyecto UniReg\Proyecto UniReg\bin\Debug\itextsharp.xtra.dll
+C:\Users\lopez\source\repos\Proyecto UniReg\Proyecto UniReg\bin\Debug\itextsharp.xml
+C:\Users\lopez\source\repos\Proyecto UniReg\Proyecto UniReg\obj\Debug\Proyecto UniReg.csproj.CopyComplete
+C:\Users\lopez\source\repos\Proyecto UniReg\Proyecto UniReg\obj\Debug\Proyecto_UniReg.Matricula.resources
+C:\Users\lopez\source\repos\Proyecto UniReg\Proyecto UniReg\obj\Debug\Proyecto_UniReg.Estudiantes.resources
