@@ -24,14 +24,13 @@ namespace Proyecto_UniReg
             Conection.User = userTxt.Text;
             Conection.Password = passwordTxt.Text;
             Env.Load();
-            Conection.DataBase = Environment.GetEnvironmentVariable("Server");
+            Conection.DataBase = Environment.GetEnvironmentVariable("Data_Base");
             Conection.Server = Environment.GetEnvironmentVariable("Server");
-            if (Conection.makeConnection() != null)
-            {
-                Principal principal = new Principal();
-                principal.Show();
-                this.Hide();
-            }     
+            Conection.makeConnection();
+            Conection.Con.Open();
+            Principal principal = new Principal();
+            principal.Show();
+            this.Hide();     
         }
     }
 }

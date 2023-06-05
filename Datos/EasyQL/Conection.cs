@@ -18,11 +18,11 @@ namespace EasyQL
 
         public static string makeConnectionString()
         {
-            if(User != "" && Password != "")
+            if(User != " " && Password != " ")
             {
                 return $"Data Source={Server};Initial Catalog={DataBase};User ID={User};Password={Password};";
             }
-            else if(User == "" && Password == "")
+            else if(User == " " && Password == " ")
             {
                 return $"Data Source={Server};Initial Catalog={DataBase};Integrated Security=true;";
             }
