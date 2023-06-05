@@ -26,11 +26,24 @@ namespace Proyecto_UniReg
             Env.Load();
             Conection.DataBase = Environment.GetEnvironmentVariable("Data_Base");
             Conection.Server = Environment.GetEnvironmentVariable("Server");
-            Conection.makeConnection();
-            Conection.Con.Open();
-            Principal principal = new Principal();
-            principal.Show();
-            this.Hide();     
+
+            try
+            {
+                Conection.makeConnection();
+                Conection.Con.Open();
+                Principal principal = new Principal();
+                principal.Show();
+                this.Hide();
+
+                if (sesionRbt.Checked)
+                {
+
+                }
+            }
+            catch
+            {
+                MessageBox.Show("La contreseña o el Usuario son incorrectas");
+            }       
         }
     }
 }
