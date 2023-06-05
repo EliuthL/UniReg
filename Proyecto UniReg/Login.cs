@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using EasyQL;
+using DotNetEnv;
 
 namespace Proyecto_UniReg
 {
@@ -19,10 +21,17 @@ namespace Proyecto_UniReg
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Principal principal = new Principal();
-            principal.Show();
-            this.Hide();
-        
+            Conection.User = userTxt.Text;
+            Conection.Password = passwordTxt.Text;
+            Env.Load();
+            Conection.DataBase = Environment.GetEnvironmentVariable("Server");
+            Conection.Server = Environment.GetEnvironmentVariable("Server");
+            if (Conection.makeConnection() != null)
+            {
+                Principal principal = new Principal();
+                principal.Show();
+                this.Hide();
+            }     
         }
     }
 }

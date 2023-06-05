@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Data.SqlClient;
 
 namespace EasyQL
@@ -102,14 +103,14 @@ namespace EasyQL
             {
                 string query = $"insert into {Table} (";
 
-                for(int i = 0; i < values.Count(); i++)
+                for(int i = 0; i < values.Count; i++)
                 {
                     query = query + $"{Fields[i]},";
                 }
                 query = query.Remove(query.Length - 1);
                 query = query + ") values( ";
 
-                for (int i = 0; i < values.Count(); i++)
+                for (int i = 0; i < values.Count; i++)
                 {
                     query = query + $"'{values[i]}',";
                 }
