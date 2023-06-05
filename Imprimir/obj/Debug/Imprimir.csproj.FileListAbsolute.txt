@@ -1,0 +1,9 @@
+C:\Users\lopez\source\repos\Proyecto UniReg\Imprimir\bin\Debug\Imprimir.dll
+C:\Users\lopez\source\repos\Proyecto UniReg\Imprimir\bin\Debug\Imprimir.pdb
+C:\Users\lopez\source\repos\Proyecto UniReg\Imprimir\bin\Debug\NReco.PdfGenerator.dll
+C:\Users\lopez\source\repos\Proyecto UniReg\Imprimir\bin\Debug\NReco.PdfGenerator.xml
+C:\Users\lopez\source\repos\Proyecto UniReg\Imprimir\obj\Debug\Imprimir.csproj.AssemblyReference.cache
+C:\Users\lopez\source\repos\Proyecto UniReg\Imprimir\obj\Debug\Imprimir.csproj.CoreCompileInputs.cache
+C:\Users\lopez\source\repos\Proyecto UniReg\Imprimir\obj\Debug\Imprimir.csproj.CopyComplete
+C:\Users\lopez\source\repos\Proyecto UniReg\Imprimir\obj\Debug\Imprimir.dll
+C:\Users\lopez\source\repos\Proyecto UniReg\Imprimir\obj\Debug\Imprimir.pdb

@@ -12,7 +12,8 @@ namespace Proyecto_UniReg
 {
     public partial class Principal : Form
     {
-        bool sliderStatus = false;
+        private bool sliderStatus = false;
+
         public Principal()
         {
             InitializeComponent();
@@ -57,16 +58,16 @@ namespace Proyecto_UniReg
         {
             if (sliderStatus == false)
             {
-                panelMenu.Width = 50;
+                panelMenu.Width = 45;
                 picturePerfil.Size = new Size(40, 40);
-                picturePerfil.Location = new Point(5, 10);
+                picturePerfil.Location = new Point(2, 10);
                 sliderStatus = true;
             }
             else
             {
                 panelMenu.Width = 200;
                 picturePerfil.Size = new Size(100, 100);
-                picturePerfil.Location = new Point(45, 10);
+                picturePerfil.Location = new Point(22, 20);
                 sliderStatus = false;
             }
 
@@ -74,12 +75,33 @@ namespace Proyecto_UniReg
 
         private void ClickMinimizar(object sender, EventArgs e)
         {
-
+            Slideer();
         }
 
         private void Click_btnmatricular(object sender, EventArgs e)
         {
             VistaForm(new Matricula());
+            ChangeColor(btnmatricular);
+        }
+
+        private void btnestudiantes_Click(object sender, EventArgs e)
+        {
+            VistaForm(new Estudiantes());
+            ChangeColor(btnestudiantes);
+        }
+        private void btncursos_Click(object sender, EventArgs e)
+        {
+            ChangeColor(btncursos);
+        }
+        private void btncrearcurso_Click(object sender, EventArgs e)
+        {
+            VistaForm(new CrearCurso());
+            ChangeColor(btncrearcurso);
+        }
+
+        private void pictureBox5_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

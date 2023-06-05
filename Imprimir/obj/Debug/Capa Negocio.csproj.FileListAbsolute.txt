@@ -1,0 +1,9 @@
+C:\Users\lopez\source\repos\Proyecto UniReg\Imprimir\bin\Debug\Capa Negocios.dll
+C:\Users\lopez\source\repos\Proyecto UniReg\Imprimir\bin\Debug\Capa Negocios.pdb
+C:\Users\lopez\source\repos\Proyecto UniReg\Imprimir\bin\Debug\NReco.PdfGenerator.dll
+C:\Users\lopez\source\repos\Proyecto UniReg\Imprimir\bin\Debug\NReco.PdfGenerator.xml
+C:\Users\lopez\source\repos\Proyecto UniReg\Imprimir\obj\Debug\Capa Negocio.csproj.AssemblyReference.cache
+C:\Users\lopez\source\repos\Proyecto UniReg\Imprimir\obj\Debug\Capa Negocio.csproj.CoreCompileInputs.cache
+C:\Users\lopez\source\repos\Proyecto UniReg\Imprimir\obj\Debug\Capa Negocio.csproj.CopyComplete
+C:\Users\lopez\source\repos\Proyecto UniReg\Imprimir\obj\Debug\Capa Negocios.dll
+C:\Users\lopez\source\repos\Proyecto UniReg\Imprimir\obj\Debug\Capa Negocios.pdb

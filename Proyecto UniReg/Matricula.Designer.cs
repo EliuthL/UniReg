@@ -125,8 +125,9 @@
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(12, 12);
+            this.panel1.MinimumSize = new System.Drawing.Size(858, 263);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(859, 263);
+            this.panel1.Size = new System.Drawing.Size(858, 263);
             this.panel1.TabIndex = 0;
             // 
             // label5
@@ -177,6 +178,7 @@
             // 
             this.comboBox1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.IntegralHeight = false;
             this.comboBox1.Items.AddRange(new object[] {
             "x",
             "s",
@@ -271,8 +273,9 @@
             this.panel2.Controls.Add(this.label7);
             this.panel2.Controls.Add(this.label12);
             this.panel2.Location = new System.Drawing.Point(12, 281);
+            this.panel2.MinimumSize = new System.Drawing.Size(858, 687);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(859, 687);
+            this.panel2.Size = new System.Drawing.Size(858, 687);
             this.panel2.TabIndex = 9;
             // 
             // textBox11
@@ -352,10 +355,6 @@
             // 
             this.comboBox2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
-            "x",
-            "s",
-            "d"});
             this.comboBox2.Location = new System.Drawing.Point(580, 370);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(223, 24);
@@ -555,6 +554,7 @@
             // textBox1
             // 
             this.textBox1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.textBox1.Enabled = false;
             this.textBox1.Location = new System.Drawing.Point(53, 81);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(225, 22);
@@ -608,8 +608,9 @@
             this.panel3.Controls.Add(this.label29);
             this.panel3.Controls.Add(this.label30);
             this.panel3.Location = new System.Drawing.Point(12, 1345);
+            this.panel3.MinimumSize = new System.Drawing.Size(858, 555);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(859, 555);
+            this.panel3.Size = new System.Drawing.Size(858, 555);
             this.panel3.TabIndex = 10;
             // 
             // button1
@@ -625,6 +626,7 @@
             this.button1.Text = "Guardar";
             this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // textBox23
             // 
@@ -829,8 +831,9 @@
             this.panel4.Controls.Add(this.label23);
             this.panel4.Controls.Add(this.radioButton4);
             this.panel4.Location = new System.Drawing.Point(12, 974);
+            this.panel4.MinimumSize = new System.Drawing.Size(858, 365);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(859, 365);
+            this.panel4.Size = new System.Drawing.Size(858, 365);
             this.panel4.TabIndex = 11;
             // 
             // textBox16
