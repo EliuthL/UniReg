@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using EasyQL;
 using DotNetEnv;
+using System.Diagnostics;
 
 namespace Proyecto_UniReg
 {
@@ -26,8 +27,25 @@ namespace Proyecto_UniReg
             Env.Load();
             Conection.DataBase = Environment.GetEnvironmentVariable("Data_Base");
             Conection.Server = Environment.GetEnvironmentVariable("Server");
-            Conection.makeConnection();
-            Conection.Con.Open();
+
+            try
+            {
+                Conection.makeConnection();
+                Conection.Con.Open();
+            }
+            catch
+            {
+                MessageBox.Show("La contreseña o el Usuario son incorrectas");
+            }
+            if (sesionRbt.Checked)
+            {
+                Process process = new Process();
+                process.StartInfo.FileName = "cmd.exe";
+                process.StartInfo.Arguments = $"/C setx User {userTxt.Text}";
+                process.Start();
+                process.WaitForExit();
+            }
+
             Principal principal = new Principal();
             principal.Show();
             this.Hide();     
