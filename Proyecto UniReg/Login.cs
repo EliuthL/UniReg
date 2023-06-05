@@ -9,7 +9,6 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using EasyQL;
 using DotNetEnv;
-using System.Diagnostics;
 
 namespace Proyecto_UniReg
 {
@@ -32,23 +31,19 @@ namespace Proyecto_UniReg
             {
                 Conection.makeConnection();
                 Conection.Con.Open();
+                Principal principal = new Principal();
+                principal.Show();
+                this.Hide();
+
+                if (sesionRbt.Checked)
+                {
+
+                }
             }
             catch
             {
                 MessageBox.Show("La contreseña o el Usuario son incorrectas");
-            }
-            if (sesionRbt.Checked)
-            {
-                Process process = new Process();
-                process.StartInfo.FileName = "cmd.exe";
-                process.StartInfo.Arguments = $"/C setx User {userTxt.Text}";
-                process.Start();
-                process.WaitForExit();
-            }
-
-            Principal principal = new Principal();
-            principal.Show();
-            this.Hide();     
+            }       
         }
     }
 }
