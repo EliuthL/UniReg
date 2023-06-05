@@ -160,9 +160,9 @@
     <None Include="Resources\imprimir.png" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Imprimir\Capa Negocio.csproj">
+    <ProjectReference Include="..\Imprimir\Servicios.csproj">
       <Project>{02554825-6c67-452b-b36d-0356fdebdf49}</Project>
-      <Name>Capa Negocio</Name>
+      <Name>Servicios</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

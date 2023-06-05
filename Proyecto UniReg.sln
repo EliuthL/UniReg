@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.33516.290
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Proyecto UniReg", "Proyecto UniReg\Proyecto UniReg.csproj", "{348F9874-3AAF-462F-88A1-2109D97BD55B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UniReg", "Proyecto UniReg\UniReg.csproj", "{348F9874-3AAF-462F-88A1-2109D97BD55B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Capa Negocio", "Imprimir\Capa Negocio.csproj", "{02554825-6C67-452B-B36D-0356FDEBDF49}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Servicios", "Imprimir\Servicios.csproj", "{02554825-6C67-452B-B36D-0356FDEBDF49}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
