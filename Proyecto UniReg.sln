@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UniReg", "Proyecto UniReg\U
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Servicios", "Imprimir\Servicios.csproj", "{02554825-6C67-452B-B36D-0356FDEBDF49}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Datos", "Datos\Datos.csproj", "{5225A5FF-2459-40BB-A5CC-95165D85D8C8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{02554825-6C67-452B-B36D-0356FDEBDF49}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{02554825-6C67-452B-B36D-0356FDEBDF49}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{02554825-6C67-452B-B36D-0356FDEBDF49}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5225A5FF-2459-40BB-A5CC-95165D85D8C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5225A5FF-2459-40BB-A5CC-95165D85D8C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5225A5FF-2459-40BB-A5CC-95165D85D8C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5225A5FF-2459-40BB-A5CC-95165D85D8C8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
