@@ -1,11 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Proyecto_UniReg
@@ -13,10 +8,30 @@ namespace Proyecto_UniReg
     public partial class Principal : Form
     {
         private bool sliderStatus = false;
+        private bool menustatus = true;
 
         public Principal()
         {
             InitializeComponent();
+        }
+
+        private void DeployMenu()
+        {
+            if (menustatus == true)
+            {
+
+                panelcontainer.Height = 0;
+                panelcontainer.Visible = false;
+                panelbuttons.Location = new Point(0, 190);
+                menustatus = false;
+            }
+            else
+            {
+                panelcontainer.Height = 68;
+                panelcontainer.Visible = true;
+                panelbuttons.Location = new Point(0, 265);
+                menustatus = true;
+            }
         }
         internal void ChangeColor(Control controlExeption)
         {
@@ -25,7 +40,8 @@ namespace Proyecto_UniReg
                 btncursos,
                 btnestudiantes,
                 btnmatricular,
-                btncrearcurso
+                btncrearcurso,
+                btnopciones
             };
 
             controlExeption.BackColor = Color.FromArgb(255, 100, 0);
@@ -82,6 +98,7 @@ namespace Proyecto_UniReg
         {
             VistaForm(new Matricula());
             ChangeColor(btnmatricular);
+            DeployMenu();
         }
 
         private void btnestudiantes_Click(object sender, EventArgs e)
@@ -102,6 +119,11 @@ namespace Proyecto_UniReg
         private void pictureBox5_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void Principal_Load(object sender, EventArgs e)
+        {
+            DeployMenu();
         }
     }
 }

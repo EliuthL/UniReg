@@ -35,10 +35,10 @@ namespace Proyecto_UniReg
                 principal.Show();
                 this.Hide();
 
-                if (sesionRbt.Checked)
-                {
+                //if (sesionRbt.Checked)
+                //{
 
-                }
+                //}
             }
             catch
             {
