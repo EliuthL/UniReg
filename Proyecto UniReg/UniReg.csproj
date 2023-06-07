@@ -318,5 +318,20 @@
   <ItemGroup>
     <None Include="Resources\Exit1.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\configuracion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\configuracion %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\agregar-usuario.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\usuario %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\agregar-documento.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
