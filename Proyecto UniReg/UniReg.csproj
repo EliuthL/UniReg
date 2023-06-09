@@ -351,5 +351,8 @@
   <ItemGroup>
     <None Include="Resources\agregar-documento.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include=".gitignore" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
