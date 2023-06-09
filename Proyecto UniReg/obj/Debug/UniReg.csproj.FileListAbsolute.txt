@@ -70,3 +70,5 @@ C:\Users\lopez\source\repos\Proyecto UniReg\Proyecto UniReg\obj\Debug\UniReg.csp
 C:\Users\lopez\source\repos\Proyecto UniReg\Proyecto UniReg\obj\Debug\UniReg.csproj.CopyComplete
 C:\Users\lopez\source\repos\Proyecto UniReg\Proyecto UniReg\obj\Debug\Proyecto UniReg.exe
 C:\Users\lopez\source\repos\Proyecto UniReg\Proyecto UniReg\obj\Debug\Proyecto UniReg.pdb
+C:\Users\lopez\source\repos\Proyecto UniReg\Proyecto UniReg\obj\Debug\Proyecto_UniReg.EstudiantesExistentes.resources
+C:\Users\lopez\source\repos\Proyecto UniReg\Proyecto UniReg\obj\Debug\Proyecto_UniReg.Cursos.resources

@@ -41,7 +41,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
     <Compile Include="EasyQL\Conection.cs" />
     <Compile Include="EasyQL\Estudiante.cs" />
     <Compile Include="EasyQL\Model.cs" />

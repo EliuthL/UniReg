@@ -32,25 +32,25 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.Minimizar = new System.Windows.Forms.PictureBox();
             this.panelMenu = new System.Windows.Forms.Panel();
             this.panelbuttons = new System.Windows.Forms.Panel();
-            this.panelcontainer = new System.Windows.Forms.Panel();
-            this.panelView = new System.Windows.Forms.Panel();
             this.btnestudiantes = new System.Windows.Forms.Button();
             this.btnopciones = new System.Windows.Forms.Button();
             this.btncrearcurso = new System.Windows.Forms.Button();
             this.btncursos = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.panelcontainer = new System.Windows.Forms.Panel();
+            this.btnestuexist = new System.Windows.Forms.Button();
+            this.btnnuevamatricula = new System.Windows.Forms.Button();
             this.picturePerfil = new System.Windows.Forms.PictureBox();
             this.btnmatricular = new System.Windows.Forms.Button();
-            this.Minimizar = new System.Windows.Forms.PictureBox();
+            this.panelView = new System.Windows.Forms.Panel();
             this.panelHeat.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Minimizar)).BeginInit();
             this.panelMenu.SuspendLayout();
             this.panelbuttons.SuspendLayout();
             this.panelcontainer.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picturePerfil)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Minimizar)).BeginInit();
             this.SuspendLayout();
             // 
             // panelHeat
@@ -63,7 +63,7 @@
             this.panelHeat.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelHeat.Location = new System.Drawing.Point(0, 0);
             this.panelHeat.Name = "panelHeat";
-            this.panelHeat.Size = new System.Drawing.Size(1122, 30);
+            this.panelHeat.Size = new System.Drawing.Size(1243, 30);
             this.panelHeat.TabIndex = 0;
             // 
             // label3
@@ -71,7 +71,7 @@
             this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(990, 6);
+            this.label3.Location = new System.Drawing.Point(1111, 6);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(45, 18);
             this.label3.TabIndex = 9;
@@ -82,7 +82,7 @@
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(621, 7);
+            this.label2.Location = new System.Drawing.Point(681, 7);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(54, 18);
             this.label2.TabIndex = 8;
@@ -98,6 +98,16 @@
             this.label1.TabIndex = 7;
             this.label1.Text = "UniReg";
             // 
+            // Minimizar
+            // 
+            this.Minimizar.Image = global::Proyecto_UniReg.Properties.Resources.Exapandir_menu;
+            this.Minimizar.Location = new System.Drawing.Point(12, 0);
+            this.Minimizar.Name = "Minimizar";
+            this.Minimizar.Size = new System.Drawing.Size(30, 30);
+            this.Minimizar.TabIndex = 0;
+            this.Minimizar.TabStop = false;
+            this.Minimizar.Click += new System.EventHandler(this.ClickMinimizar);
+            // 
             // panelMenu
             // 
             this.panelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(170)))), ((int)(((byte)(0)))));
@@ -109,7 +119,7 @@
             this.panelMenu.Location = new System.Drawing.Point(0, 30);
             this.panelMenu.MaximumSize = new System.Drawing.Size(200, 0);
             this.panelMenu.Name = "panelMenu";
-            this.panelMenu.Size = new System.Drawing.Size(200, 680);
+            this.panelMenu.Size = new System.Drawing.Size(200, 724);
             this.panelMenu.TabIndex = 0;
             // 
             // panelbuttons
@@ -123,26 +133,6 @@
             this.panelbuttons.Name = "panelbuttons";
             this.panelbuttons.Size = new System.Drawing.Size(200, 207);
             this.panelbuttons.TabIndex = 7;
-            // 
-            // panelcontainer
-            // 
-            this.panelcontainer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(170)))), ((int)(((byte)(0)))));
-            this.panelcontainer.Controls.Add(this.button2);
-            this.panelcontainer.Controls.Add(this.button1);
-            this.panelcontainer.Location = new System.Drawing.Point(0, 236);
-            this.panelcontainer.Name = "panelcontainer";
-            this.panelcontainer.Size = new System.Drawing.Size(200, 90);
-            this.panelcontainer.TabIndex = 6;
-            // 
-            // panelView
-            // 
-            this.panelView.AutoScroll = true;
-            this.panelView.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.panelView.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelView.Location = new System.Drawing.Point(200, 30);
-            this.panelView.Name = "panelView";
-            this.panelView.Size = new System.Drawing.Size(922, 680);
-            this.panelView.TabIndex = 2;
             // 
             // btnestudiantes
             // 
@@ -203,33 +193,45 @@
             this.btncursos.UseVisualStyleBackColor = false;
             this.btncursos.Click += new System.EventHandler(this.btncursos_Click);
             // 
-            // button2
+            // panelcontainer
             // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(170)))), ((int)(((byte)(0)))));
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Image = global::Proyecto_UniReg.Properties.Resources.usuario__1_;
-            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(36, 42);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(164, 42);
-            this.button2.TabIndex = 8;
-            this.button2.Text = "Existente";
-            this.button2.UseVisualStyleBackColor = false;
+            this.panelcontainer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(170)))), ((int)(((byte)(0)))));
+            this.panelcontainer.Controls.Add(this.btnestuexist);
+            this.panelcontainer.Controls.Add(this.btnnuevamatricula);
+            this.panelcontainer.Location = new System.Drawing.Point(0, 236);
+            this.panelcontainer.Name = "panelcontainer";
+            this.panelcontainer.Size = new System.Drawing.Size(200, 90);
+            this.panelcontainer.TabIndex = 6;
             // 
-            // button1
+            // btnestuexist
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(170)))), ((int)(((byte)(0)))));
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Image = global::Proyecto_UniReg.Properties.Resources.agregar_usuario;
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(36, 0);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(164, 42);
-            this.button1.TabIndex = 7;
-            this.button1.Text = "Nuevo";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnestuexist.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(170)))), ((int)(((byte)(0)))));
+            this.btnestuexist.FlatAppearance.BorderSize = 0;
+            this.btnestuexist.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnestuexist.Image = global::Proyecto_UniReg.Properties.Resources.usuario__1_;
+            this.btnestuexist.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnestuexist.Location = new System.Drawing.Point(36, 42);
+            this.btnestuexist.Name = "btnestuexist";
+            this.btnestuexist.Size = new System.Drawing.Size(164, 42);
+            this.btnestuexist.TabIndex = 8;
+            this.btnestuexist.Text = "Existente";
+            this.btnestuexist.UseVisualStyleBackColor = false;
+            this.btnestuexist.Click += new System.EventHandler(this.btnestuexist_Click);
+            // 
+            // btnnuevamatricula
+            // 
+            this.btnnuevamatricula.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(170)))), ((int)(((byte)(0)))));
+            this.btnnuevamatricula.FlatAppearance.BorderSize = 0;
+            this.btnnuevamatricula.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnnuevamatricula.Image = global::Proyecto_UniReg.Properties.Resources.agregar_usuario;
+            this.btnnuevamatricula.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnnuevamatricula.Location = new System.Drawing.Point(36, 0);
+            this.btnnuevamatricula.Name = "btnnuevamatricula";
+            this.btnnuevamatricula.Size = new System.Drawing.Size(164, 42);
+            this.btnnuevamatricula.TabIndex = 7;
+            this.btnnuevamatricula.Text = "Nuevo";
+            this.btnnuevamatricula.UseVisualStyleBackColor = false;
+            this.btnnuevamatricula.Click += new System.EventHandler(this.btnnuevamatricula_Click);
             // 
             // picturePerfil
             // 
@@ -257,36 +259,36 @@
             this.btnmatricular.UseVisualStyleBackColor = false;
             this.btnmatricular.Click += new System.EventHandler(this.Click_btnmatricular);
             // 
-            // Minimizar
+            // panelView
             // 
-            this.Minimizar.Image = global::Proyecto_UniReg.Properties.Resources.Exapandir_menu;
-            this.Minimizar.Location = new System.Drawing.Point(12, 0);
-            this.Minimizar.Name = "Minimizar";
-            this.Minimizar.Size = new System.Drawing.Size(30, 30);
-            this.Minimizar.TabIndex = 0;
-            this.Minimizar.TabStop = false;
-            this.Minimizar.Click += new System.EventHandler(this.ClickMinimizar);
+            this.panelView.AutoScroll = true;
+            this.panelView.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.panelView.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelView.Location = new System.Drawing.Point(200, 30);
+            this.panelView.Name = "panelView";
+            this.panelView.Size = new System.Drawing.Size(1043, 724);
+            this.panelView.TabIndex = 2;
             // 
             // Principal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1122, 710);
+            this.ClientSize = new System.Drawing.Size(1243, 754);
             this.Controls.Add(this.panelView);
             this.Controls.Add(this.panelMenu);
             this.Controls.Add(this.panelHeat);
-            this.MinimumSize = new System.Drawing.Size(1140, 757);
+            this.MinimumSize = new System.Drawing.Size(1261, 801);
             this.Name = "Principal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Principal_Load);
             this.panelHeat.ResumeLayout(false);
             this.panelHeat.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Minimizar)).EndInit();
             this.panelMenu.ResumeLayout(false);
             this.panelbuttons.ResumeLayout(false);
             this.panelcontainer.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.picturePerfil)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Minimizar)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -303,8 +305,8 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panelcontainer;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnestuexist;
+        private System.Windows.Forms.Button btnnuevamatricula;
         private System.Windows.Forms.Panel panelbuttons;
         private System.Windows.Forms.Button btnestudiantes;
         private System.Windows.Forms.Button btnopciones;

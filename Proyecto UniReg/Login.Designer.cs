@@ -35,7 +35,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
-            this.checksave = new System.Windows.Forms.CheckBox();
+            this.sesionCheck = new System.Windows.Forms.CheckBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -115,22 +115,22 @@
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // checksave
+            // sesionCheck
             // 
-            this.checksave.AutoSize = true;
-            this.checksave.Location = new System.Drawing.Point(264, 177);
-            this.checksave.Name = "checksave";
-            this.checksave.Size = new System.Drawing.Size(123, 20);
-            this.checksave.TabIndex = 8;
-            this.checksave.Text = "Guardar Sesión";
-            this.checksave.UseVisualStyleBackColor = true;
+            this.sesionCheck.AutoSize = true;
+            this.sesionCheck.Location = new System.Drawing.Point(264, 177);
+            this.sesionCheck.Name = "sesionCheck";
+            this.sesionCheck.Size = new System.Drawing.Size(123, 20);
+            this.sesionCheck.TabIndex = 8;
+            this.sesionCheck.Text = "Guardar Sesión";
+            this.sesionCheck.UseVisualStyleBackColor = true;
             // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(589, 255);
-            this.Controls.Add(this.checksave);
+            this.Controls.Add(this.sesionCheck);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -158,6 +158,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.CheckBox checksave;
+        private System.Windows.Forms.CheckBox sesionCheck;
     }
 }

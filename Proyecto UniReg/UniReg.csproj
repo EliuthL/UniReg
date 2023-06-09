@@ -203,11 +203,23 @@
     <Compile Include="CrearCurso.Designer.cs">
       <DependentUpon>CrearCurso.cs</DependentUpon>
     </Compile>
+    <Compile Include="Cursos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cursos.Designer.cs">
+      <DependentUpon>Cursos.cs</DependentUpon>
+    </Compile>
     <Compile Include="Estudiantes.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Estudiantes.Designer.cs">
       <DependentUpon>Estudiantes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EstudiantesExistentes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EstudiantesExistentes.Designer.cs">
+      <DependentUpon>EstudiantesExistentes.cs</DependentUpon>
     </Compile>
     <Compile Include="Inicio.cs">
       <SubType>Form</SubType>
@@ -232,8 +244,14 @@
     <EmbeddedResource Include="CrearCurso.resx">
       <DependentUpon>CrearCurso.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Cursos.resx">
+      <DependentUpon>Cursos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Estudiantes.resx">
       <DependentUpon>Estudiantes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EstudiantesExistentes.resx">
+      <DependentUpon>EstudiantesExistentes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Inicio.resx">
       <DependentUpon>Inicio.cs</DependentUpon>

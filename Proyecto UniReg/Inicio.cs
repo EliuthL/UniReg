@@ -41,7 +41,9 @@ namespace Proyecto_UniReg
                 btnestudiantes,
                 btnmatricular,
                 btncrearcurso,
-                btnopciones
+                btnopciones,
+                btnnuevamatricula,
+                btnestuexist
             };
 
             controlExeption.BackColor = Color.FromArgb(255, 100, 0);
@@ -96,7 +98,6 @@ namespace Proyecto_UniReg
 
         private void Click_btnmatricular(object sender, EventArgs e)
         {
-            VistaForm(new Matricula());
             ChangeColor(btnmatricular);
             DeployMenu();
         }
@@ -108,6 +109,7 @@ namespace Proyecto_UniReg
         }
         private void btncursos_Click(object sender, EventArgs e)
         {
+            VistaForm(new Cursos());
             ChangeColor(btncursos);
         }
         private void btncrearcurso_Click(object sender, EventArgs e)
@@ -124,6 +126,21 @@ namespace Proyecto_UniReg
         private void Principal_Load(object sender, EventArgs e)
         {
             DeployMenu();
+        }
+
+        private void btnnuevamatricula_Click(object sender, EventArgs e)
+        {
+            VistaForm(new Matricula());
+            ChangeColor(btnnuevamatricula);
+            DeployMenu();
+        }
+
+        private void btnestuexist_Click(object sender, EventArgs e)
+        {
+            VistaForm(new EstudiantesExistentes());
+            ChangeColor(btnestuexist);
+            DeployMenu();
+
         }
     }
 }
