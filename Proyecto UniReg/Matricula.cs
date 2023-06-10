@@ -17,7 +17,7 @@ namespace Proyecto_UniReg
         private void button1_Click(object sender, EventArgs e)
         {
             
-            Class1.imprimir();
+            ServiosImpresion.imprimir();
         }
     }
 }

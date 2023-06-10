@@ -9,7 +9,7 @@ using System.Diagnostics;
 
 namespace Imprimir
 {
-    public class Class1
+    public class ServiosImpresion
     {
         public static void imprimir()
         {
