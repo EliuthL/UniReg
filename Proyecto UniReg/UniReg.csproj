@@ -241,6 +241,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Validaciones\Validaciones.cs" />
     <EmbeddedResource Include="CrearCurso.resx">
       <DependentUpon>CrearCurso.cs</DependentUpon>
     </EmbeddedResource>
@@ -351,8 +352,6 @@
   <ItemGroup>
     <None Include="Resources\agregar-documento.png" />
   </ItemGroup>
-  <ItemGroup>
-    <Content Include=".gitignore" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

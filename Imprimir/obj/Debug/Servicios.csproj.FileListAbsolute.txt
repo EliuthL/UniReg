@@ -16,3 +16,4 @@ C:\Users\lopez\source\repos\Proyecto UniReg\Imprimir\obj\Debug\Servicios.csproj.
 C:\Users\lopez\source\repos\Proyecto UniReg\Imprimir\obj\Debug\Servicios.csproj.CopyComplete
 C:\Users\lopez\source\repos\Proyecto UniReg\Imprimir\obj\Debug\Capa Negocios.dll
 C:\Users\lopez\source\repos\Proyecto UniReg\Imprimir\obj\Debug\Capa Negocios.pdb
+C:\Users\lopez\source\repos\Proyecto UniReg\Imprimir\bin\Debug\BouncyCastle.Crypto.dll

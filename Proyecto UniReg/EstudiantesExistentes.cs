@@ -16,6 +16,12 @@ namespace Proyecto_UniReg
         {
             InitializeComponent();
         }
+
+        private void btnguardar_Click(object sender, EventArgs e)
+        {
+
+
+        }
     }
 
 

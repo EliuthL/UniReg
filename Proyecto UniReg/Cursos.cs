@@ -16,5 +16,12 @@ namespace Proyecto_UniReg
         {
             InitializeComponent();
         }
+
+        private void Cursos_Load(object sender, EventArgs e)
+        {
+            string[] xd = {"name"};
+            dtgcursos.Rows.Add();
+            dtgcursos.Rows.Add(xd);
+        }
     }
 }
