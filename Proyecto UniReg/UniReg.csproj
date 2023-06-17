@@ -352,9 +352,6 @@
   <ItemGroup>
     <None Include="Resources\agregar-documento.png" />
   </ItemGroup>
-  <ItemGroup />
-  <ItemGroup>
-    <None Include="Resources\UnanManagua.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
