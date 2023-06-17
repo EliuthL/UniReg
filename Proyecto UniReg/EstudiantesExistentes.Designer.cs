@@ -82,7 +82,7 @@
             // 
             // lbfinal
             // 
-            this.lbfinal.Location = new System.Drawing.Point(831, 209);
+            this.lbduracion.Location = new System.Drawing.Point(831, 209);
             // 
             // tiempoduracion
             // 

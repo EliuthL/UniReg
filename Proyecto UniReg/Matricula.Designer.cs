@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.ptipoprograma = new System.Windows.Forms.Panel();
-            this.lbfinal = new System.Windows.Forms.Label();
+            this.lbduracion = new System.Windows.Forms.Label();
             this.tiempoduracion = new System.Windows.Forms.Label();
             this.lbinicio = new System.Windows.Forms.Label();
             this.labelfechainicio = new System.Windows.Forms.Label();
@@ -115,7 +115,7 @@
             this.ptipoprograma.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.ptipoprograma.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.ptipoprograma.Controls.Add(this.lbfinal);
+            this.ptipoprograma.Controls.Add(this.lbduracion);
             this.ptipoprograma.Controls.Add(this.tiempoduracion);
             this.ptipoprograma.Controls.Add(this.lbinicio);
             this.ptipoprograma.Controls.Add(this.labelfechainicio);
@@ -130,16 +130,16 @@
             this.ptipoprograma.Size = new System.Drawing.Size(858, 263);
             this.ptipoprograma.TabIndex = 0;
             // 
-            // lbfinal
+            // lbduracion
             // 
-            this.lbfinal.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.lbfinal.AutoSize = true;
-            this.lbfinal.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbfinal.Location = new System.Drawing.Point(743, 209);
-            this.lbfinal.Name = "lbfinal";
-            this.lbfinal.Size = new System.Drawing.Size(60, 20);
-            this.lbfinal.TabIndex = 8;
-            this.lbfinal.Text = "Fecha";
+            this.lbduracion.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.lbduracion.AutoSize = true;
+            this.lbduracion.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbduracion.Location = new System.Drawing.Point(743, 209);
+            this.lbduracion.Name = "lbduracion";
+            this.lbduracion.Size = new System.Drawing.Size(60, 20);
+            this.lbduracion.TabIndex = 8;
+            this.lbduracion.Text = "Fecha";
             // 
             // tiempoduracion
             // 
@@ -284,9 +284,11 @@
             this.txtmunicipio.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtmunicipio.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtmunicipio.Location = new System.Drawing.Point(535, 522);
+            this.txtmunicipio.MaxLength = 100;
             this.txtmunicipio.Name = "txtmunicipio";
             this.txtmunicipio.Size = new System.Drawing.Size(270, 27);
             this.txtmunicipio.TabIndex = 35;
+            this.txtmunicipio.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtmunicipio_KeyPress);
             // 
             // municipio
             // 
@@ -304,9 +306,11 @@
             this.txtdepartamento.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtdepartamento.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtdepartamento.Location = new System.Drawing.Point(51, 522);
+            this.txtdepartamento.MaxLength = 100;
             this.txtdepartamento.Name = "txtdepartamento";
             this.txtdepartamento.Size = new System.Drawing.Size(284, 27);
             this.txtdepartamento.TabIndex = 33;
+            this.txtdepartamento.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtdepartamento_KeyPress);
             // 
             // departamento
             // 
@@ -339,9 +343,8 @@
             this.comboBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox3.FormattingEnabled = true;
             this.comboBox3.Items.AddRange(new object[] {
-            "x",
-            "s",
-            "d"});
+            "Claro",
+            "Tigo"});
             this.comboBox3.Location = new System.Drawing.Point(535, 444);
             this.comboBox3.Name = "comboBox3";
             this.comboBox3.Size = new System.Drawing.Size(268, 28);
@@ -388,6 +391,8 @@
             this.dtnacimiento.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.dtnacimiento.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtnacimiento.Location = new System.Drawing.Point(535, 295);
+            this.dtnacimiento.MaxDate = new System.DateTime(2070, 12, 31, 0, 0, 0, 0);
+            this.dtnacimiento.MinDate = new System.DateTime(1910, 12, 31, 0, 0, 0, 0);
             this.dtnacimiento.Name = "dtnacimiento";
             this.dtnacimiento.Size = new System.Drawing.Size(268, 27);
             this.dtnacimiento.TabIndex = 27;
@@ -397,9 +402,11 @@
             this.txtlnacimiento.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtlnacimiento.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtlnacimiento.Location = new System.Drawing.Point(53, 295);
+            this.txtlnacimiento.MaxLength = 100;
             this.txtlnacimiento.Name = "txtlnacimiento";
             this.txtlnacimiento.Size = new System.Drawing.Size(282, 27);
             this.txtlnacimiento.TabIndex = 26;
+            this.txtlnacimiento.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtlnacimiento_KeyPress);
             // 
             // lnacimieto
             // 
@@ -418,10 +425,12 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtdirecciondomi.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtdirecciondomi.Location = new System.Drawing.Point(53, 598);
+            this.txtdirecciondomi.MaxLength = 100;
             this.txtdirecciondomi.Multiline = true;
             this.txtdirecciondomi.Name = "txtdirecciondomi";
             this.txtdirecciondomi.Size = new System.Drawing.Size(752, 69);
             this.txtdirecciondomi.TabIndex = 24;
+            this.txtdirecciondomi.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtdirecciondomi_KeyPress);
             // 
             // direcciond
             // 
@@ -439,6 +448,7 @@
             this.txtnumerotelefono.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtnumerotelefono.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtnumerotelefono.Location = new System.Drawing.Point(53, 446);
+            this.txtnumerotelefono.MaxLength = 8;
             this.txtnumerotelefono.Name = "txtnumerotelefono";
             this.txtnumerotelefono.Size = new System.Drawing.Size(282, 27);
             this.txtnumerotelefono.TabIndex = 22;
@@ -459,9 +469,11 @@
             this.txtnacionalidad.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtnacionalidad.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtnacionalidad.Location = new System.Drawing.Point(53, 372);
+            this.txtnacionalidad.MaxLength = 100;
             this.txtnacionalidad.Name = "txtnacionalidad";
             this.txtnacionalidad.Size = new System.Drawing.Size(282, 27);
             this.txtnacionalidad.TabIndex = 20;
+            this.txtnacionalidad.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtnacionalidad_KeyPress);
             // 
             // nacionalida
             // 
@@ -479,9 +491,11 @@
             this.txtcedula.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtcedula.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtcedula.Location = new System.Drawing.Point(535, 217);
+            this.txtcedula.MaxLength = 14;
             this.txtcedula.Name = "txtcedula";
             this.txtcedula.Size = new System.Drawing.Size(268, 27);
             this.txtcedula.TabIndex = 18;
+            this.txtcedula.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtcedula_KeyPress);
             // 
             // cedula
             // 
@@ -499,6 +513,7 @@
             this.txtcarne.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtcarne.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtcarne.Location = new System.Drawing.Point(53, 217);
+            this.txtcarne.MaxLength = 8;
             this.txtcarne.Name = "txtcarne";
             this.txtcarne.Size = new System.Drawing.Size(282, 27);
             this.txtcarne.TabIndex = 16;
@@ -519,18 +534,22 @@
             this.txtapellido2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtapellido2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtapellido2.Location = new System.Drawing.Point(535, 149);
+            this.txtapellido2.MaxLength = 50;
             this.txtapellido2.Name = "txtapellido2";
             this.txtapellido2.Size = new System.Drawing.Size(268, 27);
             this.txtapellido2.TabIndex = 12;
+            this.txtapellido2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtapellido2_KeyPress);
             // 
             // txtname2
             // 
             this.txtname2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtname2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtname2.Location = new System.Drawing.Point(535, 81);
+            this.txtname2.MaxLength = 50;
             this.txtname2.Name = "txtname2";
             this.txtname2.Size = new System.Drawing.Size(267, 27);
             this.txtname2.TabIndex = 14;
+            this.txtname2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtname2_KeyPress);
             // 
             // apellido2
             // 
@@ -559,9 +578,11 @@
             this.txtapellido1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtapellido1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtapellido1.Location = new System.Drawing.Point(51, 149);
+            this.txtapellido1.MaxLength = 50;
             this.txtapellido1.Name = "txtapellido1";
             this.txtapellido1.Size = new System.Drawing.Size(284, 27);
             this.txtapellido1.TabIndex = 12;
+            this.txtapellido1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtapellido1_KeyPress);
             // 
             // apellido1
             // 
@@ -579,9 +600,11 @@
             this.txtname1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtname1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtname1.Location = new System.Drawing.Point(53, 81);
+            this.txtname1.MaxLength = 50;
             this.txtname1.Name = "txtname1";
             this.txtname1.Size = new System.Drawing.Size(282, 27);
             this.txtname1.TabIndex = 10;
+            this.txtname1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtname1_KeyPress);
             // 
             // nombre1
             // 
@@ -738,9 +761,11 @@
             this.txtcarreracursada.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtcarreracursada.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtcarreracursada.Location = new System.Drawing.Point(53, 263);
+            this.txtcarreracursada.MaxLength = 100;
             this.txtcarreracursada.Name = "txtcarreracursada";
             this.txtcarreracursada.Size = new System.Drawing.Size(750, 27);
             this.txtcarreracursada.TabIndex = 51;
+            this.txtcarreracursada.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtcarreracursada_KeyPress);
             // 
             // carreracursada
             // 
@@ -758,6 +783,8 @@
             this.dtfechatitulacion.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.dtfechatitulacion.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtfechatitulacion.Location = new System.Drawing.Point(56, 175);
+            this.dtfechatitulacion.MaxDate = new System.DateTime(2060, 12, 31, 0, 0, 0, 0);
+            this.dtfechatitulacion.MinDate = new System.DateTime(1920, 1, 1, 0, 0, 0, 0);
             this.dtfechatitulacion.Name = "dtfechatitulacion";
             this.dtfechatitulacion.Size = new System.Drawing.Size(308, 27);
             this.dtfechatitulacion.TabIndex = 36;
@@ -767,9 +794,11 @@
             this.txttitulacionobtenida.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txttitulacionobtenida.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txttitulacionobtenida.Location = new System.Drawing.Point(549, 175);
+            this.txttitulacionobtenida.MaxLength = 50;
             this.txttitulacionobtenida.Name = "txttitulacionobtenida";
             this.txttitulacionobtenida.Size = new System.Drawing.Size(254, 27);
             this.txttitulacionobtenida.TabIndex = 49;
+            this.txttitulacionobtenida.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txttitulacionobtenida_KeyPress);
             // 
             // tituloobtenido
             // 
@@ -798,9 +827,11 @@
             this.txtpaisgraduacion.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtpaisgraduacion.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtpaisgraduacion.Location = new System.Drawing.Point(549, 100);
+            this.txtpaisgraduacion.MaxLength = 50;
             this.txtpaisgraduacion.Name = "txtpaisgraduacion";
             this.txtpaisgraduacion.Size = new System.Drawing.Size(255, 27);
             this.txtpaisgraduacion.TabIndex = 45;
+            this.txtpaisgraduacion.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtpaisgraduacion_KeyPress);
             // 
             // paisgraduacion
             // 
@@ -818,9 +849,11 @@
             this.txtcentroestudio.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtcentroestudio.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtcentroestudio.Location = new System.Drawing.Point(58, 100);
+            this.txtcentroestudio.MaxLength = 100;
             this.txtcentroestudio.Name = "txtcentroestudio";
             this.txtcentroestudio.Size = new System.Drawing.Size(306, 27);
             this.txtcentroestudio.TabIndex = 43;
+            this.txtcentroestudio.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtcentroestudio_KeyPress);
             // 
             // labelinformacionacad
             // 
@@ -872,6 +905,7 @@
             this.txtnumerotrabajo.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtnumerotrabajo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtnumerotrabajo.Location = new System.Drawing.Point(572, 318);
+            this.txtnumerotrabajo.MaxLength = 15;
             this.txtnumerotrabajo.Name = "txtnumerotrabajo";
             this.txtnumerotrabajo.Size = new System.Drawing.Size(225, 27);
             this.txtnumerotrabajo.TabIndex = 41;
@@ -892,9 +926,11 @@
             this.txtcargo.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtcargo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtcargo.Location = new System.Drawing.Point(51, 318);
+            this.txtcargo.MaxLength = 100;
             this.txtcargo.Name = "txtcargo";
             this.txtcargo.Size = new System.Drawing.Size(344, 27);
             this.txtcargo.TabIndex = 39;
+            this.txtcargo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtcargo_KeyPress);
             // 
             // cargo
             // 
@@ -913,10 +949,12 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtdirecciontrabajo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtdirecciontrabajo.Location = new System.Drawing.Point(62, 195);
+            this.txtdirecciontrabajo.MaxLength = 200;
             this.txtdirecciontrabajo.Multiline = true;
             this.txtdirecciontrabajo.Name = "txtdirecciontrabajo";
             this.txtdirecciontrabajo.Size = new System.Drawing.Size(748, 69);
             this.txtdirecciontrabajo.TabIndex = 37;
+            this.txtdirecciontrabajo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtdirecciontrabajo_KeyPress);
             // 
             // direcciont
             // 
@@ -934,9 +972,11 @@
             this.txtcentrotrabajo.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtcentrotrabajo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtcentrotrabajo.Location = new System.Drawing.Point(439, 114);
+            this.txtcentrotrabajo.MaxLength = 100;
             this.txtcentrotrabajo.Name = "txtcentrotrabajo";
             this.txtcentrotrabajo.Size = new System.Drawing.Size(362, 27);
             this.txtcentrotrabajo.TabIndex = 37;
+            this.txtcentrotrabajo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtcentrotrabajo_KeyPress);
             // 
             // ctrabajo
             // 
@@ -972,6 +1012,7 @@
             this.rbno.TabStop = true;
             this.rbno.Text = "No";
             this.rbno.UseVisualStyleBackColor = true;
+            this.rbno.CheckedChanged += new System.EventHandler(this.rbno_CheckedChanged);
             // 
             // labelencabezadoinfo
             // 
@@ -1002,7 +1043,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(995, 570);
+            this.ClientSize = new System.Drawing.Size(1016, 570);
             this.Controls.Add(this.pinformacionlaboral);
             this.Controls.Add(this.pinformacionacademica);
             this.Controls.Add(this.pdatosgenerales);
@@ -1010,6 +1051,7 @@
             this.MinimumSize = new System.Drawing.Size(1013, 617);
             this.Name = "Matricula";
             this.Text = "Matricula";
+            this.Load += new System.EventHandler(this.Matricula_Load);
             this.ptipoprograma.ResumeLayout(false);
             this.ptipoprograma.PerformLayout();
             this.pdatosgenerales.ResumeLayout(false);
@@ -1030,7 +1072,7 @@
         public System.Windows.Forms.RadioButton rbcurso;
         public System.Windows.Forms.Label labelcursocapacitacion;
         public System.Windows.Forms.Label labelencabezadoprograma;
-        public System.Windows.Forms.Label lbfinal;
+        public System.Windows.Forms.Label lbduracion;
         public System.Windows.Forms.Label tiempoduracion;
         public System.Windows.Forms.Label lbinicio;
         public System.Windows.Forms.Label labelfechainicio;
