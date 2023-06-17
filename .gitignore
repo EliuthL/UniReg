@@ -399,3 +399,47 @@ FodyWeavers.xsd
 
 #Ignorar la carpeta ignore
 .gitignore
+
+# Carpeta de configuración de Visual Studio
+.vs/
+
+# Carpeta de archivos de caché de Visual Studio
+.vscode/
+
+# Carpeta de archivos de usuario de Visual Studio
+# (Asegúrate de adaptar esto a tu configuración personal)
+*.suo
+*.user
+*.user.props
+*.sln.docstates
+
+# Carpeta de archivos de compilación
+bin/
+obj/
+
+# Carpeta de archivos de publicación
+publish/
+
+# Carpeta de archivos de registro de errores
+*.log
+
+# Archivos de respaldo de Visual Studio
+*.*~
+*.swp
+
+# Archivos de caché y región de recursos
+*.cache
+*.resources
+
+# Archivos de depuración y seguimiento
+*.pdb
+*.ipch
+*.stackdump
+
+# Archivos temporales
+*.tmp
+*.bak
+*.cache
+*.dat
+*.tmp
+*.temp
