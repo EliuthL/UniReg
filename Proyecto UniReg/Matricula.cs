@@ -32,17 +32,43 @@ namespace Proyecto_UniReg
 
         private void button1_Click(object sender, EventArgs e)
         {
+            string curso = "";
+            string capacitacion = "";
+            string trabaja = "";
+            if (rbcurso.Checked)
+            {
+                curso = "X";
+            }
+            else
+            {
+                capacitacion = "X";
+            }
 
-            ServiciosImpresion.Imprimir(rbcurso.Text, rbcapacitacion.Text, cbcursocapacitacion.Text, lbinicio.Text, lbduracion.Text, txtname1.Text,
+            if (rbsi.Checked)
+            {
+                trabaja = "SI";
+            }
+            else
+            {
+                trabaja = "NO";
+            }
+
+            if (Validaciones.Validaciones.VDatoGenerales(txtname1, txtapellido1, txtcarne, txtcedula, txtlnacimiento, dtnacimiento) == true
+                                                         && Validaciones.Validaciones.VIformacionLaboral(rbsi, txtcentrotrabajo, txtdirecciontrabajo, txtcargo, txtnumerotrabajo) == true)
+            {
+                ServiciosImpresion.Imprimir(curso, capacitacion, cbcursocapacitacion.Text, lbinicio.Text, lbduracion.Text, txtname1.Text,
                                         txtname2.Text, txtapellido1.Text, txtapellido2.Text, txtcarne.Text, txtcedula.Text, txtlnacimiento.Text,
                                         dtnacimiento.Value.ToString("dd-MM-yyyy"), txtnacionalidad.Text, cbEstadocivil.Text, txtnumerotelefono.Text,
-                                        operadora.Text, txtdepartamento.Text, txtmunicipio.Text, txtdirecciondomi.Text, rbsi.Text, txtnumerotrabajo.Text,
-                                        txtcentrotrabajo.Text, txtdirecciontrabajo.Text, txtcargo.Text, txtnumerotrabajo.Text,txtcentroestudio.Text, txtpaisgraduacion.Text,
+                                        operadora.Text, txtdepartamento.Text, txtmunicipio.Text, txtdirecciondomi.Text, trabaja,
+                                        txtcentrotrabajo.Text, txtdirecciontrabajo.Text, txtcargo.Text, txtnumerotrabajo.Text, txtcentroestudio.Text, txtpaisgraduacion.Text,
                                         dtfechatitulacion.Value.ToString("dd-MM-yyyy"), txttitulacionobtenida.Text, txtcarreracursada.Text,
                                         txtcorreo.Text, dateformat, txtnumerorecibo.Text, txtarancel.Text);
+            }
+            
 
-            //Validaciones.Validaciones.VDatoGenerales(txtname1, txtapellido1,txtcarne,txtcedula,txtlnacimiento,dtnacimiento);
-            //Validaciones.Validaciones.VIformacionLaboral(rbsi, txtcentrotrabajo, txtdirecciontrabajo, txtcargo, txtnumerotrabajo);
+            
+
+
         }
 
         private void Matricula_Load(object sender, EventArgs e)
@@ -147,6 +173,46 @@ namespace Proyecto_UniReg
         private void rbno_CheckedChanged(object sender, EventArgs e)
         {
             PermitirCamposTrabajo();
+        }
+
+        private void txtnumerotrabajo_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void txtnumerotelefono_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true; 
+            }
+        }
+
+        private void txtcarne_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void txtnumerorecibo_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void txtarancel_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true;
+            }
         }
     }
 }

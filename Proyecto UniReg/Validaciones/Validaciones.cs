@@ -7,7 +7,7 @@ namespace Proyecto_UniReg.Validaciones
     internal class Validaciones
     {
 
-        public static void VDatoGenerales(TextBox name1, TextBox apellido1,
+        public static bool VDatoGenerales(TextBox name1, TextBox apellido1,
                                          TextBox carne, TextBox cedula,
                                          TextBox lugarnacimiento, DateTimePicker fnacimiento)
         {
@@ -16,7 +16,7 @@ namespace Proyecto_UniReg.Validaciones
             {
                 MessageBox.Show("El campo primer nombre no puede estar vacio",
                                 "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                return;
+                return false;
             }
 
             //validacion del campo apellido1
@@ -24,7 +24,7 @@ namespace Proyecto_UniReg.Validaciones
             {
                 MessageBox.Show("El campo primer apellido no puede estar vacio",
                                 "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                return;
+                return false;
             }
 
             //validacion del campo carne por numeero de caracteres y caracteres permitidos
@@ -32,6 +32,7 @@ namespace Proyecto_UniReg.Validaciones
             {
                 MessageBox.Show("El campo carne no puede estar vacio \n o ser menor a ocho digitos",
                                 "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return false;
             }
             else
             {
@@ -46,7 +47,7 @@ namespace Proyecto_UniReg.Validaciones
                     {
                         MessageBox.Show("El campo carne no pude incluir letras",
                                 "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        return;
+                        return false;
                     }
 
                 }
@@ -57,6 +58,7 @@ namespace Proyecto_UniReg.Validaciones
             {
                 MessageBox.Show("El campo cedula no puede ser menor a trece digitos",
                                 "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return false;
             }
 
             //Validacion del campo lugar de nacimiento
@@ -64,6 +66,7 @@ namespace Proyecto_UniReg.Validaciones
             {
                 MessageBox.Show("El campo lugar de nacimiento no puede estar vacio",
                                 "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return false;
             }
 
             //Validacion de fecha de nacimiento
@@ -71,13 +74,14 @@ namespace Proyecto_UniReg.Validaciones
             {
                 MessageBox.Show("La fecha de nacimiento no puede ser la fecha actual o superior",
                                 "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return false;
             }
 
-
+            return true;
         }
 
         //Validacion del apartado informacion laboral
-        public static void VIformacionLaboral(RadioButton rbtnSi, TextBox CentroTrab, TextBox Direccion, TextBox Cargo, TextBox Telefono)
+        public static bool VIformacionLaboral(RadioButton rbtnSi, TextBox CentroTrab, TextBox Direccion, TextBox Cargo, TextBox Telefono)
         {
             List<string> camposVacios = new List<string>();
             if (string.IsNullOrWhiteSpace(CentroTrab.Text))
@@ -104,6 +108,7 @@ namespace Proyecto_UniReg.Validaciones
                 {
                     string camposFaltantes = string.Join(", ", camposVacios);
                     MessageBox.Show("¡Faltan campos por rellenar!", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                    return false;
                 }
             }
             if (rbtnSi.Checked)
@@ -113,8 +118,10 @@ namespace Proyecto_UniReg.Validaciones
 
                     MessageBox.Show("¡Ingrese datos validos en el campo Telefono!", "Advertencia",
                                      MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                    return false;
                 }
             }
+            return true;
         }
     }
 

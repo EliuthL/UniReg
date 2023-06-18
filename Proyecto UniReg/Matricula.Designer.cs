@@ -452,6 +452,7 @@
             this.txtnumerotelefono.Name = "txtnumerotelefono";
             this.txtnumerotelefono.Size = new System.Drawing.Size(282, 27);
             this.txtnumerotelefono.TabIndex = 22;
+            this.txtnumerotelefono.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtnumerotelefono_KeyPress);
             // 
             // ntelefono
             // 
@@ -517,6 +518,7 @@
             this.txtcarne.Name = "txtcarne";
             this.txtcarne.Size = new System.Drawing.Size(282, 27);
             this.txtcarne.TabIndex = 16;
+            this.txtcarne.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtcarne_KeyPress);
             // 
             // carne
             // 
@@ -682,6 +684,7 @@
             this.txtarancel.Name = "txtarancel";
             this.txtarancel.Size = new System.Drawing.Size(249, 27);
             this.txtarancel.TabIndex = 59;
+            this.txtarancel.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtarancel_KeyPress);
             // 
             // arancel
             // 
@@ -702,6 +705,7 @@
             this.txtnumerorecibo.Name = "txtnumerorecibo";
             this.txtnumerorecibo.Size = new System.Drawing.Size(311, 27);
             this.txtnumerorecibo.TabIndex = 57;
+            this.txtnumerorecibo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtnumerorecibo_KeyPress);
             // 
             // norecibo
             // 
@@ -909,6 +913,7 @@
             this.txtnumerotrabajo.Name = "txtnumerotrabajo";
             this.txtnumerotrabajo.Size = new System.Drawing.Size(225, 27);
             this.txtnumerotrabajo.TabIndex = 41;
+            this.txtnumerotrabajo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtnumerotrabajo_KeyPress);
             // 
             // telefonot
             // 

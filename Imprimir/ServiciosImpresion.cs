@@ -17,7 +17,7 @@ namespace Imprimir
                                     string nacionalidad, string estadocivil,
                                     string ntelefono, string operadora,
                                     string departamento, string municipio,
-                                    string direcciondomi, string trabaja, string notrabaja,
+                                    string direcciondomi, string trabaja,
                                     string centrotrabajo, string dirtrabajo, string cargo,
                                     string teltrabajo, string centrograduacion,
                                     string paisgraduacion, string fechaexpe,

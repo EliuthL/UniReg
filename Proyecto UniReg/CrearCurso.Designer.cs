@@ -31,6 +31,8 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label11 = new System.Windows.Forms.Label();
+            this.txtduracion = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
@@ -50,8 +52,6 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
-            this.txtduracion = new System.Windows.Forms.TextBox();
-            this.label11 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -101,6 +101,26 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1092, 351);
             this.panel1.TabIndex = 2;
+            // 
+            // label11
+            // 
+            this.label11.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(900, 276);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(162, 20);
+            this.label11.TabIndex = 20;
+            this.label11.Text = "Duración (Horas):";
+            // 
+            // txtduracion
+            // 
+            this.txtduracion.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtduracion.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtduracion.Location = new System.Drawing.Point(904, 299);
+            this.txtduracion.Name = "txtduracion";
+            this.txtduracion.Size = new System.Drawing.Size(158, 27);
+            this.txtduracion.TabIndex = 19;
             // 
             // label10
             // 
@@ -307,24 +327,6 @@
             this.button1.TabIndex = 4;
             this.button1.Text = "Crear";
             this.button1.UseVisualStyleBackColor = true;
-            // 
-            // txtduracion
-            // 
-            this.txtduracion.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtduracion.Location = new System.Drawing.Point(904, 299);
-            this.txtduracion.Name = "txtduracion";
-            this.txtduracion.Size = new System.Drawing.Size(158, 27);
-            this.txtduracion.TabIndex = 19;
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(900, 276);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(162, 20);
-            this.label11.TabIndex = 20;
-            this.label11.Text = "Duración (Horas):";
             // 
             // CrearCurso
             // 
