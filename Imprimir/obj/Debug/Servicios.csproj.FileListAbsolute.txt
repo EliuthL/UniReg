@@ -17,3 +17,13 @@ C:\Users\lopez\source\repos\Proyecto UniReg\Imprimir\obj\Debug\Servicios.csproj.
 C:\Users\lopez\source\repos\Proyecto UniReg\Imprimir\obj\Debug\Capa Negocios.dll
 C:\Users\lopez\source\repos\Proyecto UniReg\Imprimir\obj\Debug\Capa Negocios.pdb
 C:\Users\lopez\source\repos\Proyecto UniReg\Imprimir\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\lopez\Source\Repos\EliuthL\UniReg\Imprimir\bin\Debug\Capa Negocios.dll
+C:\Users\lopez\Source\Repos\EliuthL\UniReg\Imprimir\bin\Debug\Capa Negocios.pdb
+C:\Users\lopez\Source\Repos\EliuthL\UniReg\Imprimir\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\lopez\Source\Repos\EliuthL\UniReg\Imprimir\bin\Debug\NReco.PdfGenerator.dll
+C:\Users\lopez\Source\Repos\EliuthL\UniReg\Imprimir\bin\Debug\NReco.PdfGenerator.xml
+C:\Users\lopez\Source\Repos\EliuthL\UniReg\Imprimir\obj\Debug\Servicios.csproj.AssemblyReference.cache
+C:\Users\lopez\Source\Repos\EliuthL\UniReg\Imprimir\obj\Debug\Servicios.csproj.CoreCompileInputs.cache
+C:\Users\lopez\Source\Repos\EliuthL\UniReg\Imprimir\obj\Debug\Servicios.csproj.CopyComplete
+C:\Users\lopez\Source\Repos\EliuthL\UniReg\Imprimir\obj\Debug\Capa Negocios.dll
+C:\Users\lopez\Source\Repos\EliuthL\UniReg\Imprimir\obj\Debug\Capa Negocios.pdb

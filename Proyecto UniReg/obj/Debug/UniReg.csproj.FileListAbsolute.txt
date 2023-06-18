@@ -72,3 +72,41 @@ C:\Users\lopez\source\repos\Proyecto UniReg\Proyecto UniReg\obj\Debug\Proyecto U
 C:\Users\lopez\source\repos\Proyecto UniReg\Proyecto UniReg\obj\Debug\Proyecto UniReg.pdb
 C:\Users\lopez\source\repos\Proyecto UniReg\Proyecto UniReg\obj\Debug\Proyecto_UniReg.EstudiantesExistentes.resources
 C:\Users\lopez\source\repos\Proyecto UniReg\Proyecto UniReg\obj\Debug\Proyecto_UniReg.Cursos.resources
+C:\Users\lopez\Source\Repos\EliuthL\UniReg\Proyecto UniReg\bin\Debug\Proyecto UniReg.exe.config
+C:\Users\lopez\Source\Repos\EliuthL\UniReg\Proyecto UniReg\bin\Debug\Proyecto UniReg.exe
+C:\Users\lopez\Source\Repos\EliuthL\UniReg\Proyecto UniReg\bin\Debug\Proyecto UniReg.pdb
+C:\Users\lopez\Source\Repos\EliuthL\UniReg\Proyecto UniReg\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\lopez\Source\Repos\EliuthL\UniReg\Proyecto UniReg\bin\Debug\Capa Negocios.dll
+C:\Users\lopez\Source\Repos\EliuthL\UniReg\Proyecto UniReg\bin\Debug\Datos.dll
+C:\Users\lopez\Source\Repos\EliuthL\UniReg\Proyecto UniReg\bin\Debug\DotNetEnv.dll
+C:\Users\lopez\Source\Repos\EliuthL\UniReg\Proyecto UniReg\bin\Debug\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\lopez\Source\Repos\EliuthL\UniReg\Proyecto UniReg\bin\Debug\Microsoft.Extensions.Configuration.dll
+C:\Users\lopez\Source\Repos\EliuthL\UniReg\Proyecto UniReg\bin\Debug\Microsoft.Extensions.Primitives.dll
+C:\Users\lopez\Source\Repos\EliuthL\UniReg\Proyecto UniReg\bin\Debug\Sprache.dll
+C:\Users\lopez\Source\Repos\EliuthL\UniReg\Proyecto UniReg\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+C:\Users\lopez\Source\Repos\EliuthL\UniReg\Proyecto UniReg\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\lopez\Source\Repos\EliuthL\UniReg\Proyecto UniReg\bin\Debug\NReco.PdfGenerator.dll
+C:\Users\lopez\Source\Repos\EliuthL\UniReg\Proyecto UniReg\bin\Debug\Datos.pdb
+C:\Users\lopez\Source\Repos\EliuthL\UniReg\Proyecto UniReg\bin\Debug\Capa Negocios.pdb
+C:\Users\lopez\Source\Repos\EliuthL\UniReg\Proyecto UniReg\bin\Debug\Microsoft.Extensions.Configuration.xml
+C:\Users\lopez\Source\Repos\EliuthL\UniReg\Proyecto UniReg\bin\Debug\Microsoft.Extensions.Configuration.Abstractions.xml
+C:\Users\lopez\Source\Repos\EliuthL\UniReg\Proyecto UniReg\bin\Debug\Microsoft.Extensions.Primitives.xml
+C:\Users\lopez\Source\Repos\EliuthL\UniReg\Proyecto UniReg\bin\Debug\Sprache.xml
+C:\Users\lopez\Source\Repos\EliuthL\UniReg\Proyecto UniReg\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+C:\Users\lopez\Source\Repos\EliuthL\UniReg\Proyecto UniReg\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\lopez\Source\Repos\EliuthL\UniReg\Proyecto UniReg\bin\Debug\NReco.PdfGenerator.xml
+C:\Users\lopez\Source\Repos\EliuthL\UniReg\Proyecto UniReg\obj\Debug\UniReg.csproj.AssemblyReference.cache
+C:\Users\lopez\Source\Repos\EliuthL\UniReg\Proyecto UniReg\obj\Debug\UniReg.csproj.SuggestedBindingRedirects.cache
+C:\Users\lopez\Source\Repos\EliuthL\UniReg\Proyecto UniReg\obj\Debug\Proyecto_UniReg.CrearCurso.resources
+C:\Users\lopez\Source\Repos\EliuthL\UniReg\Proyecto UniReg\obj\Debug\Proyecto_UniReg.Cursos.resources
+C:\Users\lopez\Source\Repos\EliuthL\UniReg\Proyecto UniReg\obj\Debug\Proyecto_UniReg.Estudiantes.resources
+C:\Users\lopez\Source\Repos\EliuthL\UniReg\Proyecto UniReg\obj\Debug\Proyecto_UniReg.EstudiantesExistentes.resources
+C:\Users\lopez\Source\Repos\EliuthL\UniReg\Proyecto UniReg\obj\Debug\Proyecto_UniReg.Principal.resources
+C:\Users\lopez\Source\Repos\EliuthL\UniReg\Proyecto UniReg\obj\Debug\Proyecto_UniReg.Login.resources
+C:\Users\lopez\Source\Repos\EliuthL\UniReg\Proyecto UniReg\obj\Debug\Proyecto_UniReg.Matricula.resources
+C:\Users\lopez\Source\Repos\EliuthL\UniReg\Proyecto UniReg\obj\Debug\Proyecto_UniReg.Properties.Resources.resources
+C:\Users\lopez\Source\Repos\EliuthL\UniReg\Proyecto UniReg\obj\Debug\UniReg.csproj.GenerateResource.cache
+C:\Users\lopez\Source\Repos\EliuthL\UniReg\Proyecto UniReg\obj\Debug\UniReg.csproj.CoreCompileInputs.cache
+C:\Users\lopez\Source\Repos\EliuthL\UniReg\Proyecto UniReg\obj\Debug\UniReg.csproj.CopyComplete
+C:\Users\lopez\Source\Repos\EliuthL\UniReg\Proyecto UniReg\obj\Debug\Proyecto UniReg.exe
+C:\Users\lopez\Source\Repos\EliuthL\UniReg\Proyecto UniReg\obj\Debug\Proyecto UniReg.pdb

@@ -32,7 +32,7 @@ namespace Imprimir
                 Margins = new PageMargins { Left = 1, Right = 1, Top = 1, Bottom = 1 }
             };
 
-            var htmlphat = "C:\\Users\\lopez\\source\\repos\\Proyecto UniReg\\Imprimir\\HojaEstudiante.html";
+            var htmlphat = "C:\\Users\\lopez\\Source\\Repos\\EliuthL\\UniReg\\Imprimir\\HojaEstudiante.html";
             string htmlContent = File.ReadAllText(htmlphat);
             htmlContent = htmlContent.Replace("{curso}", curso);
             htmlContent = htmlContent.Replace("{capacitacion}", capacitacion);
