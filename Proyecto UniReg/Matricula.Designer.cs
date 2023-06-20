@@ -177,6 +177,7 @@
             // cbcursocapacitacion
             // 
             this.cbcursocapacitacion.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.cbcursocapacitacion.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbcursocapacitacion.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbcursocapacitacion.FormattingEnabled = true;
             this.cbcursocapacitacion.IntegralHeight = false;
@@ -340,6 +341,7 @@
             this.comboBox3.AutoCompleteCustomSource.AddRange(new string[] {
             "CLARO",
             "TIGO"});
+            this.comboBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox3.FormattingEnabled = true;
             this.comboBox3.Items.AddRange(new object[] {
@@ -364,6 +366,7 @@
             // cbEstadocivil
             // 
             this.cbEstadocivil.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.cbEstadocivil.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbEstadocivil.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbEstadocivil.FormattingEnabled = true;
             this.cbEstadocivil.Items.AddRange(new object[] {

@@ -110,3 +110,4 @@ C:\Users\lopez\Source\Repos\EliuthL\UniReg\Proyecto UniReg\obj\Debug\UniReg.cspr
 C:\Users\lopez\Source\Repos\EliuthL\UniReg\Proyecto UniReg\obj\Debug\UniReg.csproj.CopyComplete
 C:\Users\lopez\Source\Repos\EliuthL\UniReg\Proyecto UniReg\obj\Debug\Proyecto UniReg.exe
 C:\Users\lopez\Source\Repos\EliuthL\UniReg\Proyecto UniReg\obj\Debug\Proyecto UniReg.pdb
+C:\Users\lopez\Source\Repos\EliuthL\UniReg\Proyecto UniReg\obj\Debug\Proyecto_UniReg.Configuracion.resources

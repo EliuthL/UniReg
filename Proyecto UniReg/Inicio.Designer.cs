@@ -162,6 +162,7 @@
             this.btnopciones.TabIndex = 5;
             this.btnopciones.Text = "Opciones";
             this.btnopciones.UseVisualStyleBackColor = false;
+            this.btnopciones.Click += new System.EventHandler(this.btnopciones_Click);
             // 
             // btncrearcurso
             // 

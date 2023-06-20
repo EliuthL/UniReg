@@ -163,7 +163,18 @@ namespace Proyecto_UniReg
             {
                 Application.Exit();
             }
+            else
+            {
+                e.Cancel = true;
+            }
             
+        }
+
+        private void btnopciones_Click(object sender, EventArgs e)
+        {
+            VistaForm(new Configuracion());
+            ChangeColor(btnopciones);
+
         }
     }
 }

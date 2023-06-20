@@ -73,8 +73,6 @@ namespace Proyecto_UniReg
 
         private void Matricula_Load(object sender, EventArgs e)
         {
-            
-
             lbfechamatricula.Text = dateformat;
         }
 

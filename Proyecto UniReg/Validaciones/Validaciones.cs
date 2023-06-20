@@ -27,13 +27,6 @@ namespace Proyecto_UniReg.Validaciones
                 return false;
             }
 
-            //validacion del campo carne por numeero de caracteres y caracteres permitidos
-            if (string.IsNullOrWhiteSpace(carne.Text) || carne.Text.Length < 8)
-            {
-                MessageBox.Show("El campo carne no puede estar vacio \n o ser menor a ocho digitos",
-                                "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                return false;
-            }
             else
             {
                 char[] numeros = carne.Text.ToCharArray();
