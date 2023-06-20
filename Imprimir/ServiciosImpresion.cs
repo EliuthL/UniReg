@@ -17,22 +17,24 @@ namespace Imprimir
                 return pdfrut;
             }
         }
-        public static void Imprimir(string curso, string capacitacion, string nombrecurso,
-                                    string fechainicio, string duracion,
-                                    string name1, string name2,
-                                    string apellido1, string apellido2,
-                                    string carne, string cedula,
-                                    string lugarnacimiento, string fechanacimiento,
-                                    string nacionalidad, string estadocivil,
-                                    string ntelefono, string operadora,
-                                    string departamento, string municipio,
-                                    string direcciondomi, string trabaja,
-                                    string centrotrabajo, string dirtrabajo, string cargo,
-                                    string teltrabajo, string centrograduacion,
-                                    string paisgraduacion, string fechaexpe,
-                                    string titulo, string carreracur,
-                                    string correo, string fechamatri, string nrecibo,
-                                    string arancel)
+        public static void Imprimir(
+            string curso, string capacitacion, string nombrecurso,
+            string fechainicio, string duracion,
+            string name1, string name2,
+            string apellido1, string apellido2,
+            string carne, string cedula,
+            string lugarnacimiento, string fechanacimiento,
+            string nacionalidad, string estadocivil,
+            string ntelefono, string operadora,
+            string departamento, string municipio,
+            string direcciondomi, string trabaja,
+            string centrotrabajo, string dirtrabajo, string cargo,
+            string teltrabajo, string centrograduacion,
+            string paisgraduacion, string fechaexpe,
+            string titulo, string carreracur,
+            string correo, string fechamatri, string nrecibo,
+            string arancel
+            )
         {
             var converter = new HtmlToPdfConverter
             {

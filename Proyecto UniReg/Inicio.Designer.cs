@@ -62,8 +62,9 @@
             this.panelHeat.Controls.Add(this.Minimizar);
             this.panelHeat.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelHeat.Location = new System.Drawing.Point(0, 0);
+            this.panelHeat.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panelHeat.Name = "panelHeat";
-            this.panelHeat.Size = new System.Drawing.Size(1243, 30);
+            this.panelHeat.Size = new System.Drawing.Size(934, 24);
             this.panelHeat.TabIndex = 0;
             // 
             // label3
@@ -71,9 +72,10 @@
             this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(1111, 6);
+            this.label3.Location = new System.Drawing.Point(835, 5);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(45, 18);
+            this.label3.Size = new System.Drawing.Size(38, 15);
             this.label3.TabIndex = 9;
             this.label3.Text = "Hora";
             // 
@@ -82,9 +84,10 @@
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(681, 7);
+            this.label2.Location = new System.Drawing.Point(512, 6);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(54, 18);
+            this.label2.Size = new System.Drawing.Size(46, 15);
             this.label2.TabIndex = 8;
             this.label2.Text = "Fecha";
             // 
@@ -92,18 +95,20 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(65, 7);
+            this.label1.Location = new System.Drawing.Point(49, 6);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(63, 18);
+            this.label1.Size = new System.Drawing.Size(55, 15);
             this.label1.TabIndex = 7;
             this.label1.Text = "UniReg";
             // 
             // Minimizar
             // 
             this.Minimizar.Image = global::Proyecto_UniReg.Properties.Resources.Exapandir_menu;
-            this.Minimizar.Location = new System.Drawing.Point(12, 0);
+            this.Minimizar.Location = new System.Drawing.Point(9, 0);
+            this.Minimizar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Minimizar.Name = "Minimizar";
-            this.Minimizar.Size = new System.Drawing.Size(30, 30);
+            this.Minimizar.Size = new System.Drawing.Size(22, 24);
             this.Minimizar.TabIndex = 0;
             this.Minimizar.TabStop = false;
             this.Minimizar.Click += new System.EventHandler(this.ClickMinimizar);
@@ -116,10 +121,11 @@
             this.panelMenu.Controls.Add(this.picturePerfil);
             this.panelMenu.Controls.Add(this.btnmatricular);
             this.panelMenu.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panelMenu.Location = new System.Drawing.Point(0, 30);
-            this.panelMenu.MaximumSize = new System.Drawing.Size(200, 0);
+            this.panelMenu.Location = new System.Drawing.Point(0, 24);
+            this.panelMenu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panelMenu.MaximumSize = new System.Drawing.Size(150, 0);
             this.panelMenu.Name = "panelMenu";
-            this.panelMenu.Size = new System.Drawing.Size(200, 724);
+            this.panelMenu.Size = new System.Drawing.Size(150, 585);
             this.panelMenu.TabIndex = 0;
             // 
             // panelbuttons
@@ -129,9 +135,10 @@
             this.panelbuttons.Controls.Add(this.btnopciones);
             this.panelbuttons.Controls.Add(this.btncrearcurso);
             this.panelbuttons.Controls.Add(this.btncursos);
-            this.panelbuttons.Location = new System.Drawing.Point(0, 336);
+            this.panelbuttons.Location = new System.Drawing.Point(0, 273);
+            this.panelbuttons.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panelbuttons.Name = "panelbuttons";
-            this.panelbuttons.Size = new System.Drawing.Size(200, 207);
+            this.panelbuttons.Size = new System.Drawing.Size(150, 168);
             this.panelbuttons.TabIndex = 7;
             // 
             // btnestudiantes
@@ -142,8 +149,9 @@
             this.btnestudiantes.Image = global::Proyecto_UniReg.Properties.Resources.Estudiantes;
             this.btnestudiantes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnestudiantes.Location = new System.Drawing.Point(0, 0);
+            this.btnestudiantes.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnestudiantes.Name = "btnestudiantes";
-            this.btnestudiantes.Size = new System.Drawing.Size(200, 53);
+            this.btnestudiantes.Size = new System.Drawing.Size(150, 43);
             this.btnestudiantes.TabIndex = 2;
             this.btnestudiantes.Text = "Estudiantes";
             this.btnestudiantes.UseVisualStyleBackColor = false;
@@ -156,9 +164,10 @@
             this.btnopciones.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnopciones.Image = global::Proyecto_UniReg.Properties.Resources.configuracion__1_;
             this.btnopciones.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnopciones.Location = new System.Drawing.Point(0, 154);
+            this.btnopciones.Location = new System.Drawing.Point(0, 125);
+            this.btnopciones.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnopciones.Name = "btnopciones";
-            this.btnopciones.Size = new System.Drawing.Size(200, 53);
+            this.btnopciones.Size = new System.Drawing.Size(150, 43);
             this.btnopciones.TabIndex = 5;
             this.btnopciones.Text = "Opciones";
             this.btnopciones.UseVisualStyleBackColor = false;
@@ -171,9 +180,10 @@
             this.btncrearcurso.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btncrearcurso.Image = global::Proyecto_UniReg.Properties.Resources.agregar_documento;
             this.btncrearcurso.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btncrearcurso.Location = new System.Drawing.Point(0, 106);
+            this.btncrearcurso.Location = new System.Drawing.Point(0, 86);
+            this.btncrearcurso.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btncrearcurso.Name = "btncrearcurso";
-            this.btncrearcurso.Size = new System.Drawing.Size(200, 53);
+            this.btncrearcurso.Size = new System.Drawing.Size(150, 43);
             this.btncrearcurso.TabIndex = 4;
             this.btncrearcurso.Text = "Crear curso";
             this.btncrearcurso.UseVisualStyleBackColor = false;
@@ -186,9 +196,10 @@
             this.btncursos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btncursos.Image = global::Proyecto_UniReg.Properties.Resources.Cursos;
             this.btncursos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btncursos.Location = new System.Drawing.Point(0, 53);
+            this.btncursos.Location = new System.Drawing.Point(0, 43);
+            this.btncursos.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btncursos.Name = "btncursos";
-            this.btncursos.Size = new System.Drawing.Size(200, 53);
+            this.btncursos.Size = new System.Drawing.Size(150, 43);
             this.btncursos.TabIndex = 3;
             this.btncursos.Text = "Cursos";
             this.btncursos.UseVisualStyleBackColor = false;
@@ -199,9 +210,10 @@
             this.panelcontainer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(170)))), ((int)(((byte)(0)))));
             this.panelcontainer.Controls.Add(this.btnestuexist);
             this.panelcontainer.Controls.Add(this.btnnuevamatricula);
-            this.panelcontainer.Location = new System.Drawing.Point(0, 236);
+            this.panelcontainer.Location = new System.Drawing.Point(0, 192);
+            this.panelcontainer.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panelcontainer.Name = "panelcontainer";
-            this.panelcontainer.Size = new System.Drawing.Size(200, 90);
+            this.panelcontainer.Size = new System.Drawing.Size(150, 73);
             this.panelcontainer.TabIndex = 6;
             // 
             // btnestuexist
@@ -211,9 +223,10 @@
             this.btnestuexist.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnestuexist.Image = global::Proyecto_UniReg.Properties.Resources.usuario__1_;
             this.btnestuexist.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnestuexist.Location = new System.Drawing.Point(36, 41);
+            this.btnestuexist.Location = new System.Drawing.Point(27, 33);
+            this.btnestuexist.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnestuexist.Name = "btnestuexist";
-            this.btnestuexist.Size = new System.Drawing.Size(164, 42);
+            this.btnestuexist.Size = new System.Drawing.Size(123, 34);
             this.btnestuexist.TabIndex = 8;
             this.btnestuexist.Text = "Existente";
             this.btnestuexist.UseVisualStyleBackColor = false;
@@ -226,9 +239,10 @@
             this.btnnuevamatricula.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnnuevamatricula.Image = global::Proyecto_UniReg.Properties.Resources.agregar_usuario;
             this.btnnuevamatricula.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnnuevamatricula.Location = new System.Drawing.Point(36, -1);
+            this.btnnuevamatricula.Location = new System.Drawing.Point(27, -1);
+            this.btnnuevamatricula.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnnuevamatricula.Name = "btnnuevamatricula";
-            this.btnnuevamatricula.Size = new System.Drawing.Size(164, 42);
+            this.btnnuevamatricula.Size = new System.Drawing.Size(123, 34);
             this.btnnuevamatricula.TabIndex = 7;
             this.btnnuevamatricula.Text = "Nuevo";
             this.btnnuevamatricula.UseVisualStyleBackColor = false;
@@ -238,9 +252,10 @@
             // 
             this.picturePerfil.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.picturePerfil.Image = global::Proyecto_UniReg.Properties.Resources.Perfil;
-            this.picturePerfil.Location = new System.Drawing.Point(45, 20);
+            this.picturePerfil.Location = new System.Drawing.Point(34, 16);
+            this.picturePerfil.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.picturePerfil.Name = "picturePerfil";
-            this.picturePerfil.Size = new System.Drawing.Size(100, 100);
+            this.picturePerfil.Size = new System.Drawing.Size(75, 81);
             this.picturePerfil.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picturePerfil.TabIndex = 1;
             this.picturePerfil.TabStop = false;
@@ -252,9 +267,10 @@
             this.btnmatricular.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnmatricular.Image = global::Proyecto_UniReg.Properties.Resources.Matricular;
             this.btnmatricular.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnmatricular.Location = new System.Drawing.Point(0, 182);
+            this.btnmatricular.Location = new System.Drawing.Point(0, 148);
+            this.btnmatricular.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnmatricular.Name = "btnmatricular";
-            this.btnmatricular.Size = new System.Drawing.Size(200, 53);
+            this.btnmatricular.Size = new System.Drawing.Size(150, 43);
             this.btnmatricular.TabIndex = 0;
             this.btnmatricular.Text = "Matricular";
             this.btnmatricular.UseVisualStyleBackColor = false;
@@ -265,23 +281,24 @@
             this.panelView.AutoScroll = true;
             this.panelView.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.panelView.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelView.Location = new System.Drawing.Point(200, 30);
+            this.panelView.Location = new System.Drawing.Point(150, 24);
+            this.panelView.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panelView.Name = "panelView";
-            this.panelView.Size = new System.Drawing.Size(1043, 724);
+            this.panelView.Size = new System.Drawing.Size(784, 585);
             this.panelView.TabIndex = 2;
             // 
             // Principal
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1243, 754);
+            this.ClientSize = new System.Drawing.Size(934, 609);
             this.Controls.Add(this.panelView);
             this.Controls.Add(this.panelMenu);
             this.Controls.Add(this.panelHeat);
-            this.MinimumSize = new System.Drawing.Size(1261, 801);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.MinimumSize = new System.Drawing.Size(950, 597);
             this.Name = "Principal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form1";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Principal_FormClosing);
             this.Load += new System.EventHandler(this.Principal_Load);
             this.panelHeat.ResumeLayout(false);
