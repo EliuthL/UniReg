@@ -16,5 +16,10 @@ namespace Proyecto_UniReg
         {
             InitializeComponent();
         }
+
+        private void Cursos_Load(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

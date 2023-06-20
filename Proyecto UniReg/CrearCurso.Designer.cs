@@ -31,6 +31,10 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label11 = new System.Windows.Forms.Label();
+            this.txtduracion = new System.Windows.Forms.TextBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
             this.label6 = new System.Windows.Forms.Label();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
@@ -47,9 +51,7 @@
             this.dateTimePicker3 = new System.Windows.Forms.DateTimePicker();
             this.label7 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.label10 = new System.Windows.Forms.Label();
+            this.btncrear = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -80,6 +82,10 @@
             // 
             this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.panel1.Controls.Add(this.btncrear);
+            this.panel1.Controls.Add(this.label11);
+            this.panel1.Controls.Add(this.txtduracion);
             this.panel1.Controls.Add(this.label10);
             this.panel1.Controls.Add(this.comboBox1);
             this.panel1.Controls.Add(this.dateTimePicker2);
@@ -96,6 +102,48 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1092, 351);
             this.panel1.TabIndex = 2;
+            // 
+            // label11
+            // 
+            this.label11.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(467, 276);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(162, 20);
+            this.label11.TabIndex = 20;
+            this.label11.Text = "Duración (Horas):";
+            // 
+            // txtduracion
+            // 
+            this.txtduracion.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtduracion.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtduracion.Location = new System.Drawing.Point(471, 299);
+            this.txtduracion.Name = "txtduracion";
+            this.txtduracion.Size = new System.Drawing.Size(158, 27);
+            this.txtduracion.TabIndex = 19;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(37, 276);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(95, 20);
+            this.label10.TabIndex = 18;
+            this.label10.Text = "Semestre:";
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "I Semestre",
+            "II Semestre"});
+            this.comboBox1.Location = new System.Drawing.Point(41, 299);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(168, 33);
+            this.comboBox1.TabIndex = 12;
             // 
             // dateTimePicker2
             // 
@@ -186,6 +234,7 @@
             // 
             this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.panel2.Controls.Add(this.label9);
             this.panel2.Controls.Add(this.textBox2);
             this.panel2.Controls.Add(this.dateTimePicker4);
@@ -270,44 +319,28 @@
             this.label5.TabIndex = 12;
             this.label5.Text = "Datos generales";
             // 
-            // button1
+            // btncrear
             // 
-            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button1.Location = new System.Drawing.Point(980, 589);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(124, 39);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "Crear";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "I Semestre",
-            "II Semestre"});
-            this.comboBox1.Location = new System.Drawing.Point(41, 299);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(168, 33);
-            this.comboBox1.TabIndex = 12;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(37, 276);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(95, 20);
-            this.label10.TabIndex = 18;
-            this.label10.Text = "Semestre:";
+            this.btncrear.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btncrear.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.btncrear.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btncrear.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btncrear.Image = global::Proyecto_UniReg.Properties.Resources.varita_magica;
+            this.btncrear.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btncrear.Location = new System.Drawing.Point(962, 286);
+            this.btncrear.MinimumSize = new System.Drawing.Size(100, 40);
+            this.btncrear.Name = "btncrear";
+            this.btncrear.Size = new System.Drawing.Size(100, 40);
+            this.btncrear.TabIndex = 4;
+            this.btncrear.Text = "Crear";
+            this.btncrear.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btncrear.UseVisualStyleBackColor = false;
             // 
             // CrearCurso
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1116, 638);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Name = "CrearCurso";
@@ -341,8 +374,10 @@
         private System.Windows.Forms.DateTimePicker dateTimePicker3;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btncrear;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.TextBox txtduracion;
     }
 }

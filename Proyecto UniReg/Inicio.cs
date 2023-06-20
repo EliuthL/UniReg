@@ -33,10 +33,21 @@ namespace Proyecto_UniReg
                 menustatus = true;
             }
         }
+        private void MenuRestar()
+        {
+            if (menustatus == true)
+            {
+                panelcontainer.Height = 0;
+                panelcontainer.Visible = false;
+                panelbuttons.Location = new Point(0, 190);
+                menustatus = false;
+            }
+        }
         internal void ChangeColor(Control controlExeption)
         {
             List<Control> controls1 = new List<Control>()
             {
+                Minimizar,
                 btncursos,
                 btnestudiantes,
                 btnmatricular,
@@ -45,8 +56,8 @@ namespace Proyecto_UniReg
                 btnnuevamatricula,
                 btnestuexist
             };
-
-            controlExeption.BackColor = Color.FromArgb(255, 100, 0);
+            if (controlExeption != Minimizar)
+                controlExeption.BackColor = Color.FromArgb(255, 100, 0);
 
             foreach (Control control in controls1)
             {
@@ -94,6 +105,8 @@ namespace Proyecto_UniReg
         private void ClickMinimizar(object sender, EventArgs e)
         {
             Slideer();
+            ChangeColor(Minimizar);
+            MenuRestar();
         }
 
         private void Click_btnmatricular(object sender, EventArgs e)
@@ -140,6 +153,27 @@ namespace Proyecto_UniReg
             VistaForm(new EstudiantesExistentes());
             ChangeColor(btnestuexist);
             DeployMenu();
+
+        }
+
+        private void Principal_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            DialogResult dialog = MessageBox.Show("Esta a punto de cerrarel progrma\n Desea cerrarlo?", "Alerta", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+            if (dialog == DialogResult.OK)
+            {
+                Application.Exit();
+            }
+            else
+            {
+                e.Cancel = true;
+            }
+            
+        }
+
+        private void btnopciones_Click(object sender, EventArgs e)
+        {
+            VistaForm(new Configuracion());
+            ChangeColor(btnopciones);
 
         }
     }

@@ -162,6 +162,7 @@
             this.btnopciones.TabIndex = 5;
             this.btnopciones.Text = "Opciones";
             this.btnopciones.UseVisualStyleBackColor = false;
+            this.btnopciones.Click += new System.EventHandler(this.btnopciones_Click);
             // 
             // btncrearcurso
             // 
@@ -210,7 +211,7 @@
             this.btnestuexist.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnestuexist.Image = global::Proyecto_UniReg.Properties.Resources.usuario__1_;
             this.btnestuexist.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnestuexist.Location = new System.Drawing.Point(36, 42);
+            this.btnestuexist.Location = new System.Drawing.Point(36, 41);
             this.btnestuexist.Name = "btnestuexist";
             this.btnestuexist.Size = new System.Drawing.Size(164, 42);
             this.btnestuexist.TabIndex = 8;
@@ -225,7 +226,7 @@
             this.btnnuevamatricula.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnnuevamatricula.Image = global::Proyecto_UniReg.Properties.Resources.agregar_usuario;
             this.btnnuevamatricula.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnnuevamatricula.Location = new System.Drawing.Point(36, 0);
+            this.btnnuevamatricula.Location = new System.Drawing.Point(36, -1);
             this.btnnuevamatricula.Name = "btnnuevamatricula";
             this.btnnuevamatricula.Size = new System.Drawing.Size(164, 42);
             this.btnnuevamatricula.TabIndex = 7;
@@ -281,6 +282,7 @@
             this.Name = "Principal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Principal_FormClosing);
             this.Load += new System.EventHandler(this.Principal_Load);
             this.panelHeat.ResumeLayout(false);
             this.panelHeat.PerformLayout();

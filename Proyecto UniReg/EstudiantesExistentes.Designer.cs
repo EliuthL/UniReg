@@ -39,326 +39,336 @@
             this.textBox24 = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.label40 = new System.Windows.Forms.Label();
-            this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
-            this.panel3.SuspendLayout();
-            this.panel4.SuspendLayout();
+            this.ptipoprograma.SuspendLayout();
+            this.pdatosgenerales.SuspendLayout();
+            this.pinformacionacademica.SuspendLayout();
+            this.pinformacionlaboral.SuspendLayout();
             this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
-            // panel1
+            // ptipoprograma
             // 
-            this.panel1.Location = new System.Drawing.Point(12, 345);
-            this.panel1.Size = new System.Drawing.Size(1035, 263);
+            this.ptipoprograma.Location = new System.Drawing.Point(12, 345);
+            this.ptipoprograma.MinimumSize = new System.Drawing.Size(1035, 263);
+            this.ptipoprograma.Size = new System.Drawing.Size(1077, 263);
             // 
-            // panel2
+            // pdatosgenerales
             // 
-            this.panel2.Location = new System.Drawing.Point(12, 614);
-            this.panel2.Size = new System.Drawing.Size(1035, 687);
+            this.pdatosgenerales.Location = new System.Drawing.Point(12, 614);
+            this.pdatosgenerales.MinimumSize = new System.Drawing.Size(1035, 687);
+            this.pdatosgenerales.Size = new System.Drawing.Size(1077, 687);
             // 
-            // panel3
+            // pinformacionacademica
             // 
-            this.panel3.Location = new System.Drawing.Point(12, 1678);
-            this.panel3.Size = new System.Drawing.Size(1035, 555);
+            this.pinformacionacademica.Location = new System.Drawing.Point(12, 1678);
+            this.pinformacionacademica.MinimumSize = new System.Drawing.Size(1035, 555);
+            this.pinformacionacademica.Size = new System.Drawing.Size(1077, 555);
             // 
-            // panel4
+            // pinformacionlaboral
             // 
-            this.panel4.Location = new System.Drawing.Point(12, 1307);
-            this.panel4.Size = new System.Drawing.Size(1035, 365);
+            this.pinformacionlaboral.Location = new System.Drawing.Point(12, 1307);
+            this.pinformacionlaboral.MinimumSize = new System.Drawing.Size(1035, 365);
+            this.pinformacionlaboral.Size = new System.Drawing.Size(1077, 365);
             // 
-            // radioButton1
+            // rbcurso
             // 
-            this.radioButton1.Location = new System.Drawing.Point(300, 81);
+            this.rbcurso.Location = new System.Drawing.Point(321, 81);
             // 
-            // label2
+            // labelcursocapacitacion
             // 
-            this.label2.Location = new System.Drawing.Point(110, 141);
+            this.labelcursocapacitacion.Location = new System.Drawing.Point(131, 141);
             // 
-            // label1
+            // labelencabezadoprograma
             // 
-            this.label1.Location = new System.Drawing.Point(310, 12);
+            this.labelencabezadoprograma.Location = new System.Drawing.Point(331, 12);
             // 
-            // label5
+            // lbduracion
             // 
-            this.label5.Location = new System.Drawing.Point(831, 209);
+            this.lbduracion.Location = new System.Drawing.Point(852, 209);
             // 
-            // label6
+            // tiempoduracion
             // 
-            this.label6.Location = new System.Drawing.Point(664, 209);
+            this.tiempoduracion.Location = new System.Drawing.Point(685, 209);
             // 
-            // label4
+            // lbinicio
             // 
-            this.label4.Location = new System.Drawing.Point(243, 209);
+            this.lbinicio.Location = new System.Drawing.Point(264, 209);
             // 
-            // label3
+            // labelfechainicio
             // 
-            this.label3.Location = new System.Drawing.Point(110, 209);
+            this.labelfechainicio.Location = new System.Drawing.Point(131, 209);
             // 
-            // comboBox1
+            // cbcursocapacitacion
             // 
-            this.comboBox1.Location = new System.Drawing.Point(421, 141);
+            this.cbcursocapacitacion.Location = new System.Drawing.Point(442, 141);
             // 
-            // radioButton2
+            // rbcapacitacion
             // 
-            this.radioButton2.Location = new System.Drawing.Point(636, 81);
+            this.rbcapacitacion.Location = new System.Drawing.Point(657, 81);
             // 
-            // textBox5
+            // txtcarne
             // 
-            this.textBox5.Location = new System.Drawing.Point(141, 217);
+            this.txtcarne.Location = new System.Drawing.Point(162, 217);
             // 
-            // label11
+            // carne
             // 
-            this.label11.Location = new System.Drawing.Point(139, 194);
+            this.carne.Location = new System.Drawing.Point(160, 194);
             // 
-            // textBox4
+            // txtapellido2
             // 
-            this.textBox4.Location = new System.Drawing.Point(666, 149);
+            this.txtapellido2.Location = new System.Drawing.Point(687, 149);
             // 
-            // textBox3
+            // txtname2
             // 
-            this.textBox3.Location = new System.Drawing.Point(665, 81);
+            this.txtname2.Location = new System.Drawing.Point(686, 81);
             // 
-            // label10
+            // apellido2
             // 
-            this.label10.Location = new System.Drawing.Point(662, 126);
+            this.apellido2.Location = new System.Drawing.Point(683, 126);
             // 
-            // label9
+            // nombre2
             // 
-            this.label9.Location = new System.Drawing.Point(662, 58);
+            this.nombre2.Location = new System.Drawing.Point(683, 58);
             // 
-            // textBox2
+            // txtapellido1
             // 
-            this.textBox2.Location = new System.Drawing.Point(139, 149);
+            this.txtapellido1.Location = new System.Drawing.Point(160, 149);
             // 
-            // label8
+            // apellido1
             // 
-            this.label8.Location = new System.Drawing.Point(139, 126);
+            this.apellido1.Location = new System.Drawing.Point(160, 126);
             // 
-            // textBox1
+            // txtname1
             // 
-            this.textBox1.Location = new System.Drawing.Point(141, 81);
+            this.txtname1.Location = new System.Drawing.Point(162, 81);
             // 
-            // label7
+            // nombre1
             // 
-            this.label7.Location = new System.Drawing.Point(139, 58);
+            this.nombre1.Location = new System.Drawing.Point(160, 58);
             // 
-            // label12
+            // labelencabezadodatosg
             // 
-            this.label12.Location = new System.Drawing.Point(416, 10);
+            this.labelencabezadodatosg.Location = new System.Drawing.Point(437, 10);
             // 
-            // textBox6
+            // txtcedula
             // 
-            this.textBox6.Location = new System.Drawing.Point(666, 217);
+            this.txtcedula.Location = new System.Drawing.Point(687, 217);
             // 
-            // label13
+            // cedula
             // 
-            this.label13.Location = new System.Drawing.Point(664, 194);
+            this.cedula.Location = new System.Drawing.Point(685, 194);
             // 
-            // textBox10
+            // txtlnacimiento
             // 
-            this.textBox10.Location = new System.Drawing.Point(141, 295);
+            this.txtlnacimiento.Location = new System.Drawing.Point(162, 295);
             // 
-            // label17
+            // lnacimieto
             // 
-            this.label17.Location = new System.Drawing.Point(139, 272);
+            this.lnacimieto.Location = new System.Drawing.Point(160, 272);
             // 
-            // textBox9
+            // txtdirecciondomi
             // 
-            this.textBox9.Location = new System.Drawing.Point(131, 598);
-            this.textBox9.Size = new System.Drawing.Size(773, 69);
+            this.txtdirecciondomi.Location = new System.Drawing.Point(131, 598);
+            this.txtdirecciondomi.Size = new System.Drawing.Size(815, 69);
             // 
-            // label16
+            // direcciond
             // 
-            this.label16.Location = new System.Drawing.Point(440, 566);
+            this.direcciond.Location = new System.Drawing.Point(461, 566);
             // 
-            // textBox7
+            // txtnumerotelefono
             // 
-            this.textBox7.Location = new System.Drawing.Point(141, 446);
+            this.txtnumerotelefono.Location = new System.Drawing.Point(162, 446);
             // 
-            // label14
+            // ntelefono
             // 
-            this.label14.Location = new System.Drawing.Point(141, 423);
+            this.ntelefono.Location = new System.Drawing.Point(162, 423);
             // 
-            // textBox8
+            // txtnacionalidad
             // 
-            this.textBox8.Location = new System.Drawing.Point(141, 372);
+            this.txtnacionalidad.Location = new System.Drawing.Point(162, 372);
             // 
-            // label15
+            // nacionalida
             // 
-            this.label15.Location = new System.Drawing.Point(139, 349);
+            this.nacionalida.Location = new System.Drawing.Point(160, 349);
             // 
-            // label19
+            // estadocivil
             // 
-            this.label19.Location = new System.Drawing.Point(664, 349);
+            this.estadocivil.Location = new System.Drawing.Point(685, 349);
             // 
-            // comboBox2
+            // cbEstadocivil
             // 
-            this.comboBox2.Location = new System.Drawing.Point(668, 370);
+            this.cbEstadocivil.Location = new System.Drawing.Point(689, 370);
             // 
-            // label18
+            // fechanacimiento
             // 
-            this.label18.Location = new System.Drawing.Point(664, 272);
+            this.fechanacimiento.Location = new System.Drawing.Point(685, 272);
             // 
-            // dateTimePicker1
+            // dtnacimiento
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(665, 295);
+            this.dtnacimiento.Location = new System.Drawing.Point(686, 295);
             // 
-            // textBox11
+            // txtmunicipio
             // 
-            this.textBox11.Location = new System.Drawing.Point(668, 522);
+            this.txtmunicipio.Location = new System.Drawing.Point(689, 522);
             // 
-            // label21
+            // municipio
             // 
-            this.label21.Location = new System.Drawing.Point(668, 499);
+            this.municipio.Location = new System.Drawing.Point(689, 499);
             // 
-            // textBox12
+            // txtdepartamento
             // 
-            this.textBox12.Location = new System.Drawing.Point(139, 522);
+            this.txtdepartamento.Location = new System.Drawing.Point(160, 522);
             // 
-            // label22
+            // departamento
             // 
-            this.label22.Location = new System.Drawing.Point(137, 499);
+            this.departamento.Location = new System.Drawing.Point(158, 499);
             // 
-            // label20
+            // operadora
             // 
-            this.label20.Location = new System.Drawing.Point(664, 421);
+            this.operadora.Location = new System.Drawing.Point(685, 421);
             // 
             // comboBox3
             // 
-            this.comboBox3.Location = new System.Drawing.Point(668, 444);
+            this.comboBox3.Location = new System.Drawing.Point(689, 444);
             // 
-            // label24
+            // trabaja
             // 
-            this.label24.Location = new System.Drawing.Point(186, 79);
+            this.trabaja.Location = new System.Drawing.Point(207, 79);
             // 
-            // radioButton3
+            // rbno
             // 
-            this.radioButton3.Location = new System.Drawing.Point(230, 114);
+            this.rbno.Location = new System.Drawing.Point(251, 114);
             // 
-            // label23
+            // labelencabezadoinfo
             // 
-            this.label23.Location = new System.Drawing.Point(401, 15);
+            this.labelencabezadoinfo.Location = new System.Drawing.Point(422, 15);
             // 
-            // radioButton4
+            // rbsi
             // 
-            this.radioButton4.Location = new System.Drawing.Point(144, 114);
+            this.rbsi.Location = new System.Drawing.Point(165, 114);
             // 
-            // textBox18
+            // txtpaisgraduacion
             // 
-            this.textBox18.Location = new System.Drawing.Point(660, 100);
+            this.txtpaisgraduacion.Location = new System.Drawing.Point(681, 100);
             // 
-            // label31
+            // paisgraduacion
             // 
-            this.label31.Location = new System.Drawing.Point(668, 77);
+            this.paisgraduacion.Location = new System.Drawing.Point(689, 77);
             // 
-            // textBox17
+            // txtcentroestudio
             // 
-            this.textBox17.Location = new System.Drawing.Point(146, 100);
+            this.txtcentroestudio.Location = new System.Drawing.Point(167, 100);
             // 
-            // label29
+            // labelinformacionacad
             // 
-            this.label29.Location = new System.Drawing.Point(389, 19);
+            this.labelinformacionacad.Location = new System.Drawing.Point(410, 19);
             // 
-            // label30
+            // centroestudio
             // 
-            this.label30.Location = new System.Drawing.Point(148, 77);
+            this.centroestudio.Location = new System.Drawing.Point(169, 77);
             // 
-            // textBox16
+            // txtnumerotrabajo
             // 
-            this.textBox16.Location = new System.Drawing.Point(660, 318);
+            this.txtnumerotrabajo.Location = new System.Drawing.Point(681, 318);
             // 
-            // label28
+            // telefonot
             // 
-            this.label28.Location = new System.Drawing.Point(662, 295);
+            this.telefonot.Location = new System.Drawing.Point(683, 295);
             // 
-            // textBox15
+            // txtcargo
             // 
-            this.textBox15.Location = new System.Drawing.Point(139, 318);
+            this.txtcargo.Location = new System.Drawing.Point(160, 318);
             // 
-            // label27
+            // cargo
             // 
-            this.label27.Location = new System.Drawing.Point(141, 295);
+            this.cargo.Location = new System.Drawing.Point(162, 295);
             // 
-            // textBox14
+            // txtdirecciontrabajo
             // 
-            this.textBox14.Location = new System.Drawing.Point(140, 195);
-            this.textBox14.Size = new System.Drawing.Size(769, 69);
+            this.txtdirecciontrabajo.Location = new System.Drawing.Point(140, 195);
+            this.txtdirecciontrabajo.Size = new System.Drawing.Size(811, 69);
             // 
-            // label26
+            // direcciont
             // 
-            this.label26.Location = new System.Drawing.Point(438, 163);
+            this.direcciont.Location = new System.Drawing.Point(459, 163);
             // 
-            // textBox13
+            // txtcentrotrabajo
             // 
-            this.textBox13.Location = new System.Drawing.Point(664, 114);
+            this.txtcentrotrabajo.Location = new System.Drawing.Point(685, 114);
+            this.txtcentrotrabajo.Size = new System.Drawing.Size(240, 27);
             // 
-            // label25
+            // ctrabajo
             // 
-            this.label25.Location = new System.Drawing.Point(664, 79);
+            this.ctrabajo.Location = new System.Drawing.Point(685, 79);
             // 
-            // textBox20
+            // txtcarreracursada
             // 
-            this.textBox20.Location = new System.Drawing.Point(141, 263);
+            this.txtcarreracursada.Location = new System.Drawing.Point(162, 263);
             // 
-            // label34
+            // carreracursada
             // 
-            this.label34.Location = new System.Drawing.Point(472, 230);
+            this.carreracursada.Location = new System.Drawing.Point(493, 230);
             // 
-            // dateTimePicker2
+            // dtfechatitulacion
             // 
-            this.dateTimePicker2.Location = new System.Drawing.Point(144, 175);
+            this.dtfechatitulacion.Location = new System.Drawing.Point(165, 175);
             // 
-            // textBox19
+            // txttitulacionobtenida
             // 
-            this.textBox19.Location = new System.Drawing.Point(663, 175);
+            this.txttitulacionobtenida.Location = new System.Drawing.Point(684, 175);
             // 
-            // label32
+            // tituloobtenido
             // 
-            this.label32.Location = new System.Drawing.Point(666, 152);
+            this.tituloobtenido.Location = new System.Drawing.Point(687, 152);
             // 
-            // label33
+            // fechatitulacion
             // 
-            this.label33.Location = new System.Drawing.Point(148, 152);
+            this.fechatitulacion.Location = new System.Drawing.Point(169, 152);
             // 
-            // textBox23
+            // txtarancel
             // 
-            this.textBox23.Location = new System.Drawing.Point(660, 424);
+            this.txtarancel.Location = new System.Drawing.Point(681, 424);
             // 
-            // label39
+            // arancel
             // 
-            this.label39.Location = new System.Drawing.Point(671, 401);
+            this.arancel.Location = new System.Drawing.Point(692, 401);
             // 
-            // textBox22
+            // txtnumerorecibo
             // 
-            this.textBox22.Location = new System.Drawing.Point(141, 424);
+            this.txtnumerorecibo.Location = new System.Drawing.Point(162, 424);
             // 
-            // label38
+            // norecibo
             // 
-            this.label38.Location = new System.Drawing.Point(148, 401);
+            this.norecibo.Location = new System.Drawing.Point(169, 401);
             // 
-            // label37
+            // lbfechamatricula
             // 
-            this.label37.Location = new System.Drawing.Point(668, 343);
+            this.lbfechamatricula.Location = new System.Drawing.Point(689, 343);
+            this.lbfechamatricula.Size = new System.Drawing.Size(103, 20);
+            this.lbfechamatricula.Text = "18-06-2023";
             // 
-            // label36
+            // fechamatricula
             // 
-            this.label36.Location = new System.Drawing.Point(666, 320);
+            this.fechamatricula.Location = new System.Drawing.Point(687, 320);
             // 
-            // textBox21
+            // txtcorreo
             // 
-            this.textBox21.Location = new System.Drawing.Point(141, 343);
+            this.txtcorreo.Location = new System.Drawing.Point(162, 343);
             // 
-            // label35
+            // correo
             // 
-            this.label35.Location = new System.Drawing.Point(148, 320);
+            this.correo.Location = new System.Drawing.Point(169, 320);
             // 
-            // btngiardar
+            // btnguardar
             // 
-            this.btngiardar.Location = new System.Drawing.Point(885, 499);
-            this.btngiardar.MaximumSize = new System.Drawing.Size(0, 0);
-            this.btngiardar.MinimumSize = new System.Drawing.Size(115, 45);
+            this.btnguardar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.btnguardar.FlatAppearance.BorderSize = 0;
+            this.btnguardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnguardar.Location = new System.Drawing.Point(927, 499);
+            this.btnguardar.UseVisualStyleBackColor = false;
+            this.btnguardar.Click += new System.EventHandler(this.btnguardar_Click);
             // 
             // panel5
             // 
@@ -376,9 +386,9 @@
             this.panel5.Controls.Add(this.dataGridView1);
             this.panel5.Controls.Add(this.label40);
             this.panel5.Location = new System.Drawing.Point(12, 12);
-            this.panel5.MinimumSize = new System.Drawing.Size(858, 327);
+            this.panel5.MinimumSize = new System.Drawing.Size(1035, 327);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(1035, 327);
+            this.panel5.Size = new System.Drawing.Size(1077, 327);
             this.panel5.TabIndex = 12;
             // 
             // label43
@@ -386,7 +396,7 @@
             this.label43.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label43.AutoSize = true;
             this.label43.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label43.Location = new System.Drawing.Point(668, 69);
+            this.label43.Location = new System.Drawing.Point(689, 69);
             this.label43.Name = "label43";
             this.label43.Size = new System.Drawing.Size(68, 20);
             this.label43.TabIndex = 9;
@@ -397,7 +407,7 @@
             this.label42.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label42.AutoSize = true;
             this.label42.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label42.Location = new System.Drawing.Point(362, 69);
+            this.label42.Location = new System.Drawing.Point(383, 69);
             this.label42.Name = "label42";
             this.label42.Size = new System.Drawing.Size(61, 20);
             this.label42.TabIndex = 8;
@@ -408,7 +418,7 @@
             this.label41.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label41.AutoSize = true;
             this.label41.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label41.Location = new System.Drawing.Point(148, 69);
+            this.label41.Location = new System.Drawing.Point(169, 69);
             this.label41.Name = "label41";
             this.label41.Size = new System.Drawing.Size(54, 20);
             this.label41.TabIndex = 7;
@@ -418,7 +428,7 @@
             // 
             this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox1.Image = global::Proyecto_UniReg.Properties.Resources.busqueda;
-            this.pictureBox1.Location = new System.Drawing.Point(959, 84);
+            this.pictureBox1.Location = new System.Drawing.Point(1001, 84);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(41, 34);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -428,7 +438,7 @@
             // button1
             // 
             this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button1.Location = new System.Drawing.Point(855, 289);
+            this.button1.Location = new System.Drawing.Point(897, 289);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(175, 34);
             this.button1.TabIndex = 5;
@@ -438,7 +448,7 @@
             // textBox26
             // 
             this.textBox26.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox26.Location = new System.Drawing.Point(524, 92);
+            this.textBox26.Location = new System.Drawing.Point(545, 92);
             this.textBox26.Name = "textBox26";
             this.textBox26.Size = new System.Drawing.Size(365, 22);
             this.textBox26.TabIndex = 4;
@@ -446,7 +456,7 @@
             // textBox25
             // 
             this.textBox25.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox25.Location = new System.Drawing.Point(300, 96);
+            this.textBox25.Location = new System.Drawing.Point(321, 96);
             this.textBox25.Name = "textBox25";
             this.textBox25.Size = new System.Drawing.Size(182, 22);
             this.textBox25.TabIndex = 3;
@@ -454,7 +464,7 @@
             // textBox24
             // 
             this.textBox24.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox24.Location = new System.Drawing.Point(99, 92);
+            this.textBox24.Location = new System.Drawing.Point(120, 92);
             this.textBox24.Name = "textBox24";
             this.textBox24.Size = new System.Drawing.Size(182, 22);
             this.textBox24.TabIndex = 2;
@@ -464,11 +474,11 @@
             this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(3, 124);
+            this.dataGridView1.Location = new System.Drawing.Point(10, 124);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(1029, 160);
+            this.dataGridView1.Size = new System.Drawing.Size(1055, 160);
             this.dataGridView1.TabIndex = 1;
             // 
             // label40
@@ -476,7 +486,7 @@
             this.label40.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label40.AutoSize = true;
             this.label40.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label40.Location = new System.Drawing.Point(440, 9);
+            this.label40.Location = new System.Drawing.Point(461, 9);
             this.label40.Name = "label40";
             this.label40.Size = new System.Drawing.Size(221, 29);
             this.label40.TabIndex = 0;
@@ -486,24 +496,24 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1184, 633);
+            this.ClientSize = new System.Drawing.Size(1222, 633);
             this.Controls.Add(this.panel5);
             this.Name = "EstudiantesExistentes";
             this.ShowInTaskbar = false;
             this.Text = "EstudiantesExistentes";
-            this.Controls.SetChildIndex(this.panel1, 0);
-            this.Controls.SetChildIndex(this.panel2, 0);
-            this.Controls.SetChildIndex(this.panel3, 0);
-            this.Controls.SetChildIndex(this.panel4, 0);
+            this.Controls.SetChildIndex(this.ptipoprograma, 0);
+            this.Controls.SetChildIndex(this.pdatosgenerales, 0);
+            this.Controls.SetChildIndex(this.pinformacionacademica, 0);
+            this.Controls.SetChildIndex(this.pinformacionlaboral, 0);
             this.Controls.SetChildIndex(this.panel5, 0);
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
-            this.panel4.ResumeLayout(false);
-            this.panel4.PerformLayout();
+            this.ptipoprograma.ResumeLayout(false);
+            this.ptipoprograma.PerformLayout();
+            this.pdatosgenerales.ResumeLayout(false);
+            this.pdatosgenerales.PerformLayout();
+            this.pinformacionacademica.ResumeLayout(false);
+            this.pinformacionacademica.PerformLayout();
+            this.pinformacionlaboral.ResumeLayout(false);
+            this.pinformacionlaboral.PerformLayout();
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

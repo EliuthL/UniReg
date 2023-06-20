@@ -136,6 +136,9 @@
   <data name="disco" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\disco.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="agregar-documento" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\agregar-documento.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Config" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Config.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -160,6 +163,9 @@
   <data name="Exit1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Exit1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="UnanManagua" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\UnanManagua.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="disco (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\disco (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -169,7 +175,7 @@
   <data name="Exapandir menu" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Exapandir menu.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="agregar-documento" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\agregar-documento.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="varita-magica" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\varita-magica.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

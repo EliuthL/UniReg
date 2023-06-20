@@ -77,6 +77,7 @@
             this.passwordTxt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.passwordTxt.Multiline = true;
             this.passwordTxt.Name = "passwordTxt";
+            this.passwordTxt.PasswordChar = '*';
             this.passwordTxt.Size = new System.Drawing.Size(291, 30);
             this.passwordTxt.TabIndex = 3;
             // 
