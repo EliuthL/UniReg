@@ -1,13 +1,22 @@
 ﻿using NReco.PdfGenerator;
 using System.Diagnostics;
-using System.Globalization;
 using System.IO;
 
 namespace Imprimir
 {
     public class ServiciosImpresion
     {
+        public static string PdfGetRut()
+        {
+            string ruttxt = Directory.GetCurrentDirectory();
+            ruttxt = Path.Combine(ruttxt, "rutSave.txt");
 
+            using (StreamReader reader = new StreamReader(ruttxt))
+            {
+                string pdfrut = reader.ReadToEnd();
+                return pdfrut;
+            }
+        }
         public static void Imprimir(string curso, string capacitacion, string nombrecurso,
                                     string fechainicio, string duracion,
                                     string name1, string name2,
@@ -17,7 +26,7 @@ namespace Imprimir
                                     string nacionalidad, string estadocivil,
                                     string ntelefono, string operadora,
                                     string departamento, string municipio,
-                                    string direcciondomi, string trabaja, string notrabaja,
+                                    string direcciondomi, string trabaja,
                                     string centrotrabajo, string dirtrabajo, string cargo,
                                     string teltrabajo, string centrograduacion,
                                     string paisgraduacion, string fechaexpe,
@@ -32,7 +41,10 @@ namespace Imprimir
                 Margins = new PageMargins { Left = 1, Right = 1, Top = 1, Bottom = 1 }
             };
 
-            var htmlphat = "C:\\Users\\lopez\\Source\\Repos\\EliuthL\\UniReg\\Imprimir\\HojaEstudiante.html";
+            string directory = Directory.GetCurrentDirectory();
+            var htmlMatricula = "HojaEstudiante.html";
+            string htmlphat = Path.Combine(directory, htmlMatricula);
+
             string htmlContent = File.ReadAllText(htmlphat);
             htmlContent = htmlContent.Replace("{curso}", curso);
             htmlContent = htmlContent.Replace("{capacitacion}", capacitacion);
@@ -67,19 +79,23 @@ namespace Imprimir
             htmlContent = htmlContent.Replace("{fmatricula}", fechamatri);
             htmlContent = htmlContent.Replace("{nrecibo}", nrecibo);
             htmlContent = htmlContent.Replace("{arancel}", arancel);
-            
+
 
 
             var pdfBytes = converter.GeneratePdf(htmlContent);
+            string pdffilePath = PdfGetRut();
+            try
+            {
+                pdffilePath = Path.Combine(pdffilePath, $"{name1 + apellido1 + cedula}.pdf");
+                File.WriteAllBytes(pdffilePath, pdfBytes);
+            }
+            catch (System.Exception)
+            {
+                throw;
+            }
 
-            string pdffilePath = $"C:\\Users\\lopez\\OneDrive\\Escritorio\\New folder (4)\\{name1 + apellido1 + cedula}.pdf";
-            File.WriteAllBytes(pdffilePath, pdfBytes);
 
             Process.Start(pdffilePath);
-        }
-        public void ExelGenerator()
-        {
-
         }
     }
 }
