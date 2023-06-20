@@ -158,7 +158,7 @@ namespace Proyecto_UniReg
 
         private void Principal_FormClosing(object sender, FormClosingEventArgs e)
         {
-            DialogResult dialog = MessageBox.Show("Esta a punto de cerrarel progrma\n Desea cerrarlo?", "Alerta", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+            DialogResult dialog = MessageBox.Show("Esta a punto de cerrar el programa\n ¿Desea cerrarlo?", "Alerta", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
             if (dialog == DialogResult.OK)
             {
                 Application.Exit();
