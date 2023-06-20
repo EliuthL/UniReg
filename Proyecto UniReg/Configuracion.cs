@@ -82,7 +82,10 @@ namespace Proyecto_UniReg
 
         private void Configuracion_Load(object sender, EventArgs e)
         {
-            txtruta.Text = ServiciosImpresion.PdfGetRut();
+            if(ServiciosImpresion.PdfGetRut() != "")
+            {
+                txtruta.Text = ServiciosImpresion.PdfGetRut();
+            } 
         }
     }
 }
