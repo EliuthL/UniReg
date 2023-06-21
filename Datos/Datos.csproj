@@ -42,7 +42,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="EasyQL\Conection.cs" />
+    <Compile Include="EasyQL\Curso.cs" />
     <Compile Include="EasyQL\Estudiante.cs" />
+    <Compile Include="EasyQL\Est_Cur.cs" />
     <Compile Include="EasyQL\Model.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

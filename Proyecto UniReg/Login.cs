@@ -29,7 +29,7 @@ namespace Proyecto_UniReg
 
             try
             {
-                Conection.makeConnection();
+                Conection.makeConnection(Conection.connectionString());
                 Conection.Con.Open();
                 Principal principal = new Principal();
                 principal.Show();
