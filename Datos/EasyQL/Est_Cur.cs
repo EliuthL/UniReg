@@ -1,12 +1,18 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Data.SqlClient;
 
-namespace Datos.EasyQL
+namespace EasyQL
 {
-    internal class Est_Cur
+    public class Est_Cur : Model
     {
+        public Est_Cur(SqlConnection conection) : base(conection)
+        {
+            Fields.Add("id_estudiante");
+            Fields.Add("id_curso");
+            Fields.Add("fecha_mat");
+            Fields.Add("recibo_no");
+            Fields.Add("arancel");
+
+            Table = "Est_Cur";
+        }
     }
 }
