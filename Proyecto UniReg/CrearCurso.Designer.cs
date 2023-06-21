@@ -31,6 +31,7 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btncrear = new System.Windows.Forms.Button();
             this.label11 = new System.Windows.Forms.Label();
             this.txtduracion = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
@@ -51,7 +52,6 @@
             this.dateTimePicker3 = new System.Windows.Forms.DateTimePicker();
             this.label7 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.btncrear = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -83,7 +83,6 @@
             this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.panel1.Controls.Add(this.btncrear);
             this.panel1.Controls.Add(this.label11);
             this.panel1.Controls.Add(this.txtduracion);
             this.panel1.Controls.Add(this.label10);
@@ -103,12 +102,29 @@
             this.panel1.Size = new System.Drawing.Size(1092, 351);
             this.panel1.TabIndex = 2;
             // 
+            // btncrear
+            // 
+            this.btncrear.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btncrear.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.btncrear.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btncrear.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btncrear.Image = global::Proyecto_UniReg.Properties.Resources.varita_magica;
+            this.btncrear.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btncrear.Location = new System.Drawing.Point(951, 599);
+            this.btncrear.MinimumSize = new System.Drawing.Size(100, 40);
+            this.btncrear.Name = "btncrear";
+            this.btncrear.Size = new System.Drawing.Size(123, 50);
+            this.btncrear.TabIndex = 4;
+            this.btncrear.Text = "Crear";
+            this.btncrear.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btncrear.UseVisualStyleBackColor = false;
+            // 
             // label11
             // 
-            this.label11.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.label11.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(467, 276);
+            this.label11.Location = new System.Drawing.Point(900, 276);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(162, 20);
             this.label11.TabIndex = 20;
@@ -116,9 +132,9 @@
             // 
             // txtduracion
             // 
-            this.txtduracion.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtduracion.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtduracion.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtduracion.Location = new System.Drawing.Point(471, 299);
+            this.txtduracion.Location = new System.Drawing.Point(904, 299);
             this.txtduracion.Name = "txtduracion";
             this.txtduracion.Size = new System.Drawing.Size(158, 27);
             this.txtduracion.TabIndex = 19;
@@ -261,7 +277,7 @@
             // 
             this.textBox2.Enabled = false;
             this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(66, 118);
+            this.textBox2.Location = new System.Drawing.Point(41, 118);
             this.textBox2.Multiline = true;
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(188, 53);
@@ -319,28 +335,12 @@
             this.label5.TabIndex = 12;
             this.label5.Text = "Datos generales";
             // 
-            // btncrear
-            // 
-            this.btncrear.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btncrear.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.btncrear.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btncrear.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btncrear.Image = global::Proyecto_UniReg.Properties.Resources.varita_magica;
-            this.btncrear.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btncrear.Location = new System.Drawing.Point(962, 286);
-            this.btncrear.MinimumSize = new System.Drawing.Size(100, 40);
-            this.btncrear.Name = "btncrear";
-            this.btncrear.Size = new System.Drawing.Size(100, 40);
-            this.btncrear.TabIndex = 4;
-            this.btncrear.Text = "Crear";
-            this.btncrear.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btncrear.UseVisualStyleBackColor = false;
-            // 
             // CrearCurso
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1116, 638);
+            this.ClientSize = new System.Drawing.Size(1116, 661);
+            this.Controls.Add(this.btncrear);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Name = "CrearCurso";

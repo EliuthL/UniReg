@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.userTxt = new System.Windows.Forms.TextBox();
@@ -64,18 +65,18 @@
             // 
             // userTxt
             // 
+            this.userTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.userTxt.Location = new System.Drawing.Point(263, 62);
             this.userTxt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.userTxt.Multiline = true;
             this.userTxt.Name = "userTxt";
             this.userTxt.Size = new System.Drawing.Size(291, 30);
             this.userTxt.TabIndex = 2;
             // 
             // passwordTxt
             // 
+            this.passwordTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.passwordTxt.Location = new System.Drawing.Point(263, 137);
             this.passwordTxt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.passwordTxt.Multiline = true;
             this.passwordTxt.Name = "passwordTxt";
             this.passwordTxt.PasswordChar = '*';
             this.passwordTxt.Size = new System.Drawing.Size(291, 30);
@@ -139,6 +140,7 @@
             this.Controls.Add(this.userTxt);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

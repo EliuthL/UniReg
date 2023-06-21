@@ -33,6 +33,7 @@ namespace Entidades
         public string Fechatitulacion { get; set; }
         public string Titulo { get; set; }
         public string Carrera { get; set; }
+        public string Correo { get; set; }
 
 
     }
