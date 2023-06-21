@@ -27,25 +27,6 @@ namespace Proyecto_UniReg.Validaciones
                 return false;
             }
 
-            else
-            {
-                char[] numeros = carne.Text.ToCharArray();
-                foreach (char c in numeros)
-                {
-                    if (c == '0' || c == '1' || c == '2' || c == '3' || c == '4'
-                        || c == '5' || c == '6' || c == '7' || c == '8' || c == '9')
-                    {
-                    }
-                    else
-                    {
-                        MessageBox.Show("El campo carne no pude incluir letras",
-                                "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        return false;
-                    }
-
-                }
-            }
-
             //Validacion del campo cedula
             if (cedula.Text.Length < 14 || string.IsNullOrWhiteSpace(cedula.Text))
             {
@@ -63,7 +44,7 @@ namespace Proyecto_UniReg.Validaciones
             }
 
             //Validacion de fecha de nacimiento
-            if (fnacimiento.Value == DateTime.Now || fnacimiento.Value > DateTime.Now)
+            if (fnacimiento.Value != DateTime.Now && fnacimiento.Value > DateTime.Now)
             {
                 MessageBox.Show("La fecha de nacimiento no puede ser la fecha actual o superior",
                                 "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Information);
