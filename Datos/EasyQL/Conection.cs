@@ -16,26 +16,19 @@ namespace EasyQL
         public static string Password { get => password; set => password = value; }
         public static SqlConnection Con { get => con; set => con = value; }
 
-        public static string makeConnectionString()
+        public static string connectionString()
         {
-            if(User != " " && Password != " ")
-            {
-                return $"Data Source={Server};Initial Catalog={DataBase};User ID={User};Password={Password};";
-            }
-            else if(User == " " && Password == " ")
-            {
-                return $"Data Source={Server};Initial Catalog={DataBase};Integrated Security=true;";
-            }
-            else
-            {
-                return null;
-            }
+            return $"Data Source={Server};Initial Catalog={DataBase};User ID={User};Password={Password}; TrustServerCertificate=True";
         }
 
-        public static SqlConnection makeConnection()
+        public static string winConectionString()
         {
-            Con = new SqlConnection(makeConnectionString());
-            return Con;
+            return $"Data Source={Server};Initial Catalog={DataBase};Integrated Security=true; TrustServerCertificate=True";
+        }
+
+        public static void makeConnection(string connectionString)
+        {
+            Con = new SqlConnection(connectionString);
         }
     }
 }
