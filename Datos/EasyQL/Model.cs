@@ -1,6 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Data.SqlClient;
+using System;
 
 namespace EasyQL
 {
@@ -41,12 +41,30 @@ namespace EasyQL
                 SqlDataReader reader = comand.ExecuteReader();
                 return reader;
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 Console.WriteLine(ex);
                 return null;
             }
+        }
 
+        public SqlDataReader find(string id)
+        {
+            try
+            {
+                string query = $"Select *";
+
+                query = query + $" from {Table} Where {Identifier}  = {id};";
+
+                SqlCommand comand = new SqlCommand(query, Con);
+                SqlDataReader reader = comand.ExecuteReader();
+                return reader;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex);
+                return null;
+            }
         }
 
         public SqlDataReader all(List<string> fields)
@@ -60,6 +78,24 @@ namespace EasyQL
                     query = query + $"{i},";
                 }
                 query = query.Remove(query.Length - 1);
+
+                query = query + $" from {Table};";
+                SqlCommand comand = new SqlCommand(query, Con);
+                SqlDataReader reader = comand.ExecuteReader();
+                return reader;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex);
+                return null;
+            }
+        }
+
+        public SqlDataReader all()
+        {
+            try
+            {
+                string query = $"Select *";
 
                 query = query + $" from {Table};";
                 SqlCommand comand = new SqlCommand(query, Con);
@@ -97,15 +133,33 @@ namespace EasyQL
             }
         }
 
-        public int insert(List<string> values)
+        public SqlDataReader where(string field, string comparator, string value)
+        {
+            try
+            {
+                string query = $"Select *";
+
+                query = query + $" from {Table} where {field} {comparator} '{value}';";
+                SqlCommand comand = new SqlCommand(query, Con);
+                SqlDataReader reader = comand.ExecuteReader();
+                return reader;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex);
+                return null;
+            }
+        }
+
+        public int insert(List<string> fields, List<string> values)
         {
             try
             {
                 string query = $"insert into {Table} (";
 
-                for(int i = 0; i < values.Count; i++)
+                for (int i = 0; i < fields.Count; i++)
                 {
-                    query = query + $"{Fields[i]},";
+                    query = query + $"{fields[i]},";
                 }
                 query = query.Remove(query.Length - 1);
                 query = query + ") values( ";
@@ -122,7 +176,7 @@ namespace EasyQL
 
                 return rows;
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 Console.WriteLine(ex);
                 return 0;
@@ -138,7 +192,7 @@ namespace EasyQL
                 int rows = comand.ExecuteNonQuery();
                 return rows;
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 Console.WriteLine(ex);
                 return 0;
@@ -167,20 +221,20 @@ namespace EasyQL
             {
                 string query = $"update {Table} set";
 
-                foreach(List<string> i in data)
+                foreach (List<string> i in data)
                 {
                     query = query + $" {i[0]} = '{i[1]}',";
                 }
                 query = query.Remove(query.Length - 1);
 
                 query = query + $" where {Identifier} = {id};";
-                
+
                 SqlCommand comand = new SqlCommand(query, Con);
                 int rows = comand.ExecuteNonQuery();
                 return rows;
             }
 
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 Console.WriteLine(ex);
                 return 0;
