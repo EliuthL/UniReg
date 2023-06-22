@@ -1,6 +1,8 @@
 ﻿using NReco.PdfGenerator;
+using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
+using System.Threading;
 
 namespace Imprimir
 {
@@ -36,6 +38,10 @@ namespace Imprimir
             string arancel
             )
         {
+            
+
+
+
             var converter = new HtmlToPdfConverter
             {
                 Size = PageSize.Letter,
@@ -95,7 +101,6 @@ namespace Imprimir
             {
                 throw;
             }
-
 
             Process.Start(pdffilePath);
         }

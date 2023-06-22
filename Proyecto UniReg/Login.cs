@@ -24,8 +24,8 @@ namespace Proyecto_UniReg
             Conection.User = userTxt.Text;
             Conection.Password = passwordTxt.Text;
             Env.Load();
-            Conection.DataBase = Environment.GetEnvironmentVariable("Data_Base");
-            Conection.Server = Environment.GetEnvironmentVariable("Server");
+            Conection.DataBase = "MatriculaDB";
+            Conection.Server = "MSI\\MSSQLSERVER01";
 
             try
             {
@@ -40,10 +40,27 @@ namespace Proyecto_UniReg
 
                 }
             }
-            catch
+            catch(Exception ex)
             {
-                MessageBox.Show("La contreseña o el Usuario son incorrectas");
-            }       
+                MessageBox.Show(ex.Message);
+            }
+                  
+        }
+
+        private void userTxt_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                passwordTxt.Focus();
+            }
+        }
+
+        private void passwordTxt_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                button1_Click(sender, e);
+            }
         }
     }
 }
