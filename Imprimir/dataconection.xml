@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<database>
+	<server>
+		<servername>MSI\\MSSQLSERVER01</servername>
+		<databse>MatriculaDB</databse>
+	</server>
+</database>

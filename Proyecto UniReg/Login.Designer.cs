@@ -128,6 +128,7 @@
             this.sesionCheck.TabIndex = 8;
             this.sesionCheck.Text = "Guardar Sesión";
             this.sesionCheck.UseVisualStyleBackColor = true;
+            this.sesionCheck.CheckedChanged += new System.EventHandler(this.sesionCheck_CheckedChanged);
             // 
             // Login
             // 
