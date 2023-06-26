@@ -10,3 +10,9 @@ C:\Users\lopez\source\repos\Proyecto UniReg\Datos\obj\Debug\Datos.csproj.Assembl
 C:\Users\lopez\source\repos\Proyecto UniReg\Datos\obj\Debug\Datos.csproj.CoreCompileInputs.cache
 C:\Users\lopez\source\repos\Proyecto UniReg\Datos\obj\Debug\Datos.dll
 C:\Users\lopez\source\repos\Proyecto UniReg\Datos\obj\Debug\Datos.pdb
+C:\Users\lopez\Source\Repos\EliuthL\UniReg\Datos\bin\Debug\Datos.dll
+C:\Users\lopez\Source\Repos\EliuthL\UniReg\Datos\bin\Debug\Datos.pdb
+C:\Users\lopez\Source\Repos\EliuthL\UniReg\Datos\obj\Debug\Datos.csproj.AssemblyReference.cache
+C:\Users\lopez\Source\Repos\EliuthL\UniReg\Datos\obj\Debug\Datos.csproj.CoreCompileInputs.cache
+C:\Users\lopez\Source\Repos\EliuthL\UniReg\Datos\obj\Debug\Datos.dll
+C:\Users\lopez\Source\Repos\EliuthL\UniReg\Datos\obj\Debug\Datos.pdb
