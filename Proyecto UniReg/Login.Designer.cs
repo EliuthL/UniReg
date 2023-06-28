@@ -71,6 +71,7 @@
             this.userTxt.Name = "userTxt";
             this.userTxt.Size = new System.Drawing.Size(291, 30);
             this.userTxt.TabIndex = 2;
+            this.userTxt.KeyDown += new System.Windows.Forms.KeyEventHandler(this.userTxt_KeyDown);
             // 
             // passwordTxt
             // 
@@ -81,6 +82,7 @@
             this.passwordTxt.PasswordChar = '*';
             this.passwordTxt.Size = new System.Drawing.Size(291, 30);
             this.passwordTxt.TabIndex = 3;
+            this.passwordTxt.KeyDown += new System.Windows.Forms.KeyEventHandler(this.passwordTxt_KeyDown);
             // 
             // label1
             // 
@@ -126,6 +128,7 @@
             this.sesionCheck.TabIndex = 8;
             this.sesionCheck.Text = "Guardar Sesión";
             this.sesionCheck.UseVisualStyleBackColor = true;
+            this.sesionCheck.CheckedChanged += new System.EventHandler(this.sesionCheck_CheckedChanged);
             // 
             // Login
             // 
