@@ -25,7 +25,7 @@ namespace Proyecto_UniReg
         {
             Conection.User = userTxt.Text;
             Conection.Password = passwordTxt.Text;
-            Env.Load();
+            //Env.Load();
             //Conection.DataBase = "MatriculaDB";
             //Conection.Server = "MSI\\MSSQLSERVER01";
             ServicioGuardado servicioGuardado = new ServicioGuardado("MSI\\MSSQLSERVER01", "MatriculaDB");
