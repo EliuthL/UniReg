@@ -14,6 +14,7 @@ namespace EasyQL
             Fields.Add("ini_matricula");
             Fields.Add("fin_matricula");
             Fields.Add("duracion_horas");
+            Fields.Add("semestre");
 
             Table = "Curso";
         }
