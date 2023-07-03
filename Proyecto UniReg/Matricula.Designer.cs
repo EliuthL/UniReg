@@ -125,7 +125,7 @@
             this.ptipoprograma.Controls.Add(this.labelcursocapacitacion);
             this.ptipoprograma.Controls.Add(this.labelencabezadoprograma);
             this.ptipoprograma.Location = new System.Drawing.Point(9, 6);
-            this.ptipoprograma.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.ptipoprograma.Margin = new System.Windows.Forms.Padding(2);
             this.ptipoprograma.MinimumSize = new System.Drawing.Size(644, 214);
             this.ptipoprograma.Name = "ptipoprograma";
             this.ptipoprograma.Size = new System.Drawing.Size(644, 214);
@@ -191,7 +191,7 @@
             "s",
             "d"});
             this.cbcursocapacitacion.Location = new System.Drawing.Point(250, 113);
-            this.cbcursocapacitacion.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cbcursocapacitacion.Margin = new System.Windows.Forms.Padding(2);
             this.cbcursocapacitacion.Name = "cbcursocapacitacion";
             this.cbcursocapacitacion.Size = new System.Drawing.Size(354, 25);
             this.cbcursocapacitacion.TabIndex = 4;
@@ -202,7 +202,7 @@
             this.rbcapacitacion.AutoSize = true;
             this.rbcapacitacion.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rbcapacitacion.Location = new System.Drawing.Point(411, 66);
-            this.rbcapacitacion.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.rbcapacitacion.Margin = new System.Windows.Forms.Padding(2);
             this.rbcapacitacion.Name = "rbcapacitacion";
             this.rbcapacitacion.Size = new System.Drawing.Size(107, 21);
             this.rbcapacitacion.TabIndex = 3;
@@ -216,7 +216,7 @@
             this.rbcurso.AutoSize = true;
             this.rbcurso.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rbcurso.Location = new System.Drawing.Point(159, 66);
-            this.rbcurso.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.rbcurso.Margin = new System.Windows.Forms.Padding(2);
             this.rbcurso.Name = "rbcurso";
             this.rbcurso.Size = new System.Drawing.Size(63, 21);
             this.rbcurso.TabIndex = 2;
@@ -285,7 +285,7 @@
             this.pdatosgenerales.Controls.Add(this.nombre1);
             this.pdatosgenerales.Controls.Add(this.labelencabezadodatosg);
             this.pdatosgenerales.Location = new System.Drawing.Point(9, 225);
-            this.pdatosgenerales.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pdatosgenerales.Margin = new System.Windows.Forms.Padding(2);
             this.pdatosgenerales.MinimumSize = new System.Drawing.Size(644, 558);
             this.pdatosgenerales.Name = "pdatosgenerales";
             this.pdatosgenerales.Size = new System.Drawing.Size(644, 558);
@@ -296,7 +296,7 @@
             this.txtmunicipio.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtmunicipio.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtmunicipio.Location = new System.Drawing.Point(401, 424);
-            this.txtmunicipio.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtmunicipio.Margin = new System.Windows.Forms.Padding(2);
             this.txtmunicipio.MaxLength = 100;
             this.txtmunicipio.Name = "txtmunicipio";
             this.txtmunicipio.Size = new System.Drawing.Size(204, 23);
@@ -320,7 +320,7 @@
             this.txtdepartamento.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtdepartamento.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtdepartamento.Location = new System.Drawing.Point(38, 424);
-            this.txtdepartamento.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtdepartamento.Margin = new System.Windows.Forms.Padding(2);
             this.txtdepartamento.MaxLength = 100;
             this.txtdepartamento.Name = "txtdepartamento";
             this.txtdepartamento.Size = new System.Drawing.Size(214, 23);
@@ -364,7 +364,7 @@
             "Claro",
             "Tigo"});
             this.comboBox3.Location = new System.Drawing.Point(401, 361);
-            this.comboBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.comboBox3.Margin = new System.Windows.Forms.Padding(2);
             this.comboBox3.Name = "comboBox3";
             this.comboBox3.Size = new System.Drawing.Size(202, 25);
             this.comboBox3.TabIndex = 30;
@@ -392,7 +392,7 @@
             "CASADO",
             "UNION DE HECHOS ESTABLES"});
             this.cbEstadocivil.Location = new System.Drawing.Point(401, 301);
-            this.cbEstadocivil.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cbEstadocivil.Margin = new System.Windows.Forms.Padding(2);
             this.cbEstadocivil.Name = "cbEstadocivil";
             this.cbEstadocivil.Size = new System.Drawing.Size(202, 25);
             this.cbEstadocivil.TabIndex = 9;
@@ -414,7 +414,7 @@
             this.dtnacimiento.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.dtnacimiento.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtnacimiento.Location = new System.Drawing.Point(401, 240);
-            this.dtnacimiento.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dtnacimiento.Margin = new System.Windows.Forms.Padding(2);
             this.dtnacimiento.MaxDate = new System.DateTime(2070, 12, 31, 0, 0, 0, 0);
             this.dtnacimiento.MinDate = new System.DateTime(1910, 12, 31, 0, 0, 0, 0);
             this.dtnacimiento.Name = "dtnacimiento";
@@ -426,7 +426,7 @@
             this.txtlnacimiento.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtlnacimiento.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtlnacimiento.Location = new System.Drawing.Point(40, 240);
-            this.txtlnacimiento.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtlnacimiento.Margin = new System.Windows.Forms.Padding(2);
             this.txtlnacimiento.MaxLength = 100;
             this.txtlnacimiento.Name = "txtlnacimiento";
             this.txtlnacimiento.Size = new System.Drawing.Size(212, 23);
@@ -451,7 +451,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtdirecciondomi.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtdirecciondomi.Location = new System.Drawing.Point(40, 486);
-            this.txtdirecciondomi.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtdirecciondomi.Margin = new System.Windows.Forms.Padding(2);
             this.txtdirecciondomi.MaxLength = 100;
             this.txtdirecciondomi.Multiline = true;
             this.txtdirecciondomi.Name = "txtdirecciondomi";
@@ -476,7 +476,7 @@
             this.txtnumerotelefono.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtnumerotelefono.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtnumerotelefono.Location = new System.Drawing.Point(40, 362);
-            this.txtnumerotelefono.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtnumerotelefono.Margin = new System.Windows.Forms.Padding(2);
             this.txtnumerotelefono.MaxLength = 8;
             this.txtnumerotelefono.Name = "txtnumerotelefono";
             this.txtnumerotelefono.Size = new System.Drawing.Size(212, 23);
@@ -500,7 +500,7 @@
             this.txtnacionalidad.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtnacionalidad.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtnacionalidad.Location = new System.Drawing.Point(40, 302);
-            this.txtnacionalidad.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtnacionalidad.Margin = new System.Windows.Forms.Padding(2);
             this.txtnacionalidad.MaxLength = 100;
             this.txtnacionalidad.Name = "txtnacionalidad";
             this.txtnacionalidad.Size = new System.Drawing.Size(212, 23);
@@ -524,7 +524,7 @@
             this.txtcedula.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtcedula.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtcedula.Location = new System.Drawing.Point(401, 176);
-            this.txtcedula.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtcedula.Margin = new System.Windows.Forms.Padding(2);
             this.txtcedula.MaxLength = 14;
             this.txtcedula.Name = "txtcedula";
             this.txtcedula.Size = new System.Drawing.Size(202, 23);
@@ -548,7 +548,7 @@
             this.txtcarne.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtcarne.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtcarne.Location = new System.Drawing.Point(40, 176);
-            this.txtcarne.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtcarne.Margin = new System.Windows.Forms.Padding(2);
             this.txtcarne.MaxLength = 8;
             this.txtcarne.Name = "txtcarne";
             this.txtcarne.Size = new System.Drawing.Size(212, 23);
@@ -573,7 +573,7 @@
             this.txtapellido2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtapellido2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtapellido2.Location = new System.Drawing.Point(401, 121);
-            this.txtapellido2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtapellido2.Margin = new System.Windows.Forms.Padding(2);
             this.txtapellido2.MaxLength = 50;
             this.txtapellido2.Name = "txtapellido2";
             this.txtapellido2.Size = new System.Drawing.Size(202, 23);
@@ -586,7 +586,7 @@
             this.txtname2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtname2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtname2.Location = new System.Drawing.Point(401, 66);
-            this.txtname2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtname2.Margin = new System.Windows.Forms.Padding(2);
             this.txtname2.MaxLength = 50;
             this.txtname2.Name = "txtname2";
             this.txtname2.Size = new System.Drawing.Size(201, 23);
@@ -623,7 +623,7 @@
             this.txtapellido1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtapellido1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtapellido1.Location = new System.Drawing.Point(38, 121);
-            this.txtapellido1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtapellido1.Margin = new System.Windows.Forms.Padding(2);
             this.txtapellido1.MaxLength = 50;
             this.txtapellido1.Name = "txtapellido1";
             this.txtapellido1.Size = new System.Drawing.Size(214, 23);
@@ -647,7 +647,7 @@
             this.txtname1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtname1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtname1.Location = new System.Drawing.Point(40, 66);
-            this.txtname1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtname1.Margin = new System.Windows.Forms.Padding(2);
             this.txtname1.MaxLength = 50;
             this.txtname1.Name = "txtname1";
             this.txtname1.Size = new System.Drawing.Size(212, 23);
@@ -704,7 +704,7 @@
             this.pinformacionacademica.Controls.Add(this.labelinformacionacad);
             this.pinformacionacademica.Controls.Add(this.centroestudio);
             this.pinformacionacademica.Location = new System.Drawing.Point(9, 1090);
-            this.pinformacionacademica.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pinformacionacademica.Margin = new System.Windows.Forms.Padding(2);
             this.pinformacionacademica.MinimumSize = new System.Drawing.Size(644, 451);
             this.pinformacionacademica.Name = "pinformacionacademica";
             this.pinformacionacademica.Size = new System.Drawing.Size(644, 451);
@@ -716,7 +716,7 @@
             this.btnguardar.Image = global::Proyecto_UniReg.Properties.Resources.disco__1_;
             this.btnguardar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnguardar.Location = new System.Drawing.Point(531, 405);
-            this.btnguardar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnguardar.Margin = new System.Windows.Forms.Padding(2);
             this.btnguardar.MinimumSize = new System.Drawing.Size(86, 37);
             this.btnguardar.Name = "btnguardar";
             this.btnguardar.Size = new System.Drawing.Size(86, 37);
@@ -731,7 +731,7 @@
             this.txtarancel.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtarancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtarancel.Location = new System.Drawing.Point(429, 344);
-            this.txtarancel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtarancel.Margin = new System.Windows.Forms.Padding(2);
             this.txtarancel.Name = "txtarancel";
             this.txtarancel.Size = new System.Drawing.Size(188, 23);
             this.txtarancel.TabIndex = 59;
@@ -755,7 +755,7 @@
             this.txtnumerorecibo.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtnumerorecibo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtnumerorecibo.Location = new System.Drawing.Point(40, 344);
-            this.txtnumerorecibo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtnumerorecibo.Margin = new System.Windows.Forms.Padding(2);
             this.txtnumerorecibo.Name = "txtnumerorecibo";
             this.txtnumerorecibo.Size = new System.Drawing.Size(234, 23);
             this.txtnumerorecibo.TabIndex = 57;
@@ -803,7 +803,7 @@
             this.txtcorreo.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtcorreo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtcorreo.Location = new System.Drawing.Point(40, 279);
-            this.txtcorreo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtcorreo.Margin = new System.Windows.Forms.Padding(2);
             this.txtcorreo.Name = "txtcorreo";
             this.txtcorreo.Size = new System.Drawing.Size(234, 23);
             this.txtcorreo.TabIndex = 53;
@@ -826,7 +826,7 @@
             this.txtcarreracursada.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtcarreracursada.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtcarreracursada.Location = new System.Drawing.Point(40, 214);
-            this.txtcarreracursada.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtcarreracursada.Margin = new System.Windows.Forms.Padding(2);
             this.txtcarreracursada.MaxLength = 100;
             this.txtcarreracursada.Name = "txtcarreracursada";
             this.txtcarreracursada.Size = new System.Drawing.Size(564, 23);
@@ -851,7 +851,7 @@
             this.dtfechatitulacion.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.dtfechatitulacion.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtfechatitulacion.Location = new System.Drawing.Point(42, 142);
-            this.dtfechatitulacion.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dtfechatitulacion.Margin = new System.Windows.Forms.Padding(2);
             this.dtfechatitulacion.MaxDate = new System.DateTime(2060, 12, 31, 0, 0, 0, 0);
             this.dtfechatitulacion.MinDate = new System.DateTime(1920, 1, 1, 0, 0, 0, 0);
             this.dtfechatitulacion.Name = "dtfechatitulacion";
@@ -863,7 +863,7 @@
             this.txttitulacionobtenida.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txttitulacionobtenida.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txttitulacionobtenida.Location = new System.Drawing.Point(412, 142);
-            this.txttitulacionobtenida.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txttitulacionobtenida.Margin = new System.Windows.Forms.Padding(2);
             this.txttitulacionobtenida.MaxLength = 50;
             this.txttitulacionobtenida.Name = "txttitulacionobtenida";
             this.txttitulacionobtenida.Size = new System.Drawing.Size(192, 23);
@@ -900,7 +900,7 @@
             this.txtpaisgraduacion.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtpaisgraduacion.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtpaisgraduacion.Location = new System.Drawing.Point(412, 81);
-            this.txtpaisgraduacion.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtpaisgraduacion.Margin = new System.Windows.Forms.Padding(2);
             this.txtpaisgraduacion.MaxLength = 50;
             this.txtpaisgraduacion.Name = "txtpaisgraduacion";
             this.txtpaisgraduacion.Size = new System.Drawing.Size(192, 23);
@@ -925,7 +925,7 @@
             this.txtcentroestudio.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtcentroestudio.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtcentroestudio.Location = new System.Drawing.Point(44, 81);
-            this.txtcentroestudio.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtcentroestudio.Margin = new System.Windows.Forms.Padding(2);
             this.txtcentroestudio.MaxLength = 100;
             this.txtcentroestudio.Name = "txtcentroestudio";
             this.txtcentroestudio.Size = new System.Drawing.Size(230, 23);
@@ -975,7 +975,7 @@
             this.pinformacionlaboral.Controls.Add(this.labelencabezadoinfo);
             this.pinformacionlaboral.Controls.Add(this.rbsi);
             this.pinformacionlaboral.Location = new System.Drawing.Point(9, 788);
-            this.pinformacionlaboral.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pinformacionlaboral.Margin = new System.Windows.Forms.Padding(2);
             this.pinformacionlaboral.MinimumSize = new System.Drawing.Size(644, 297);
             this.pinformacionlaboral.Name = "pinformacionlaboral";
             this.pinformacionlaboral.Size = new System.Drawing.Size(644, 297);
@@ -986,7 +986,7 @@
             this.txtnumerotrabajo.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtnumerotrabajo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtnumerotrabajo.Location = new System.Drawing.Point(429, 258);
-            this.txtnumerotrabajo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtnumerotrabajo.Margin = new System.Windows.Forms.Padding(2);
             this.txtnumerotrabajo.MaxLength = 15;
             this.txtnumerotrabajo.Name = "txtnumerotrabajo";
             this.txtnumerotrabajo.Size = new System.Drawing.Size(170, 23);
@@ -1011,7 +1011,7 @@
             this.txtcargo.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtcargo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtcargo.Location = new System.Drawing.Point(38, 258);
-            this.txtcargo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtcargo.Margin = new System.Windows.Forms.Padding(2);
             this.txtcargo.MaxLength = 100;
             this.txtcargo.Name = "txtcargo";
             this.txtcargo.Size = new System.Drawing.Size(259, 23);
@@ -1037,7 +1037,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtdirecciontrabajo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtdirecciontrabajo.Location = new System.Drawing.Point(46, 158);
-            this.txtdirecciontrabajo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtdirecciontrabajo.Margin = new System.Windows.Forms.Padding(2);
             this.txtdirecciontrabajo.MaxLength = 200;
             this.txtdirecciontrabajo.Multiline = true;
             this.txtdirecciontrabajo.Name = "txtdirecciontrabajo";
@@ -1063,7 +1063,7 @@
             this.txtcentrotrabajo.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtcentrotrabajo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtcentrotrabajo.Location = new System.Drawing.Point(329, 93);
-            this.txtcentrotrabajo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtcentrotrabajo.Margin = new System.Windows.Forms.Padding(2);
             this.txtcentrotrabajo.MaxLength = 100;
             this.txtcentrotrabajo.Name = "txtcentrotrabajo";
             this.txtcentrotrabajo.Size = new System.Drawing.Size(272, 23);
@@ -1101,7 +1101,7 @@
             this.rbno.AutoSize = true;
             this.rbno.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rbno.Location = new System.Drawing.Point(106, 93);
-            this.rbno.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.rbno.Margin = new System.Windows.Forms.Padding(2);
             this.rbno.Name = "rbno";
             this.rbno.Size = new System.Drawing.Size(44, 21);
             this.rbno.TabIndex = 10;
@@ -1128,7 +1128,7 @@
             this.rbsi.AutoSize = true;
             this.rbsi.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rbsi.Location = new System.Drawing.Point(42, 93);
-            this.rbsi.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.rbsi.Margin = new System.Windows.Forms.Padding(2);
             this.rbsi.Name = "rbsi";
             this.rbsi.Size = new System.Drawing.Size(38, 21);
             this.rbsi.TabIndex = 9;
@@ -1146,7 +1146,7 @@
             this.Controls.Add(this.pinformacionacademica);
             this.Controls.Add(this.pdatosgenerales);
             this.Controls.Add(this.ptipoprograma);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.MinimumSize = new System.Drawing.Size(764, 509);
             this.Name = "Matricula";
             this.Text = "Matricula";
