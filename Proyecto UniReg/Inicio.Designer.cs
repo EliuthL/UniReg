@@ -206,6 +206,7 @@
             this.Controls.Add(this.panelMenu);
             this.Controls.Add(this.panelHeat);
             this.Name = "Principal";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Principal_FormClosing);
             this.Load += new System.EventHandler(this.Principal_Load);
             this.panelHeat.ResumeLayout(false);

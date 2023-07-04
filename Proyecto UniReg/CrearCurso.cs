@@ -63,9 +63,8 @@ namespace Proyecto_UniReg
                     throw new Exception("Ingrese el semestre del curso");
                 }
 
-
                 curso.insert(fields, values);
-                MessageBox.Show("Se ha creado el curso");
+                MessageBox.Show("Se ha creado el curso", "Completado", MessageBoxButtons.OK, MessageBoxIcon.None);
             }
             catch(Exception ex)
             {
