@@ -16,3 +16,6 @@ C:\Users\lopez\Source\Repos\EliuthL\UniReg\Datos\obj\Debug\Datos.csproj.Assembly
 C:\Users\lopez\Source\Repos\EliuthL\UniReg\Datos\obj\Debug\Datos.csproj.CoreCompileInputs.cache
 C:\Users\lopez\Source\Repos\EliuthL\UniReg\Datos\obj\Debug\Datos.dll
 C:\Users\lopez\Source\Repos\EliuthL\UniReg\Datos\obj\Debug\Datos.pdb
+C:\Users\lopez\Source\Repos\EliuthL\UniReg\Datos\bin\Debug\Entidades.dll
+C:\Users\lopez\Source\Repos\EliuthL\UniReg\Datos\bin\Debug\Entidades.pdb
+C:\Users\lopez\Source\Repos\EliuthL\UniReg\Datos\obj\Debug\Datos.csproj.CopyComplete

@@ -18,7 +18,7 @@ namespace EasyQL
 
         public static string connectionString()
         {
-            return $"Data Source={Server};Initial Catalog={DataBase};User ID={User};Password={Password}; TrustServerCertificate=True";
+            return $"Data Source= MSI\\MSSQLSERVER01;Initial Catalog= MatriculaDB;User ID={User};Password={Password}; TrustServerCertificate=True";
         }
 
         public static string winConectionString()

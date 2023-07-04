@@ -218,6 +218,12 @@
     <Compile Include="Cursos.Designer.cs">
       <DependentUpon>Cursos.cs</DependentUpon>
     </Compile>
+    <Compile Include="Editar curso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Editar curso.Designer.cs">
+      <DependentUpon>Editar curso.cs</DependentUpon>
+    </Compile>
     <Compile Include="Estudiantes.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -259,6 +265,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Cursos.resx">
       <DependentUpon>Cursos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Editar curso.resx">
+      <DependentUpon>Editar curso.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Estudiantes.resx">
       <DependentUpon>Estudiantes.cs</DependentUpon>
@@ -334,6 +343,10 @@
     <ProjectReference Include="..\Datos\Datos.csproj">
       <Project>{5225a5ff-2459-40bb-a5cc-95165d85d8c8}</Project>
       <Name>Datos</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Entidades\Entidades.csproj">
+      <Project>{D099499C-346D-49BF-B964-B57EF2451758}</Project>
+      <Name>Entidades</Name>
     </ProjectReference>
     <ProjectReference Include="..\Imprimir\Servicios.csproj">
       <Project>{02554825-6c67-452b-b36d-0356fdebdf49}</Project>

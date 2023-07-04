@@ -31,6 +31,8 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Cursos));
             this.dtgcursos = new System.Windows.Forms.DataGridView();
+            this.editar = new System.Windows.Forms.DataGridViewImageColumn();
+            this.Column1 = new System.Windows.Forms.DataGridViewImageColumn();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -52,17 +54,48 @@
             // dtgcursos
             // 
             this.dtgcursos.AllowUserToDeleteRows = false;
+            this.dtgcursos.AllowUserToOrderColumns = true;
             this.dtgcursos.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dtgcursos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgcursos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.editar,
+            this.Column1});
+            this.dtgcursos.GridColor = System.Drawing.SystemColors.Control;
             this.dtgcursos.Location = new System.Drawing.Point(12, 238);
             this.dtgcursos.Name = "dtgcursos";
             this.dtgcursos.ReadOnly = true;
             this.dtgcursos.RowHeadersWidth = 51;
             this.dtgcursos.RowTemplate.Height = 24;
+            this.dtgcursos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dtgcursos.Size = new System.Drawing.Size(880, 404);
             this.dtgcursos.TabIndex = 0;
+            this.dtgcursos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgcursos_CellContentClick);
+            // 
+            // editar
+            // 
+            this.editar.HeaderText = "Editar";
+            this.editar.Image = global::Proyecto_UniReg.Properties.Resources.Matricular;
+            this.editar.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
+            this.editar.MinimumWidth = 50;
+            this.editar.Name = "editar";
+            this.editar.ReadOnly = true;
+            this.editar.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.editar.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.editar.Width = 80;
+            // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "Imprimir";
+            this.Column1.Image = global::Proyecto_UniReg.Properties.Resources.imprimir;
+            this.Column1.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
+            this.Column1.MinimumWidth = 50;
+            this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
+            this.Column1.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.Column1.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.Column1.Width = 80;
             // 
             // textBox1
             // 
@@ -120,6 +153,7 @@
             this.button1.TabIndex = 12;
             this.button1.Text = "Aplicar";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label3
             // 
@@ -166,6 +200,7 @@
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(107, 32);
             this.textBox2.TabIndex = 16;
+            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // label6
             // 
@@ -203,6 +238,7 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 8;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // Cursos
             // 
@@ -245,5 +281,7 @@
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.DataGridViewImageColumn dataGridViewImageColumn1;
+        private System.Windows.Forms.DataGridViewImageColumn editar;
+        private System.Windows.Forms.DataGridViewImageColumn Column1;
     }
 }

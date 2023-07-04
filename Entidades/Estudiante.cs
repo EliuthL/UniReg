@@ -14,6 +14,7 @@ namespace Entidades
         public string Apellido1 { get; set; }
         public string Apellido2 { get; set; }
         public string Carnet { get; set; }
+        public string Cedula { get; set; }
         public string Lugarnacimiento { get; set; }
         public string Fechanacimiento { get; set; }
         public string Estadocivil { get; set; }
@@ -35,6 +36,6 @@ namespace Entidades
         public string Carrera { get; set; }
         public string Correo { get; set; }
 
-
+        
     }
 }

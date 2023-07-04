@@ -1,6 +1,6 @@
 ﻿namespace Proyecto_UniReg
 {
-    partial class CrearCurso
+    partial class Editar_curso
     {
         /// <summary>
         /// Required designer variable.
@@ -28,8 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.txtnombre = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.label9 = new System.Windows.Forms.Label();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.datefinmatricula = new System.Windows.Forms.DateTimePicker();
+            this.label8 = new System.Windows.Forms.Label();
+            this.dateinimatricula = new System.Windows.Forms.DateTimePicker();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.numduracion = new System.Windows.Forms.NumericUpDown();
             this.label11 = new System.Windows.Forms.Label();
@@ -41,40 +47,102 @@
             this.rdCurso = new System.Windows.Forms.RadioButton();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.btncrear = new System.Windows.Forms.Button();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.label9 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.datefinmatricula = new System.Windows.Forms.DateTimePicker();
-            this.label8 = new System.Windows.Forms.Label();
-            this.dateinimatricula = new System.Windows.Forms.DateTimePicker();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
+            this.txtnombre = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.btnactualizar = new System.Windows.Forms.Button();
+            this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numduracion)).BeginInit();
-            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
-            // txtnombre
+            // panel2
             // 
-            this.txtnombre.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtnombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtnombre.Location = new System.Drawing.Point(41, 218);
-            this.txtnombre.Name = "txtnombre";
-            this.txtnombre.Size = new System.Drawing.Size(1021, 34);
-            this.txtnombre.TabIndex = 0;
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.panel2.Controls.Add(this.label9);
+            this.panel2.Controls.Add(this.textBox2);
+            this.panel2.Controls.Add(this.datefinmatricula);
+            this.panel2.Controls.Add(this.label8);
+            this.panel2.Controls.Add(this.dateinimatricula);
+            this.panel2.Controls.Add(this.label7);
+            this.panel2.Controls.Add(this.label5);
+            this.panel2.Location = new System.Drawing.Point(12, 12);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(1096, 212);
+            this.panel2.TabIndex = 4;
             // 
-            // label1
+            // label9
             // 
-            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(388, 11);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(369, 29);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Datos del programa a registrar";
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(97, 81);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(87, 20);
+            this.label9.TabIndex = 17;
+            this.label9.Text = "Facultad:";
+            // 
+            // textBox2
+            // 
+            this.textBox2.Enabled = false;
+            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox2.Location = new System.Drawing.Point(41, 118);
+            this.textBox2.Multiline = true;
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(188, 53);
+            this.textBox2.TabIndex = 16;
+            this.textBox2.Text = "UNAN-MANAGUA-FAREM-ESTELÍ\r\n";
+            // 
+            // datefinmatricula
+            // 
+            this.datefinmatricula.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.datefinmatricula.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.datefinmatricula.Location = new System.Drawing.Point(780, 118);
+            this.datefinmatricula.Name = "datefinmatricula";
+            this.datefinmatricula.Size = new System.Drawing.Size(286, 27);
+            this.datefinmatricula.TabIndex = 15;
+            // 
+            // label8
+            // 
+            this.label8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(837, 81);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(151, 20);
+            this.label8.TabIndex = 14;
+            this.label8.Text = "Fin de matrícula:";
+            // 
+            // dateinimatricula
+            // 
+            this.dateinimatricula.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.dateinimatricula.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateinimatricula.Location = new System.Drawing.Point(395, 118);
+            this.dateinimatricula.Name = "dateinimatricula";
+            this.dateinimatricula.Size = new System.Drawing.Size(299, 27);
+            this.dateinimatricula.TabIndex = 13;
+            // 
+            // label7
+            // 
+            this.label7.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(461, 81);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(170, 20);
+            this.label7.TabIndex = 12;
+            this.label7.Text = "Inicio de matrícula:";
+            // 
+            // label5
+            // 
+            this.label5.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(452, 14);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(204, 29);
+            this.label5.TabIndex = 12;
+            this.label5.Text = "Datos generales";
             // 
             // panel1
             // 
@@ -93,10 +161,10 @@
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.txtnombre);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(12, 230);
+            this.panel1.Location = new System.Drawing.Point(12, 242);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1092, 351);
-            this.panel1.TabIndex = 2;
+            this.panel1.TabIndex = 5;
             // 
             // numduracion
             // 
@@ -211,143 +279,59 @@
             this.label2.TabIndex = 2;
             this.label2.Text = "Nombre del curso o capacitación";
             // 
-            // btncrear
+            // txtnombre
             // 
-            this.btncrear.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btncrear.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.btncrear.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btncrear.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btncrear.Image = global::Proyecto_UniReg.Properties.Resources.varita_magica;
-            this.btncrear.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btncrear.Location = new System.Drawing.Point(951, 599);
-            this.btncrear.MinimumSize = new System.Drawing.Size(100, 40);
-            this.btncrear.Name = "btncrear";
-            this.btncrear.Size = new System.Drawing.Size(123, 50);
-            this.btncrear.TabIndex = 4;
-            this.btncrear.Text = "Crear";
-            this.btncrear.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btncrear.UseVisualStyleBackColor = false;
-            this.btncrear.Click += new System.EventHandler(this.btncrear_Click);
-            // 
-            // panel2
-            // 
-            this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.txtnombre.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.panel2.Controls.Add(this.label9);
-            this.panel2.Controls.Add(this.textBox2);
-            this.panel2.Controls.Add(this.datefinmatricula);
-            this.panel2.Controls.Add(this.label8);
-            this.panel2.Controls.Add(this.dateinimatricula);
-            this.panel2.Controls.Add(this.label7);
-            this.panel2.Controls.Add(this.label5);
-            this.panel2.Location = new System.Drawing.Point(12, 12);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1092, 212);
-            this.panel2.TabIndex = 3;
+            this.txtnombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtnombre.Location = new System.Drawing.Point(41, 218);
+            this.txtnombre.Name = "txtnombre";
+            this.txtnombre.Size = new System.Drawing.Size(1021, 34);
+            this.txtnombre.TabIndex = 0;
             // 
-            // label9
+            // label1
             // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(97, 81);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(87, 20);
-            this.label9.TabIndex = 17;
-            this.label9.Text = "Facultad:";
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(388, 11);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(369, 29);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Datos del programa a registrar";
             // 
-            // textBox2
+            // btnactualizar
             // 
-            this.textBox2.Enabled = false;
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(41, 118);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(188, 53);
-            this.textBox2.TabIndex = 16;
-            this.textBox2.Text = "UNAN-MANAGUA-FAREM-ESTELÍ\r\n";
+            this.btnactualizar.Location = new System.Drawing.Point(983, 632);
+            this.btnactualizar.Name = "btnactualizar";
+            this.btnactualizar.Size = new System.Drawing.Size(121, 37);
+            this.btnactualizar.TabIndex = 6;
+            this.btnactualizar.Text = "Actualizar";
+            this.btnactualizar.UseVisualStyleBackColor = true;
+            this.btnactualizar.Click += new System.EventHandler(this.btnactualizar_Click);
             // 
-            // datefinmatricula
-            // 
-            this.datefinmatricula.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.datefinmatricula.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.datefinmatricula.Location = new System.Drawing.Point(776, 118);
-            this.datefinmatricula.Name = "datefinmatricula";
-            this.datefinmatricula.Size = new System.Drawing.Size(286, 27);
-            this.datefinmatricula.TabIndex = 15;
-            // 
-            // label8
-            // 
-            this.label8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(833, 81);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(151, 20);
-            this.label8.TabIndex = 14;
-            this.label8.Text = "Fin de matrícula:";
-            // 
-            // dateinimatricula
-            // 
-            this.dateinimatricula.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.dateinimatricula.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateinimatricula.Location = new System.Drawing.Point(393, 118);
-            this.dateinimatricula.Name = "dateinimatricula";
-            this.dateinimatricula.Size = new System.Drawing.Size(299, 27);
-            this.dateinimatricula.TabIndex = 13;
-            // 
-            // label7
-            // 
-            this.label7.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(459, 81);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(170, 20);
-            this.label7.TabIndex = 12;
-            this.label7.Text = "Inicio de matrícula:";
-            // 
-            // label5
-            // 
-            this.label5.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(450, 14);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(204, 29);
-            this.label5.TabIndex = 12;
-            this.label5.Text = "Datos generales";
-            // 
-            // CrearCurso
+            // Editar_curso
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1116, 661);
-            this.Controls.Add(this.btncrear);
-            this.Controls.Add(this.panel2);
+            this.ClientSize = new System.Drawing.Size(1120, 681);
+            this.Controls.Add(this.btnactualizar);
             this.Controls.Add(this.panel1);
-            this.Name = "CrearCurso";
-            this.Text = "CrearCurso";
+            this.Controls.Add(this.panel2);
+            this.Name = "Editar_curso";
+            this.Text = "Editar Curso";
+            this.Load += new System.EventHandler(this.Editar_curso_Load);
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numduracion)).EndInit();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.TextBox txtnombre;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.DateTimePicker dateinicio;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.RadioButton rdCapacitacion;
-        private System.Windows.Forms.RadioButton rdCurso;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TextBox textBox2;
@@ -356,10 +340,19 @@
         private System.Windows.Forms.DateTimePicker dateinimatricula;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Button btncrear;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.NumericUpDown numduracion;
+        private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.ComboBox cbsemestre;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.NumericUpDown numduracion;
+        private System.Windows.Forms.DateTimePicker dateinicio;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.RadioButton rdCapacitacion;
+        private System.Windows.Forms.RadioButton rdCurso;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox txtnombre;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnactualizar;
     }
 }
