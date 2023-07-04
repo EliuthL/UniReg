@@ -24,6 +24,15 @@ namespace Proyecto_UniReg
         private string _finmatricula;
         private string _semestre;
         private string _horas;
+
+        //creando delegado y evento
+        public delegate void ActualizadtgEventHandler();
+        public event ActualizadtgEventHandler ExecuteUpdate;
+        public Editar_curso()
+        {
+            InitializeComponent();
+        }
+
         public Editar_curso(string id, string facultad, string dependencia, string tipo, string nombre, string fechaini, string inimatricula, string finmatricula, string semestre, string horas)
         {
             InitializeComponent();
@@ -66,6 +75,7 @@ namespace Proyecto_UniReg
             _horas = numduracion.Value.ToString();
             _nombre = txtnombre.Text;
             CD_Cursos.Updatecur(int.Parse(_id), Deftipo(), _nombre, _fechaini, _inimatricula, _finmatricula, _semestre, int.Parse(_horas));
+            ExecuteUpdate?.Invoke();
         }
 
         private string Deftipo()

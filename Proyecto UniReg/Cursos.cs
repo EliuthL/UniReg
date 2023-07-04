@@ -14,6 +14,22 @@ namespace Proyecto_UniReg
     public partial class Cursos : Form
     {
         DataTable dt = new DataTable();
+
+        public void Actualizardtg()
+        {
+            Actualizar();
+        }
+
+        public void Actualizar()
+        {
+            dt.Clear();
+            foreach (var data in CD_Cursos.Cursosreturner())
+            {
+                dt.Rows.Add(data.Id, data.Facultad, data.Dependencias, data.Tipo, data.Nombre, data.Fechini, data.Inimatricula, data.Finmatricula, data.Semestre, data.Duracion);
+            }
+
+            dtgcursos.DataSource = dt;
+        }
         public Cursos()
         {
             InitializeComponent();
@@ -34,7 +50,9 @@ namespace Proyecto_UniReg
                 dt.Rows.Add(data.Id,data.Facultad,data.Dependencias, data.Tipo, data.Nombre, data.Fechini, data.Inimatricula, data.Finmatricula, data.Semestre, data.Duracion);
             }
 
-            dtgcursos.DataSource = dt;        
+            dtgcursos.DataSource = dt;
+            Editar_curso editar_Curso = new Editar_curso();
+            editar_Curso.ExecuteUpdate += Actualizardtg;
         }
 
         private void Cursos_Load(object sender, EventArgs e)
@@ -104,6 +122,11 @@ namespace Proyecto_UniReg
 
                 dtgcursos.DataSource = dt;
             }
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
 
         }
     }
