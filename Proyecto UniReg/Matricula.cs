@@ -107,7 +107,6 @@ namespace Proyecto_UniReg
                 if (datatable.Rows.Count > 0)
                 {
                     DataRow row = datatable.Rows[0];
-                    MessageBox.Show(row["id"].ToString() + "hola");
                     idEstudiante = row["id"].ToString();
                 }
                 reader.Close();

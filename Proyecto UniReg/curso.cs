@@ -50,6 +50,16 @@ namespace Proyecto_UniReg
                 numericUpDown1.Value = Convert.ToInt32(row["duracion_horas"]);
                 comboBox1.Text = Convert.ToString(row["semestre"]);
             }
+
+            string query = "SELECT * FROM Estudiante " +
+                "JOIN Est_Cur ON Estudiante.id = Est_Cur.id_estudiante " +
+                "WHERE Est_Cur.id_curso = @IdCurso";
+            SqlCommand command = new SqlCommand(query, Conection.Con);
+            command.Parameters.AddWithValue("@IdCurso", id);
+            SqlDataReader reader = command.ExecuteReader();
+            DataTable tabla = new DataTable();
+            tabla.Load(reader);
+            dataGridView1.DataSource = tabla;
         }
 
         private void button2_Click(object sender, EventArgs e)
