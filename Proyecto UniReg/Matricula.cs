@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Windows.Forms;
+using EasyQL;
 using Imprimir;
 
 namespace Proyecto_UniReg
@@ -64,11 +65,26 @@ namespace Proyecto_UniReg
                                         dtfechatitulacion.Value.ToString("dd-MM-yyyy"), txttitulacionobtenida.Text, txtcarreracursada.Text,
                                         txtcorreo.Text, dateformat, txtnumerorecibo.Text, txtarancel.Text);
             }
-            
 
-            
+            Estudiante estudiante = new Estudiante(Conection.Con);
+            List<string> fields = new List<string>()
+            {
+                    "nombre1", "nombre2", "apellido1", "apellido2", "carnet", "cedula",
+                    "lugar_nac", "fecha_nac", "estado_civil", "nacionalidad", "telefono", "operadora",
+                    "direccion", "departamento", "municipio", "trabaja", "centro_trabajo", "direccion_trabajo",
+                    "telefono_trabajo", "cargo", "centro_estudio", "pais", "fecha_exp_titulo", "titulo",
+                    "carrera", "email"
+            };
 
-
+            List<string> values = new List<string>()
+            {
+                    txtname1.Text, txtname2.Text, txtapellido1.Text, txtapellido2.Text, txtcarne.Text, txtcedula.Text,
+                    txtlnacimiento.Text, dtnacimiento.Value.ToString("yyyy-MM-dd"), cbEstadocivil.Text, txtnacionalidad.Text, txtnumerotelefono.Text, comboBox3.Text,
+                    txtdirecciondomi.Text, txtdepartamento.Text, txtmunicipio.Text, trabaja, txtcentrotrabajo.Text, txtdirecciontrabajo.Text,
+                    txtnumerotrabajo.Text, txtcargo.Text, txtcentroestudio.Text, txtpaisgraduacion.Text, dtfechatitulacion.Value.ToString("yyyy-MM-dd"), txttitulacionobtenida.Text,
+                    txtcarreracursada.Text, txtcorreo.Text
+            };
+            estudiante.insert(fields, values);
         }
 
         private void Matricula_Load(object sender, EventArgs e)

@@ -31,7 +31,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Principal));
             this.panelHeat = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.Minimizar = new System.Windows.Forms.PictureBox();
             this.panelMenu = new System.Windows.Forms.Panel();
@@ -58,7 +57,6 @@
             // 
             this.panelHeat.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(170)))), ((int)(((byte)(0)))));
             this.panelHeat.Controls.Add(this.label3);
-            this.panelHeat.Controls.Add(this.label2);
             this.panelHeat.Controls.Add(this.label1);
             this.panelHeat.Controls.Add(this.Minimizar);
             resources.ApplyResources(this.panelHeat, "panelHeat");
@@ -68,11 +66,6 @@
             // 
             resources.ApplyResources(this.label3, "label3");
             this.label3.Name = "label3";
-            // 
-            // label2
-            // 
-            resources.ApplyResources(this.label2, "label2");
-            this.label2.Name = "label2";
             // 
             // label1
             // 
@@ -206,6 +199,7 @@
             this.Controls.Add(this.panelMenu);
             this.Controls.Add(this.panelHeat);
             this.Name = "Principal";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Principal_FormClosing);
             this.Load += new System.EventHandler(this.Principal_Load);
             this.panelHeat.ResumeLayout(false);
@@ -229,7 +223,6 @@
         private System.Windows.Forms.Panel panelView;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panelcontainer;
         private System.Windows.Forms.Button btnestuexist;
         private System.Windows.Forms.Button btnnuevamatricula;

@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Data.SqlClient;
 using System;
+using System.Diagnostics;
 
 namespace EasyQL
 {
@@ -43,7 +44,7 @@ namespace EasyQL
             }
             catch (Exception ex)
             {
-                Console.WriteLine(ex);
+                error(ex);
                 return null;
             }
         }
@@ -62,7 +63,7 @@ namespace EasyQL
             }
             catch (Exception ex)
             {
-                Console.WriteLine(ex);
+                error(ex);
                 return null;
             }
         }
@@ -86,7 +87,7 @@ namespace EasyQL
             }
             catch (Exception ex)
             {
-                Console.WriteLine(ex);
+                error(ex);
                 return null;
             }
         }
@@ -104,7 +105,7 @@ namespace EasyQL
             }
             catch (Exception ex)
             {
-                Console.WriteLine(ex);
+                error(ex);
                 return null;
             }
         }
@@ -128,7 +129,7 @@ namespace EasyQL
             }
             catch (Exception ex)
             {
-                Console.WriteLine(ex);
+                error(ex);
                 return null;
             }
         }
@@ -146,7 +147,7 @@ namespace EasyQL
             }
             catch (Exception ex)
             {
-                Console.WriteLine(ex);
+                error(ex);
                 return null;
             }
         }
@@ -178,7 +179,7 @@ namespace EasyQL
             }
             catch (Exception ex)
             {
-                Console.WriteLine(ex);
+                error(ex);
                 return 0;
             }
         }
@@ -194,7 +195,7 @@ namespace EasyQL
             }
             catch (Exception ex)
             {
-                Console.WriteLine(ex);
+                error(ex);
                 return 0;
             }
         }
@@ -210,7 +211,7 @@ namespace EasyQL
             }
             catch (Exception ex)
             {
-                Console.WriteLine(ex);
+                error(ex);
                 return 0;
             }
         }
@@ -236,9 +237,14 @@ namespace EasyQL
 
             catch (Exception ex)
             {
-                Console.WriteLine(ex);
+                error(ex);
                 return 0;
             }
+        }
+
+        void error(Exception ex)
+        {
+            Debug.Print(ex.Message + "model");
         }
     }
 }
