@@ -21,10 +21,18 @@ namespace Proyecto_UniReg
 
         private void Cursos_Load(object sender, EventArgs e)
         {
-            Curso curso = new Curso(Conection.Con);
-            DataTable tabla = new DataTable();
-            tabla.Load(curso.all());
-            dtgcursos.DataSource = tabla;
+            try
+            {
+                Curso curso = new Curso(Conection.Con);
+                DataTable tabla = new DataTable();
+                tabla.Load(curso.all());
+                dtgcursos.DataSource = tabla;
+            }
+            catch
+            {
+
+            }
+            
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -107,7 +115,6 @@ namespace Proyecto_UniReg
             if (e.RowIndex >= 0 && e.ColumnIndex >= 0)
             {
                 int id = (int)dtgcursos.Rows[e.RowIndex].Cells["ID"].Value;
-                //MessageBox.Show("Se hizo click en la columna con id: " + id);
                 curso cur = new curso(id, dtgcursos);
                 cur.Show();
             }

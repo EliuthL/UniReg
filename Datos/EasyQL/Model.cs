@@ -244,7 +244,7 @@ namespace EasyQL
 
         void error(Exception ex)
         {
-            Debug.Print(ex.Message + "model");
+            Debug.Print("Model: " + ex.Message);
         }
     }
 }

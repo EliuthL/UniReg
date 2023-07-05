@@ -329,7 +329,7 @@
             // 
             // txtarancel
             // 
-            this.txtarancel.Location = new System.Drawing.Point(681, 424);
+            //this.txtarancel.Location = new System.Drawing.Point(681, 424);
             // 
             // arancel
             // 
@@ -337,7 +337,7 @@
             // 
             // txtnumerorecibo
             // 
-            this.txtnumerorecibo.Location = new System.Drawing.Point(162, 424);
+            //this.txtnumerorecibo.Location = new System.Drawing.Point(162, 424);
             // 
             // norecibo
             // 
