@@ -1,5 +1,7 @@
-﻿using System;
+﻿using EasyQL;
+using System;
 using System.Collections.Generic;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Windows.Forms;
 
@@ -9,11 +11,23 @@ namespace Proyecto_UniReg
     {
         private bool sliderStatus = false;
         private bool menustatus = true;
+        private System.Windows.Forms.Timer timerFechaActual;
 
         public Principal()
         {
             InitializeComponent();
+            // Configurar el Timer
+            timerFechaActual = new Timer();
+            timerFechaActual.Interval = 1000; // Intervalo de actualización en milisegundos (en este caso, 1 segundo)
+            timerFechaActual.Tick += TimerFechaActual_Tick;
+            timerFechaActual.Start();
         }
+
+        private void TimerFechaActual_Tick(object sender, EventArgs e)
+        {
+            label3.Text = "Fecha y Hora: " + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
+        }
+
 
         private void DeployMenu()
         {
@@ -139,6 +153,11 @@ namespace Proyecto_UniReg
         private void Principal_Load(object sender, EventArgs e)
         {
             DeployMenu();
+            using (SqlCommand command = new SqlCommand("SELECT SUSER_SNAME() AS UserName", Conection.Con))
+            {
+                string userName = command.ExecuteScalar() as string;
+                label1.Text = "Usuario Actual: " + userName;
+            }
         }
 
         private void btnnuevamatricula_Click(object sender, EventArgs e)
