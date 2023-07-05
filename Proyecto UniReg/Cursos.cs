@@ -101,5 +101,16 @@ namespace Proyecto_UniReg
             tabla.Load(curso.all());
             dtgcursos.DataSource = tabla;
         }
+
+        private void dtgcursos_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0 && e.ColumnIndex >= 0)
+            {
+                int id = (int)dtgcursos.Rows[e.RowIndex].Cells["ID"].Value;
+                //MessageBox.Show("Se hizo click en la columna con id: " + id);
+                curso cur = new curso(id, dtgcursos);
+                cur.Show();
+            }
+        }
     }
 }

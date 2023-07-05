@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Cursos));
             this.dtgcursos = new System.Windows.Forms.DataGridView();
             this.textBox1 = new System.Windows.Forms.TextBox();
@@ -65,8 +65,10 @@
             this.dtgcursos.ReadOnly = true;
             this.dtgcursos.RowHeadersWidth = 51;
             this.dtgcursos.RowTemplate.Height = 24;
+            this.dtgcursos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dtgcursos.Size = new System.Drawing.Size(660, 328);
             this.dtgcursos.TabIndex = 0;
+            this.dtgcursos.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgcursos_CellClick);
             // 
             // textBox1
             // 
@@ -187,10 +189,10 @@
             // 
             // dataGridViewImageColumn1
             // 
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle9.NullValue = ((object)(resources.GetObject("dataGridViewCellStyle9.NullValue")));
-            dataGridViewCellStyle9.Padding = new System.Windows.Forms.Padding(5);
-            this.dataGridViewImageColumn1.DefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle11.NullValue = ((object)(resources.GetObject("dataGridViewCellStyle11.NullValue")));
+            dataGridViewCellStyle11.Padding = new System.Windows.Forms.Padding(5);
+            this.dataGridViewImageColumn1.DefaultCellStyle = dataGridViewCellStyle11;
             this.dataGridViewImageColumn1.HeaderText = "Editar";
             this.dataGridViewImageColumn1.Image = global::Proyecto_UniReg.Properties.Resources.agregar_documento;
             this.dataGridViewImageColumn1.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
