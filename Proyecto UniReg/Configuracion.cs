@@ -87,5 +87,10 @@ namespace Proyecto_UniReg
                 txtruta.Text = ServiciosImpresion.PdfGetRut();
             } 
         }
+
+        private void txtruta_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
