@@ -59,12 +59,10 @@
             this.txtruta.Location = new System.Drawing.Point(18, 68);
             this.txtruta.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtruta.Name = "txtruta";
-<<<<<<< HEAD
+
             this.txtruta.ReadOnly = true;
             this.txtruta.Size = new System.Drawing.Size(634, 27);
-=======
-            this.txtruta.Size = new System.Drawing.Size(476, 23);
->>>>>>> eaff8c3bd90dd78dc5d59cf8c45a5e276b228d61
+
             this.txtruta.TabIndex = 1;
             this.txtruta.TextChanged += new System.EventHandler(this.txtruta_TextChanged);
             // 
@@ -137,15 +135,13 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-<<<<<<< HEAD
+
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.txtrutbackup);
             this.Controls.Add(this.btnsaverut);
             this.Controls.Add(this.btnbackup);
             this.Controls.Add(this.label2);
-=======
-            this.ClientSize = new System.Drawing.Size(600, 366);
->>>>>>> eaff8c3bd90dd78dc5d59cf8c45a5e276b228d61
+
             this.Controls.Add(this.lbrut);
             this.Controls.Add(this.btnruta);
             this.Controls.Add(this.txtruta);

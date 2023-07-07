@@ -28,11 +28,7 @@ namespace Proyecto_UniReg
             //Env.Load();
             //Conection.DataBase = "MatriculaDB";
             //Conection.Server = "MSI\\MSSQLSERVER01";
-<<<<<<< HEAD
-            ServicioGuardado servicioGuardado = new ServicioGuardado("MSI\\MSSQLSERVER01", "MatriculaDB");
-=======
-            ServicioGuardado servicioGuardado = new ServicioGuardado("DESKTOP-IS7CJTG\\SQLEXPRESS", "MatriculaDB");
->>>>>>> eaff8c3bd90dd78dc5d59cf8c45a5e276b228d61
+            ServicioGuardado servicioGuardado = new ServicioGuardado("DESKTOP-7AD0TBQ", "MatriculaDB");
             Conection.DataBase = servicioGuardado.Datareturn();
             Conection.Server = servicioGuardado.Serverreturn();
            

@@ -723,7 +723,6 @@
             // btnguardar
             // 
             this.btnguardar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnguardar.Image = global::Proyecto_UniReg.Properties.Resources.disco__1_;
             this.btnguardar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnguardar.Location = new System.Drawing.Point(531, 405);
             this.btnguardar.Margin = new System.Windows.Forms.Padding(2);
