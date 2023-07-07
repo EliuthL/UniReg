@@ -47,18 +47,18 @@
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(215, 255);
+            this.panel1.Size = new System.Drawing.Size(161, 207);
             this.panel1.TabIndex = 0;
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Proyecto_UniReg.Properties.Resources.Recurso_4;
-            this.pictureBox1.Location = new System.Drawing.Point(31, 47);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox1.Location = new System.Drawing.Point(23, 38);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(149, 150);
+            this.pictureBox1.Size = new System.Drawing.Size(112, 122);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -66,21 +66,21 @@
             // userTxt
             // 
             this.userTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.userTxt.Location = new System.Drawing.Point(263, 62);
-            this.userTxt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.userTxt.Location = new System.Drawing.Point(197, 50);
+            this.userTxt.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.userTxt.Name = "userTxt";
-            this.userTxt.Size = new System.Drawing.Size(291, 30);
+            this.userTxt.Size = new System.Drawing.Size(219, 26);
             this.userTxt.TabIndex = 2;
             this.userTxt.KeyDown += new System.Windows.Forms.KeyEventHandler(this.userTxt_KeyDown);
             // 
             // passwordTxt
             // 
             this.passwordTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.passwordTxt.Location = new System.Drawing.Point(263, 137);
-            this.passwordTxt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.passwordTxt.Location = new System.Drawing.Point(197, 111);
+            this.passwordTxt.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.passwordTxt.Name = "passwordTxt";
             this.passwordTxt.PasswordChar = '*';
-            this.passwordTxt.Size = new System.Drawing.Size(291, 30);
+            this.passwordTxt.Size = new System.Drawing.Size(219, 26);
             this.passwordTxt.TabIndex = 3;
             this.passwordTxt.KeyDown += new System.Windows.Forms.KeyEventHandler(this.passwordTxt_KeyDown);
             // 
@@ -88,9 +88,10 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(260, 38);
+            this.label1.Location = new System.Drawing.Point(195, 31);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(171, 20);
+            this.label1.Size = new System.Drawing.Size(148, 17);
             this.label1.TabIndex = 4;
             this.label1.Text = "Nombre de Usuario";
             // 
@@ -98,9 +99,10 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(260, 114);
+            this.label2.Location = new System.Drawing.Point(195, 93);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(105, 20);
+            this.label2.Size = new System.Drawing.Size(91, 17);
             this.label2.TabIndex = 5;
             this.label2.Text = "Contraseña";
             // 
@@ -110,10 +112,10 @@
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(351, 214);
-            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button1.Location = new System.Drawing.Point(263, 174);
+            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(107, 33);
+            this.button1.Size = new System.Drawing.Size(80, 27);
             this.button1.TabIndex = 6;
             this.button1.Text = "Entrar";
             this.button1.UseVisualStyleBackColor = false;
@@ -122,9 +124,10 @@
             // sesionCheck
             // 
             this.sesionCheck.AutoSize = true;
-            this.sesionCheck.Location = new System.Drawing.Point(264, 177);
+            this.sesionCheck.Location = new System.Drawing.Point(198, 144);
+            this.sesionCheck.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.sesionCheck.Name = "sesionCheck";
-            this.sesionCheck.Size = new System.Drawing.Size(123, 20);
+            this.sesionCheck.Size = new System.Drawing.Size(99, 17);
             this.sesionCheck.TabIndex = 8;
             this.sesionCheck.Text = "Guardar Sesión";
             this.sesionCheck.UseVisualStyleBackColor = true;
@@ -132,9 +135,9 @@
             // 
             // Login
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(589, 255);
+            this.ClientSize = new System.Drawing.Size(442, 207);
             this.Controls.Add(this.sesionCheck);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label2);
@@ -144,10 +147,11 @@
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
+            this.Load += new System.EventHandler(this.Login_Load);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
