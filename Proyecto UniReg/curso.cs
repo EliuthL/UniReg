@@ -47,7 +47,7 @@ namespace Proyecto_UniReg
                 ini_cur.Value = Convert.ToDateTime(row["fecha_ini"]);
                 ini_mat.Value = Convert.ToDateTime(row["ini_matricula"]);
                 fin_mat.Value = Convert.ToDateTime(row["fin_matricula"]);
-                numericUpDown1.Value = Convert.ToInt32(row["duracion_horas"]);
+                numericUpDown1.Value = Convert.ToDecimal(row["duracion_horas"]);
                 comboBox1.Text = Convert.ToString(row["semestre"]);
             }
         }
