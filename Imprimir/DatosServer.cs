@@ -37,9 +37,9 @@ namespace Servicios
                     {
                         if (reader.Name == "servername")
                         {
-                            reader.Read(); // Moverse al contenido del elemento 'server'
-                            servername = reader.Value; // Obtener el valor del elemento
-                            break; // Salir del bucle una vez que se encuentre el elemento deseado
+                            reader.Read(); 
+                            servername = reader.Value; 
+                            break;
                         }
                     }
                 }
@@ -59,9 +59,9 @@ namespace Servicios
                     {
                         if (reader.Name == "databse")
                         {
-                            reader.Read(); // Moverse al contenido del elemento 'databse'
-                            databasename = reader.Value; // Obtener el valor del elemento
-                            break; // Salir del bucle una vez que se encuentre el elemento deseado
+                            reader.Read();
+                            databasename = reader.Value;
+                            break;
                         }
                     }
                 }

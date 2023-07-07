@@ -1,8 +1,8 @@
-﻿using System;
-using System.Drawing;
+﻿using Datos;
+using Imprimir;
+using System;
 using System.IO;
 using System.Windows.Forms;
-using Imprimir;
 
 namespace Proyecto_UniReg
 {
@@ -12,7 +12,7 @@ namespace Proyecto_UniReg
         {
             InitializeComponent();
         }
-        
+
         private void FolderSelect()
         {
             FolderBrowserDialog folderBrowserDialog = new FolderBrowserDialog();
@@ -31,48 +31,37 @@ namespace Proyecto_UniReg
                     writer.Write(rut);
                 }
 
-                
+
             }
         }
 
-        /*public static string RutGenerator(string name)
+        private void RutWriterBackup()
         {
-            
-            SaveFileDialog saveFileDialog = new SaveFileDialog();
-            saveFileDialog.Title = "Configuracion de ruta";
-            saveFileDialog.FileName =
+            string ruttxt = Directory.GetCurrentDirectory();
+            ruttxt = Path.Combine(ruttxt, "BackupRut.txt");
 
-            saveFileDialog.Filter = "Archivos de texto (*.pdf)|*.pdf|Todos los archivos (*.*)|*.*";
-            DialogResult result = saveFileDialog.ShowDialog();
-            if (result == DialogResult.OK)
+            using (StreamWriter writer = new StreamWriter(ruttxt))
             {
-                string rutaArchivo = saveFileDialog.FileName;
-                string ruttxt = Directory.GetCurrentDirectory();
-                ruttxt = Path.Combine(ruttxt, "rutSave.txt");
-
-                using (StreamWriter writer = new StreamWriter(ruttxt))
-                {
-                    bool statustext = false;
-                    using (StreamReader reader = new StreamReader(ruttxt))
-                    {
-                        string text = reader.ReadToEnd();
-
-                        if (reader.ReadToEnd().Length > 0)
-                        {
-                            statustext = true;
-                        }
-                    }
-                    writer.Write(rutaArchivo);
-                }
-
-                using (StreamReader reader = new StreamReader(ruttxt))
-                {
-                     rut = reader.ReadToEnd();
-                }
+                writer.Write(string.Empty);
+                writer.Write(txtrutbackup.Text);
             }
-            return rut;
 
-        }*/
+
+
+        }
+
+        private string ReuturnPathBackup()
+        {
+            string ruttxt = Directory.GetCurrentDirectory();
+            ruttxt = Path.Combine(ruttxt, "BackupRut.txt");
+
+            using (StreamReader reader = new StreamReader(ruttxt))
+            {
+                string backuprut = reader.ReadToEnd();
+                return backuprut;
+            }
+        }
+
 
         private void btnruta_Click(object sender, EventArgs e)
         {
@@ -82,10 +71,33 @@ namespace Proyecto_UniReg
 
         private void Configuracion_Load(object sender, EventArgs e)
         {
-            if(ServiciosImpresion.PdfGetRut() != "")
+            if (ServiciosImpresion.PdfGetRut() != "")
             {
                 txtruta.Text = ServiciosImpresion.PdfGetRut();
-            } 
+            }
+
+            txtrutbackup.Text = ReuturnPathBackup();
+
+        }
+
+
+
+        private void btnbackup_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                Backup.CreateBackup(txtrutbackup.Text);
+                MessageBox.Show("El respaldo se realizó con exito", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message,"Error",MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void btnsaverut_Click(object sender, EventArgs e)
+        {
+            RutWriterBackup();
         }
 
         private void txtruta_TextChanged(object sender, EventArgs e)

@@ -112,7 +112,7 @@ namespace Proyecto_UniReg
 
         private void dtgcursos_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            if (e.RowIndex >= 0 && e.ColumnIndex >= 0)
+            if (e.RowIndex >= 0 && e.ColumnIndex >= 0 && e.RowIndex < dtgcursos.Rows.Count -1)
             {
                 int id = (int)dtgcursos.Rows[e.RowIndex].Cells["ID"].Value;
                 curso cur = new curso(id, dtgcursos);
