@@ -14,41 +14,31 @@ namespace Proyecto_UniReg.Validaciones
             //Validacion del campo nombre1
             if (string.IsNullOrWhiteSpace(name1.Text))
             {
-                MessageBox.Show("El campo primer nombre no puede estar vacio",
-                                "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                return false;
+                throw new Exception("El campo primer nombre no puede estar vacio");
             }
 
             //validacion del campo apellido1
             if (apellido1.Text.Length < 3 || string.IsNullOrWhiteSpace(apellido1.Text))
             {
-                MessageBox.Show("El campo primer apellido no puede estar vacio",
-                                "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                return false;
+                throw new Exception("El campo primer apellido no puede estar vacio");
             }
 
             //Validacion del campo cedula
             if (cedula.Text.Length < 14 || string.IsNullOrWhiteSpace(cedula.Text))
             {
-                MessageBox.Show("El campo cedula no puede ser menor a trece digitos",
-                                "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                return false;
+                throw new Exception("El campo cedula no puede ser menor a trece digitos");
             }
 
             //Validacion del campo lugar de nacimiento
             if (string.IsNullOrWhiteSpace(lugarnacimiento.Text))
             {
-                MessageBox.Show("El campo lugar de nacimiento no puede estar vacio",
-                                "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                return false;
+                throw new Exception("El campo lugar de nacimiento no puede estar vacio");
             }
 
             //Validacion de fecha de nacimiento
             if (fnacimiento.Value != DateTime.Now && fnacimiento.Value > DateTime.Now)
             {
-                MessageBox.Show("La fecha de nacimiento no puede ser la fecha actual o superior",
-                                "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                return false;
+                throw new Exception("La fecha de nacimiento no puede ser la fecha actual o superior");
             }
 
             return true;
@@ -80,19 +70,16 @@ namespace Proyecto_UniReg.Validaciones
             {
                 if (camposVacios.Count > 0)
                 {
-                    string camposFaltantes = string.Join(", ", camposVacios);
-                    MessageBox.Show("¡Faltan campos por rellenar!", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                    return false;
+                    //string camposFaltantes = string.Join(", ", camposVacios);
+                    throw new Exception("¡Faltan campos por rellenar!");
                 }
-            }
-            if (rbtnSi.Checked)
-            {
-                if (camposVacios.Count == 0)
+                if (Telefono.Text.Length != 8)
                 {
-
-                    MessageBox.Show("¡Ingrese datos validos en el campo Telefono!", "Advertencia",
-                                     MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                    return false;
+                    int a;
+                    if(!int.TryParse(Telefono.Text, out a))
+                    {
+                        throw new Exception("¡Ingrese datos validos en el campo Telefono!");
+                    }   
                 }
             }
             return true;

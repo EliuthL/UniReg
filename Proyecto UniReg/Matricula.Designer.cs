@@ -71,10 +71,10 @@
             this.nombre1 = new System.Windows.Forms.Label();
             this.labelencabezadodatosg = new System.Windows.Forms.Label();
             this.pinformacionacademica = new System.Windows.Forms.Panel();
+            this.domainUpDown2 = new System.Windows.Forms.DomainUpDown();
+            this.domainUpDown1 = new System.Windows.Forms.DomainUpDown();
             this.btnguardar = new System.Windows.Forms.Button();
-            this.txtarancel = new System.Windows.Forms.TextBox();
             this.arancel = new System.Windows.Forms.Label();
-            this.txtnumerorecibo = new System.Windows.Forms.TextBox();
             this.norecibo = new System.Windows.Forms.Label();
             this.lbfechamatricula = new System.Windows.Forms.Label();
             this.fechamatricula = new System.Windows.Forms.Label();
@@ -139,16 +139,16 @@
             this.lbduracion.Location = new System.Drawing.Point(557, 170);
             this.lbduracion.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbduracion.Name = "lbduracion";
-            this.lbduracion.Size = new System.Drawing.Size(52, 17);
+            this.lbduracion.Size = new System.Drawing.Size(17, 17);
             this.lbduracion.TabIndex = 8;
-            this.lbduracion.Text = "Fecha";
+            this.lbduracion.Text = "0";
             // 
             // tiempoduracion
             // 
             this.tiempoduracion.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.tiempoduracion.AutoSize = true;
             this.tiempoduracion.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tiempoduracion.Location = new System.Drawing.Point(432, 170);
+            this.tiempoduracion.Location = new System.Drawing.Point(426, 170);
             this.tiempoduracion.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.tiempoduracion.Name = "tiempoduracion";
             this.tiempoduracion.Size = new System.Drawing.Size(138, 17);
@@ -182,19 +182,15 @@
             // cbcursocapacitacion
             // 
             this.cbcursocapacitacion.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.cbcursocapacitacion.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbcursocapacitacion.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbcursocapacitacion.FormattingEnabled = true;
             this.cbcursocapacitacion.IntegralHeight = false;
-            this.cbcursocapacitacion.Items.AddRange(new object[] {
-            "x",
-            "s",
-            "d"});
             this.cbcursocapacitacion.Location = new System.Drawing.Point(250, 113);
             this.cbcursocapacitacion.Margin = new System.Windows.Forms.Padding(2);
             this.cbcursocapacitacion.Name = "cbcursocapacitacion";
             this.cbcursocapacitacion.Size = new System.Drawing.Size(354, 25);
             this.cbcursocapacitacion.TabIndex = 4;
+            this.cbcursocapacitacion.SelectedIndexChanged += new System.EventHandler(this.cbcursocapacitacion_SelectedIndexChanged);
             // 
             // rbcapacitacion
             // 
@@ -683,10 +679,10 @@
             this.pinformacionacademica.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pinformacionacademica.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.pinformacionacademica.Controls.Add(this.domainUpDown2);
+            this.pinformacionacademica.Controls.Add(this.domainUpDown1);
             this.pinformacionacademica.Controls.Add(this.btnguardar);
-            this.pinformacionacademica.Controls.Add(this.txtarancel);
             this.pinformacionacademica.Controls.Add(this.arancel);
-            this.pinformacionacademica.Controls.Add(this.txtnumerorecibo);
             this.pinformacionacademica.Controls.Add(this.norecibo);
             this.pinformacionacademica.Controls.Add(this.lbfechamatricula);
             this.pinformacionacademica.Controls.Add(this.fechamatricula);
@@ -710,6 +706,20 @@
             this.pinformacionacademica.Size = new System.Drawing.Size(644, 451);
             this.pinformacionacademica.TabIndex = 10;
             // 
+            // domainUpDown2
+            // 
+            this.domainUpDown2.Location = new System.Drawing.Point(429, 357);
+            this.domainUpDown2.Name = "domainUpDown2";
+            this.domainUpDown2.Size = new System.Drawing.Size(120, 20);
+            this.domainUpDown2.TabIndex = 62;
+            // 
+            // domainUpDown1
+            // 
+            this.domainUpDown1.Location = new System.Drawing.Point(40, 357);
+            this.domainUpDown1.Name = "domainUpDown1";
+            this.domainUpDown1.Size = new System.Drawing.Size(120, 20);
+            this.domainUpDown1.TabIndex = 61;
+            // 
             // btnguardar
             // 
             this.btnguardar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
@@ -726,18 +736,6 @@
             this.btnguardar.UseVisualStyleBackColor = true;
             this.btnguardar.Click += new System.EventHandler(this.button1_Click);
             // 
-            // txtarancel
-            // 
-            this.txtarancel.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.txtarancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtarancel.Location = new System.Drawing.Point(429, 344);
-            this.txtarancel.Margin = new System.Windows.Forms.Padding(2);
-            this.txtarancel.Name = "txtarancel";
-            this.txtarancel.Size = new System.Drawing.Size(188, 23);
-            this.txtarancel.TabIndex = 59;
-            this.txtarancel.Text = " ";
-            this.txtarancel.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtarancel_KeyPress);
-            // 
             // arancel
             // 
             this.arancel.Anchor = System.Windows.Forms.AnchorStyles.Top;
@@ -749,18 +747,6 @@
             this.arancel.Size = new System.Drawing.Size(60, 17);
             this.arancel.TabIndex = 58;
             this.arancel.Text = "Arancel:";
-            // 
-            // txtnumerorecibo
-            // 
-            this.txtnumerorecibo.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.txtnumerorecibo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtnumerorecibo.Location = new System.Drawing.Point(40, 344);
-            this.txtnumerorecibo.Margin = new System.Windows.Forms.Padding(2);
-            this.txtnumerorecibo.Name = "txtnumerorecibo";
-            this.txtnumerorecibo.Size = new System.Drawing.Size(234, 23);
-            this.txtnumerorecibo.TabIndex = 57;
-            this.txtnumerorecibo.Text = " ";
-            this.txtnumerorecibo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtnumerorecibo_KeyPress);
             // 
             // norecibo
             // 
@@ -987,7 +973,7 @@
             this.txtnumerotrabajo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtnumerotrabajo.Location = new System.Drawing.Point(429, 258);
             this.txtnumerotrabajo.Margin = new System.Windows.Forms.Padding(2);
-            this.txtnumerotrabajo.MaxLength = 15;
+            this.txtnumerotrabajo.MaxLength = 8;
             this.txtnumerotrabajo.Name = "txtnumerotrabajo";
             this.txtnumerotrabajo.Size = new System.Drawing.Size(170, 23);
             this.txtnumerotrabajo.TabIndex = 41;
@@ -1231,14 +1217,14 @@
         public System.Windows.Forms.TextBox txttitulacionobtenida;
         public System.Windows.Forms.Label tituloobtenido;
         public System.Windows.Forms.Label fechatitulacion;
-        public System.Windows.Forms.TextBox txtarancel;
         public System.Windows.Forms.Label arancel;
-        public System.Windows.Forms.TextBox txtnumerorecibo;
         public System.Windows.Forms.Label norecibo;
         public System.Windows.Forms.Label lbfechamatricula;
         public System.Windows.Forms.Label fechamatricula;
         public System.Windows.Forms.TextBox txtcorreo;
         public System.Windows.Forms.Label correo;
         public System.Windows.Forms.Button btnguardar;
+        private System.Windows.Forms.DomainUpDown domainUpDown2;
+        private System.Windows.Forms.DomainUpDown domainUpDown1;
     }
 }
