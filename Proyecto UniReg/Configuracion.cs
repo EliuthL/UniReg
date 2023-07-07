@@ -99,5 +99,10 @@ namespace Proyecto_UniReg
         {
             RutWriterBackup();
         }
+
+        private void txtruta_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

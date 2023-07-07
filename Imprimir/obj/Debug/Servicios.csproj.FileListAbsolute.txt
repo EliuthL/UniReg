@@ -28,3 +28,13 @@ C:\Users\lopez\Source\Repos\EliuthL\UniReg\Imprimir\obj\Debug\Servicios.csproj.C
 C:\Users\lopez\Source\Repos\EliuthL\UniReg\Imprimir\obj\Debug\Capa Negocios.dll
 C:\Users\lopez\Source\Repos\EliuthL\UniReg\Imprimir\obj\Debug\Capa Negocios.pdb
 C:\Users\Everth\Desktop\UniReg\Imprimir\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\Daniel Olivas\Source\Repos\EliuthL\UniReg\Imprimir\bin\Debug\Capa Negocios.dll
+C:\Users\Daniel Olivas\Source\Repos\EliuthL\UniReg\Imprimir\bin\Debug\Capa Negocios.pdb
+C:\Users\Daniel Olivas\Source\Repos\EliuthL\UniReg\Imprimir\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\Daniel Olivas\Source\Repos\EliuthL\UniReg\Imprimir\bin\Debug\NReco.PdfGenerator.dll
+C:\Users\Daniel Olivas\Source\Repos\EliuthL\UniReg\Imprimir\bin\Debug\NReco.PdfGenerator.xml
+C:\Users\Daniel Olivas\Source\Repos\EliuthL\UniReg\Imprimir\obj\Debug\Servicios.csproj.AssemblyReference.cache
+C:\Users\Daniel Olivas\Source\Repos\EliuthL\UniReg\Imprimir\obj\Debug\Servicios.csproj.CoreCompileInputs.cache
+C:\Users\Daniel Olivas\Source\Repos\EliuthL\UniReg\Imprimir\obj\Debug\Servicios.csproj.CopyComplete
+C:\Users\Daniel Olivas\Source\Repos\EliuthL\UniReg\Imprimir\obj\Debug\Capa Negocios.dll
+C:\Users\Daniel Olivas\Source\Repos\EliuthL\UniReg\Imprimir\obj\Debug\Capa Negocios.pdb

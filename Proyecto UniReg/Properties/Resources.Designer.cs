@@ -63,6 +63,16 @@ namespace Proyecto_UniReg.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap actualizar_flecha {
+            get {
+                object obj = ResourceManager.GetObject("actualizar-flecha", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap agregar_documento {
             get {
                 object obj = ResourceManager.GetObject("agregar-documento", resourceCulture);
@@ -146,6 +156,16 @@ namespace Proyecto_UniReg.Properties {
         internal static System.Drawing.Bitmap disco__1_ {
             get {
                 object obj = ResourceManager.GetObject("disco (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap eliminar {
+            get {
+                object obj = ResourceManager.GetObject("eliminar", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
