@@ -400,24 +400,24 @@ FodyWeavers.xsd
 #Ignorar la carpeta ignore
 .gitignore
 
-# Carpeta de configuración de Visual Studio
+# Carpeta de configuraciï¿½n de Visual Studio
 .vs/
 
-# Carpeta de archivos de caché de Visual Studio
+# Carpeta de archivos de cachï¿½ de Visual Studio
 .vscode/
 
 # Carpeta de archivos de usuario de Visual Studio
-# (Asegúrate de adaptar esto a tu configuración personal)
+# (Asegï¿½rate de adaptar esto a tu configuraciï¿½n personal)
 *.suo
 *.user
 *.user.props
 *.sln.docstates
 
-# Carpeta de archivos de compilación
+# Carpeta de archivos de compilaciï¿½n
 bin/
 obj/
 
-# Carpeta de archivos de publicación
+# Carpeta de archivos de publicaciï¿½n
 publish/
 
 # Carpeta de archivos de registro de errores
@@ -427,11 +427,11 @@ publish/
 *.*~
 *.swp
 
-# Archivos de caché y región de recursos
+# Archivos de cachï¿½ y regiï¿½n de recursos
 *.cache
 *.resources
 
-# Archivos de depuración y seguimiento
+# Archivos de depuraciï¿½n y seguimiento
 *.pdb
 *.ipch
 *.stackdump
@@ -443,3 +443,6 @@ publish/
 *.dat
 *.tmp
 *.temp
+.gitignore
+Datos/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
+.vs/Proyecto UniReg/v17/.suo

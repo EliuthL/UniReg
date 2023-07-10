@@ -708,6 +708,7 @@
             // 
             // domainUpDown2
             // 
+            this.domainUpDown2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.domainUpDown2.Location = new System.Drawing.Point(429, 357);
             this.domainUpDown2.Name = "domainUpDown2";
             this.domainUpDown2.Size = new System.Drawing.Size(120, 20);
@@ -715,6 +716,7 @@
             // 
             // domainUpDown1
             // 
+            this.domainUpDown1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.domainUpDown1.Location = new System.Drawing.Point(40, 357);
             this.domainUpDown1.Name = "domainUpDown1";
             this.domainUpDown1.Size = new System.Drawing.Size(120, 20);

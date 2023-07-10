@@ -57,20 +57,18 @@
             this.txtruta.Enabled = false;
             this.txtruta.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtruta.Location = new System.Drawing.Point(18, 68);
-            this.txtruta.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtruta.Margin = new System.Windows.Forms.Padding(2);
             this.txtruta.Name = "txtruta";
-
             this.txtruta.ReadOnly = true;
-            this.txtruta.Size = new System.Drawing.Size(634, 27);
-
+            this.txtruta.Size = new System.Drawing.Size(634, 23);
             this.txtruta.TabIndex = 1;
             this.txtruta.TextChanged += new System.EventHandler(this.txtruta_TextChanged);
             // 
             // btnruta
             // 
             this.btnruta.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnruta.Location = new System.Drawing.Point(498, 68);
-            this.btnruta.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnruta.Location = new System.Drawing.Point(664, 68);
+            this.btnruta.Margin = new System.Windows.Forms.Padding(2);
             this.btnruta.Name = "btnruta";
             this.btnruta.Size = new System.Drawing.Size(93, 22);
             this.btnruta.TabIndex = 2;
@@ -95,7 +93,7 @@
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(21, 132);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(420, 16);
+            this.label2.Size = new System.Drawing.Size(341, 13);
             this.label2.TabIndex = 6;
             this.label2.Text = "Ruta donde se guadarán los respaldos de la base de datos";
             // 
@@ -128,25 +126,23 @@
             this.txtrutbackup.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtrutbackup.Location = new System.Drawing.Point(24, 151);
             this.txtrutbackup.Name = "txtrutbackup";
-            this.txtrutbackup.Size = new System.Drawing.Size(634, 27);
+            this.txtrutbackup.Size = new System.Drawing.Size(634, 23);
             this.txtrutbackup.TabIndex = 9;
             // 
             // Configuracion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.txtrutbackup);
             this.Controls.Add(this.btnsaverut);
             this.Controls.Add(this.btnbackup);
             this.Controls.Add(this.label2);
-
             this.Controls.Add(this.lbrut);
             this.Controls.Add(this.btnruta);
             this.Controls.Add(this.txtruta);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Configuracion";
             this.Text = "Configuracion";
             this.Load += new System.EventHandler(this.Configuracion_Load);
