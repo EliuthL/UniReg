@@ -47,11 +47,17 @@ namespace Proyecto_UniReg
                 ini_cur.Value = Convert.ToDateTime(row["fecha_ini"]);
                 ini_mat.Value = Convert.ToDateTime(row["ini_matricula"]);
                 fin_mat.Value = Convert.ToDateTime(row["fin_matricula"]);
-                numericUpDown1.Value = Convert.ToInt32(row["duracion_horas"]);
+                numericUpDown1.Value = Convert.ToDecimal(row["duracion_horas"]);
                 comboBox1.Text = Convert.ToString(row["semestre"]);
             }
 
-            string query = "SELECT * FROM Estudiante " +
+            string query = "SELECT Estudiante.nombre1, Estudiante.apellido1, Estudiante.carnet, Estudiante.cedula," +
+                "Estudiante.lugar_nac, Estudiante.fecha_nac, Estudiante.estado_civil, Estudiante.nacionalidad," +
+                "Estudiante.telefono, Estudiante.operadora, Estudiante.direccion, Estudiante.departamento," +
+                "Estudiante.municipio, Estudiante.trabaja, Estudiante.centro_trabajo, Estudiante.direccion_trabajo," +
+                "Estudiante.telefono_trabajo, Estudiante.cargo, Estudiante.centro_estudio, Estudiante.pais," +
+                "Estudiante.fecha_exp_titulo, Estudiante.carrera, Estudiante.email, Est_Cur.fecha_mat, Est_Cur.recibo_no," +
+                "Est_Cur.arancel FROM Estudiante " +
                 "JOIN Est_Cur ON Estudiante.id = Est_Cur.id_estudiante " +
                 "WHERE Est_Cur.id_curso = @IdCurso";
             SqlCommand command = new SqlCommand(query, Conection.Con);

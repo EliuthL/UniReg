@@ -327,17 +327,11 @@
             // 
             this.fechatitulacion.Location = new System.Drawing.Point(127, 124);
             // 
-            // txtarancel
-            // 
-            this.txtarancel.Location = new System.Drawing.Point(511, 344);
             // 
             // arancel
             // 
             this.arancel.Location = new System.Drawing.Point(519, 326);
             // 
-            // txtnumerorecibo
-            // 
-            this.txtnumerorecibo.Location = new System.Drawing.Point(122, 344);
             // 
             // norecibo
             // 
