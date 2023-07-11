@@ -12,7 +12,7 @@ namespace Proyecto_UniReg
 {
     public partial class Matricula : Form
     {
-        string cursoId = "";
+        protected string cursoId = "";
 
         public string dateformat = DateTime.Now.ToString("dd-MM-yyyy");
         public Matricula()
@@ -37,7 +37,7 @@ namespace Proyecto_UniReg
             }
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        protected virtual void btnguardar_Click(object sender, EventArgs e)
         {
             //obtener datos de los radio butons
             string curso = "";
