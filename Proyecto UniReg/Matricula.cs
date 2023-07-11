@@ -12,7 +12,7 @@ namespace Proyecto_UniReg
 {
     public partial class Matricula : Form
     {
-        string cursoId = "";
+        protected string cursoId = "";
 
         public string dateformat = DateTime.Now.ToString("dd-MM-yyyy");
         public Matricula()
@@ -37,7 +37,7 @@ namespace Proyecto_UniReg
             }
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        protected virtual void btnguardar_Click(object sender, EventArgs e)
         {
             //obtener datos de los radio butons
             string curso = "";
@@ -331,6 +331,37 @@ namespace Proyecto_UniReg
                 }
             }
             catch(Exception ex)
+            {
+
+            }
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                cbcursocapacitacion.Items.Clear();
+                lbfechamatricula.Text = dateformat;
+
+                string hoy = DateTime.Today.ToString("yyyy-MM-dd");
+                string query = $"SELECT * FROM Curso WHERE ini_matricula <= '{hoy}' AND fin_matricula >= '{hoy}'";
+                SqlCommand command = new SqlCommand(query, Conection.Con);
+                SqlDataReader reader = command.ExecuteReader();
+                while (reader.Read())
+                {
+                    int id = reader.GetInt32(0);
+                    string nombre = reader.GetString(4);
+
+                    cbcursocapacitacion.Items.Add($"Id: {id} Nombre: {nombre}");
+                }
+                reader.Close();
+            }
+            catch
             {
 
             }

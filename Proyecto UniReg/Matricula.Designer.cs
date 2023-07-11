@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.ptipoprograma = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lbduracion = new System.Windows.Forms.Label();
             this.tiempoduracion = new System.Windows.Forms.Label();
             this.lbinicio = new System.Windows.Forms.Label();
@@ -105,6 +106,7 @@
             this.labelencabezadoinfo = new System.Windows.Forms.Label();
             this.rbsi = new System.Windows.Forms.RadioButton();
             this.ptipoprograma.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.pdatosgenerales.SuspendLayout();
             this.pinformacionacademica.SuspendLayout();
             this.pinformacionlaboral.SuspendLayout();
@@ -115,6 +117,7 @@
             this.ptipoprograma.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.ptipoprograma.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.ptipoprograma.Controls.Add(this.pictureBox1);
             this.ptipoprograma.Controls.Add(this.lbduracion);
             this.ptipoprograma.Controls.Add(this.tiempoduracion);
             this.ptipoprograma.Controls.Add(this.lbinicio);
@@ -131,12 +134,25 @@
             this.ptipoprograma.Size = new System.Drawing.Size(644, 214);
             this.ptipoprograma.TabIndex = 0;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.pictureBox1.Image = global::Proyecto_UniReg.Properties.Resources.actualizar_flecha;
+            this.pictureBox1.InitialImage = global::Proyecto_UniReg.Properties.Resources.actualizar_flecha;
+            this.pictureBox1.Location = new System.Drawing.Point(569, 105);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(30, 30);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 10;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
             // lbduracion
             // 
             this.lbduracion.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lbduracion.AutoSize = true;
             this.lbduracion.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbduracion.Location = new System.Drawing.Point(557, 170);
+            this.lbduracion.Location = new System.Drawing.Point(511, 170);
             this.lbduracion.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbduracion.Name = "lbduracion";
             this.lbduracion.Size = new System.Drawing.Size(17, 17);
@@ -148,7 +164,7 @@
             this.tiempoduracion.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.tiempoduracion.AutoSize = true;
             this.tiempoduracion.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tiempoduracion.Location = new System.Drawing.Point(426, 170);
+            this.tiempoduracion.Location = new System.Drawing.Point(370, 170);
             this.tiempoduracion.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.tiempoduracion.Name = "tiempoduracion";
             this.tiempoduracion.Size = new System.Drawing.Size(138, 17);
@@ -185,10 +201,10 @@
             this.cbcursocapacitacion.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbcursocapacitacion.FormattingEnabled = true;
             this.cbcursocapacitacion.IntegralHeight = false;
-            this.cbcursocapacitacion.Location = new System.Drawing.Point(250, 113);
+            this.cbcursocapacitacion.Location = new System.Drawing.Point(236, 110);
             this.cbcursocapacitacion.Margin = new System.Windows.Forms.Padding(2);
             this.cbcursocapacitacion.Name = "cbcursocapacitacion";
-            this.cbcursocapacitacion.Size = new System.Drawing.Size(354, 25);
+            this.cbcursocapacitacion.Size = new System.Drawing.Size(313, 25);
             this.cbcursocapacitacion.TabIndex = 4;
             this.cbcursocapacitacion.SelectedIndexChanged += new System.EventHandler(this.cbcursocapacitacion_SelectedIndexChanged);
             // 
@@ -225,7 +241,7 @@
             this.labelcursocapacitacion.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.labelcursocapacitacion.AutoSize = true;
             this.labelcursocapacitacion.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelcursocapacitacion.Location = new System.Drawing.Point(16, 115);
+            this.labelcursocapacitacion.Location = new System.Drawing.Point(2, 113);
             this.labelcursocapacitacion.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelcursocapacitacion.Name = "labelcursocapacitacion";
             this.labelcursocapacitacion.Size = new System.Drawing.Size(230, 17);
@@ -353,7 +369,6 @@
             this.comboBox3.AutoCompleteCustomSource.AddRange(new string[] {
             "CLARO",
             "TIGO"});
-            this.comboBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox3.FormattingEnabled = true;
             this.comboBox3.Items.AddRange(new object[] {
@@ -380,7 +395,6 @@
             // cbEstadocivil
             // 
             this.cbEstadocivil.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.cbEstadocivil.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbEstadocivil.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbEstadocivil.FormattingEnabled = true;
             this.cbEstadocivil.Items.AddRange(new object[] {
@@ -735,7 +749,7 @@
             this.btnguardar.Text = "Guardar";
             this.btnguardar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnguardar.UseVisualStyleBackColor = true;
-            this.btnguardar.Click += new System.EventHandler(this.button1_Click);
+            this.btnguardar.Click += new System.EventHandler(this.btnguardar_Click);
             // 
             // arancel
             // 
@@ -1128,7 +1142,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(762, 470);
+            this.ClientSize = new System.Drawing.Size(765, 470);
             this.Controls.Add(this.pinformacionlaboral);
             this.Controls.Add(this.pinformacionacademica);
             this.Controls.Add(this.pdatosgenerales);
@@ -1140,6 +1154,7 @@
             this.Load += new System.EventHandler(this.Matricula_Load);
             this.ptipoprograma.ResumeLayout(false);
             this.ptipoprograma.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.pdatosgenerales.ResumeLayout(false);
             this.pdatosgenerales.PerformLayout();
             this.pinformacionacademica.ResumeLayout(false);
@@ -1225,7 +1240,8 @@
         public System.Windows.Forms.TextBox txtcorreo;
         public System.Windows.Forms.Label correo;
         public System.Windows.Forms.Button btnguardar;
-        private System.Windows.Forms.DomainUpDown domainUpDown2;
-        private System.Windows.Forms.DomainUpDown domainUpDown1;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        protected System.Windows.Forms.DomainUpDown domainUpDown2;
+        protected System.Windows.Forms.DomainUpDown domainUpDown1;
     }
 }

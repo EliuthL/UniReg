@@ -86,7 +86,6 @@ namespace Proyecto_UniReg
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
-
             }
         }
     }
