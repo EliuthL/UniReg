@@ -1,14 +1,9 @@
-﻿using System;
+﻿using EasyQL;
+using System;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
 using System.Data.SqlClient;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using EasyQL;
 
 namespace Proyecto_UniReg
 {
@@ -71,7 +66,7 @@ namespace Proyecto_UniReg
         private void button2_Click(object sender, EventArgs e)
         {
             string tipo = "";
-            if(cursoRadio.Checked)
+            if (cursoRadio.Checked)
             {
                 tipo = "Curso";
             }
@@ -99,7 +94,7 @@ namespace Proyecto_UniReg
             DataTable data = new DataTable();
             data.Load(cur.find(id.ToString()));
 
-            if(data.Rows.Count > 0)
+            if (data.Rows.Count > 0)
             {
                 DataRow row = data.Rows[0];
                 facultadTxt.Text = Convert.ToString(row["facultad"]);
@@ -123,18 +118,29 @@ namespace Proyecto_UniReg
             DataTable griddata = new DataTable();
             griddata.Load(cur.all());
             grid.DataSource = griddata;
+
+            MessageBox.Show("Se actualizó con exito", "Informació", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            this.Close();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Curso cur = new Curso(Conection.Con);
-            cur.delete(id.ToString());
 
-            DataTable griddata = new DataTable();
-            griddata.Load(cur.all());
-            grid.DataSource = griddata;
+            DialogResult = MessageBox.Show("Desea eliminar el curso?\nEsta acción es irreversible", "Advertencia", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation);
 
-            this.Close();
+            if (DialogResult == DialogResult.Yes)
+            {
+                Curso cur = new Curso(Conection.Con);
+                cur.delete(id.ToString());
+
+                DataTable griddata = new DataTable();
+                griddata.Load(cur.all());
+                grid.DataSource = griddata;
+
+                this.Close();
+            }
+
+
         }
     }
 }

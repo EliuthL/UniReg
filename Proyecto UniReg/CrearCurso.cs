@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using EasyQL;
+using Org.BouncyCastle.Asn1.Crmf;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace Proyecto_UniReg
 {
@@ -16,6 +18,15 @@ namespace Proyecto_UniReg
         public CrearCurso()
         {
             InitializeComponent();
+        }
+
+        private void CleanControls()
+        {
+
+            textBox1.Text = string.Empty;
+            comboBox1.Text = string.Empty;
+            numericUpDown1.ResetText();
+
         }
 
         private void btncrear_Click(object sender, EventArgs e)
@@ -64,7 +75,8 @@ namespace Proyecto_UniReg
                 }
 
                 curso.insert(fields, values);
-                MessageBox.Show("Se ha creado el curso", "Completado", MessageBoxButtons.OK, MessageBoxIcon.None);
+                MessageBox.Show("Se ha creado el curso", "Completado", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                CleanControls();
             }
             catch(Exception ex)
             {
