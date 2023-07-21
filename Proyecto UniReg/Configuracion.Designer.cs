@@ -36,6 +36,7 @@
             this.btnbackup = new System.Windows.Forms.Button();
             this.btnsaverut = new System.Windows.Forms.Button();
             this.txtrutbackup = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -129,11 +130,22 @@
             this.txtrutbackup.Size = new System.Drawing.Size(634, 23);
             this.txtrutbackup.TabIndex = 9;
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(19, 236);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(101, 48);
+            this.button1.TabIndex = 10;
+            this.button1.Text = "Cerrar sesión";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Configuracion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.txtrutbackup);
             this.Controls.Add(this.btnsaverut);
             this.Controls.Add(this.btnbackup);
@@ -161,5 +173,6 @@
         private System.Windows.Forms.Button btnbackup;
         private System.Windows.Forms.Button btnsaverut;
         private System.Windows.Forms.TextBox txtrutbackup;
+        private System.Windows.Forms.Button button1;
     }
 }
