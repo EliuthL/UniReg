@@ -12,8 +12,9 @@ namespace Proyecto_UniReg
         private bool sliderStatus = false;
         private bool menustatus = true;
         private System.Windows.Forms.Timer timerFechaActual;
+        Login login;
 
-        public Principal()
+        public Principal(Login log)
         {
             InitializeComponent();
             // Configurar el Timer
@@ -21,6 +22,7 @@ namespace Proyecto_UniReg
             timerFechaActual.Interval = 1000; // Intervalo de actualización en milisegundos (en este caso, 1 segundo)
             timerFechaActual.Tick += TimerFechaActual_Tick;
             timerFechaActual.Start();
+            login = log;
         }
 
         private void TimerFechaActual_Tick(object sender, EventArgs e)
@@ -158,6 +160,7 @@ namespace Proyecto_UniReg
                 string userName = command.ExecuteScalar() as string;
                 label1.Text = "Usuario Actual: " + userName;
             }
+            this.Focus();
         }
 
         private void btnnuevamatricula_Click(object sender, EventArgs e)

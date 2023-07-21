@@ -11,6 +11,7 @@ using EasyQL;
 using DotNetEnv;
 using System.IO;
 using Servicios;
+using System.Diagnostics;
 
 namespace Proyecto_UniReg
 {
@@ -25,10 +26,8 @@ namespace Proyecto_UniReg
         {
             Conection.User = userTxt.Text;
             Conection.Password = passwordTxt.Text;
-            //Env.Load();
-            //Conection.DataBase = "MatriculaDB";
-            //Conection.Server = "MSI\\MSSQLSERVER01";
-            ServicioGuardado servicioGuardado = new ServicioGuardado("MSI\\MSSQLSERVER01", "MatriculaDB");
+
+            ServicioGuardado servicioGuardado = new ServicioGuardado("DESKTOP-7AD0TBQ", "MatriculaDB");
             Conection.DataBase = servicioGuardado.Datareturn();
             Conection.Server = servicioGuardado.Serverreturn();
            
@@ -36,13 +35,18 @@ namespace Proyecto_UniReg
             {
                 Conection.makeConnection(Conection.connectionString());
                 Conection.Con.Open();
-                Principal principal = new Principal();
+                Principal principal = new Principal(this);
                 principal.Show();
-                this.Hide();
 
                 if (sesionCheck.Checked)
                 {
+                    string datosAGuardar = userTxt.Text + "," + passwordTxt.Text.ToString();
 
+                    string rutaArchivo = "C:\\Users\\Everth\\Desktop\\UniReg\\Proyecto UniReg\\datos.txt";
+                    using (StreamWriter escritor = new StreamWriter(rutaArchivo))
+                    {
+                        escritor.WriteLine(datosAGuardar);
+                    }
                 }
             }
             catch(Exception ex)
@@ -81,7 +85,37 @@ namespace Proyecto_UniReg
 
         private void Login_Load(object sender, EventArgs e)
         {
+            string rutaArchivo = "C:\\Users\\Everth\\Desktop\\UniReg\\Proyecto UniReg\\datos.txt";
+            using (StreamReader lector = new StreamReader(rutaArchivo))
+            {
+                string linea = lector.ReadLine();
 
+                string[] datos = linea.Split(',');
+
+                if (datos.Count() > 1)
+                {
+                    string user = datos[0];
+                    string password = datos[1];
+                    Conection.User = user;
+                    Conection.Password = password;
+
+                    ServicioGuardado servicioGuardado = new ServicioGuardado("DESKTOP-7AD0TBQ", "MatriculaDB");
+                    Conection.DataBase = servicioGuardado.Datareturn();
+                    Conection.Server = servicioGuardado.Serverreturn();
+
+                    try
+                    {
+                        Conection.makeConnection(Conection.connectionString());
+                        Conection.Con.Open();
+                        Principal principal = new Principal(this);
+                        principal.Show();
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show(ex.Message);
+                    }
+                }
+            }
         }
     }
 }

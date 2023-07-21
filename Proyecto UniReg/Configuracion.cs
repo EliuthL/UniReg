@@ -104,5 +104,16 @@ namespace Proyecto_UniReg
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            string rutaArchivo = "C:\\Users\\Everth\\Desktop\\UniReg\\Proyecto UniReg\\datos.txt";
+            using (StreamWriter escritor = new StreamWriter(rutaArchivo))
+            {
+                escritor.WriteLine("");
+                Application.Exit();
+            }
+
+        }
     }
 }

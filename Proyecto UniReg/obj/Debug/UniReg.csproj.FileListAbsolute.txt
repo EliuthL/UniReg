@@ -116,3 +116,4 @@ C:\Users\Everth\Desktop\UniReg\Proyecto UniReg\obj\Debug\Proyecto_UniReg.Cursos.
 C:\Users\Everth\Desktop\UniReg\Proyecto UniReg\obj\Debug\Proyecto_UniReg.EstudiantesExistentes.resources
 C:\Users\Everth\Desktop\UniReg\Proyecto UniReg\obj\Debug\Proyecto_UniReg.curso.resources
 C:\Users\lopez\Source\Repos\EliuthL\UniReg\Proyecto UniReg\obj\Debug\Proyecto_UniReg.curso.resources
+C:\Users\Everth\Desktop\UniReg\Proyecto UniReg\bin\Debug\App.config
